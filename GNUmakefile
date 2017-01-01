@@ -1,5 +1,6 @@
 THISDIR := ece1229-antenna
 THISBOOK := ece1229
+BASEVER := 787e6af
 
 include ../latex/make.bookvars
 
