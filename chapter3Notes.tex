@@ -28,67 +28,13 @@
 
 For reasons that are yet to be seen (and justified), we work with a generalization of Maxwell's equations to include
 electric AND magnetic charge densities.
-\index{magnetic charge density}
-\index{electric charge density}
-\index{magnetic current density}
-\index{electric current density}
 
-\begin{subequations}
-\begin{dmath}\label{eqn:chapter3Notes:20}
-\spacegrad \cross \bcE = - \bcM - \PD{t}{\bcB}
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:40}
-\spacegrad \cross \bcH = \bcJ + \PD{t}{\bcD}
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:60}
-\spacegrad \cdot \bcD = \rho
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:80}
-\spacegrad \cdot \bcB = \rho_\txtm.
-\end{dmath}
-\end{subequations}
+\input{MaxwellsStatement.tex}
 
 Assuming a phasor relationships of the form \( \bcE = \Real \lr{ \BE(\Br) e^{j \omega t}} \) for the fields and the currents, these reduce to
-\index{phasor}
 
-\begin{subequations}
-\label{eqn:chapter3Notes:99}
-\begin{dmath}\label{eqn:chapter3Notes:100}
-\spacegrad \cross \BE = - \BM - j \omega \BB
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:120}
-\spacegrad \cross \BH = \BJ + j \omega \BD
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:140}
-\spacegrad \cdot \BD = \rho
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:160}
-\spacegrad \cdot \BB = \rho_\txtm.
-\end{dmath}
-\end{subequations}
-
-In engineering the fields
-
-\begin{itemize}
-	\item \( \BE \) : Electric field intensity (\si{V/m}, \si{Volts/meter}).
-	\item \( \BH \) : Magnetic field intensity (\si{A/m}, \si{Amperes/meter}).
-\end{itemize}
-
-are designated primary fields, whereas
-
-\begin{itemize}
-	\item \( \BD \) : Electric flux density (or displacement vector) (\si{C/m}, \si{Coulombs/meter}).
-	\item \( \BB \) : Magnetic flux density (\si{W/m}, \si{Webers/meter}).
-\end{itemize}
-
-are designated the induced fields.  The currents and charges are
-
-\begin{itemize}
-	\item \( \BJ \) : Electric current density (\si{A/m}).
-	\item \( \BM \) : Magnetic current density (\si{V/m}).
-	\item \( \rho \) : Electric charge density (\si{C/m^3}).
-	\item \( \rho_\txtm \) : Magnetic charge density (\si{W/m^3}).
-\end{itemize}
+\input{MaxwellsTimeHarmonic.tex}
+\input{MaxwellsFieldAndSourceDescription.tex}
 
 Because \( \spacegrad \cdot \lr{ \spacegrad \cross \Bf } = 0 \) for any (sufficiently continuous) vector \( \Bf \), divergence relations between the currents and the charges follow from \cref{eqn:chapter3Notes:99}
 
