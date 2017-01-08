@@ -1,6 +1,5 @@
 THISDIR := ece1229-antenna
 THISBOOK := ece1229
-BASEVER := 787e6af
 
 include ../latex/make.bookvars
 
@@ -10,7 +9,7 @@ SOURCE_DIRS += appendix
 # FIXME:
 # 1) including this incorrectly adds figures/*pdf to the ./.gitignore file
 # 2) also not seeing this result in figure dependencies. touch figures/etalonFig1.pdf
-FIGURES := ../../figures/$(THISBOOK)
+FIGURES := ../figures/$(THISBOOK)
 SOURCE_DIRS += $(FIGURES)
 
 # also toggle redacted classicthesis-config.tex
@@ -63,20 +62,20 @@ advancedantennaProblemSet5.pdf : ps5matlab.tex
 advancedantennaProblemSet5.pdf : ps5mathematica.tex
 advancedantennaProblemSet5.pdf : matlab.sty
 
-ps5matlab.tex : ../METADATA ../../matlab/METADATA
+ps5matlab.tex : ../METADATA ../matlab/METADATA
 	(cd .. ; ./METADATA -matlab -latex -ece1229 -filter ece1229/ps5/ ) > $@
 
-ps5mathematica.tex : ../METADATA ../../mathematica/METADATA
+ps5mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps5/ ) > $@
 
-ps4mathematica.tex : ../METADATA ../../mathematica/METADATA
+ps4mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps4/ ) > $@
 
-ps4matlab.tex : ../METADATA ../../matlab/METADATA
+ps4matlab.tex : ../METADATA ../matlab/METADATA
 	(cd .. ; ./METADATA -matlab -latex -ece1229 -filter ece1229/ps4/ ) > $@
 
-ps4julia.tex : ../METADATA ../../julia/METADATA
+ps4julia.tex : ../METADATA ../julia/METADATA
 	(cd .. ; ./METADATA -julia -latex -ece1229 -filter ece1229/ps4/ ) > $@
 
-ps3mathematica.tex : ../METADATA ../../mathematica/METADATA
+ps3mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps3/ ) > $@
