@@ -3,8 +3,7 @@ THISBOOK := ece1229
 
 export BOOKSUBVER := 1
 export BOOKMAJVER := 0
-# This isn't a good way to version.  It depends on the local git reflog history count.
-export REVCOUNTSTART := 1
+export REVISIONNUMBER := 11
 
 include ../latex/make.bookvars
 
