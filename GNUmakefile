@@ -1,10 +1,7 @@
 THISDIR := ece1229-antenna
 THISBOOK := ece1229
 
-export BOOKSUBVER := 1
-export BOOKMAJVER := 0
-export REVISIONNUMBER := 11
-
+include make.revision
 include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
@@ -15,10 +12,6 @@ SOURCE_DIRS += appendix
 # 2) also not seeing this result in figure dependencies. touch figures/etalonFig1.pdf
 FIGURES := ../figures/$(THISBOOK)
 SOURCE_DIRS += $(FIGURES)
-
-# also toggle redacted classicthesis-config.tex
-# FIXME: changing this flag should be a dependency of matlab.tex 
-#REDACTED := -redacted
 
 GENERATED_SOURCES += matlab.tex 
 GENERATED_SOURCES += mathematica.tex 
