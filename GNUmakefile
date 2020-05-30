@@ -36,6 +36,8 @@ THISBOOK_DEPS += macros_mathematica.sty
 .PHONY: spellcheck
 include ../latex/make.rules
 
+$(THISBOOK).pdf :: $(EXTERNAL_DEPENDENCIES)
+
 problemSets : advancedantennaProblemSet1.pdf advancedantennaProblemSet2.pdf advancedantennaProblemSet3.pdf advancedantennaProblemSet4.pdf advancedantennaProblemSet5.pdf
 
 advancedantennaProblemSet1.pdf : advancedantennaProblemSet1Problem1.tex
@@ -88,16 +90,16 @@ ps4julia.tex : ../METADATA ../julia/METADATA
 ps3mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps3/ ) > $@
 
-backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
-	rm -f $@
-	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
-
 spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
 
 %.sp : %.tex
 	spellcheck $^
 	touch $@
 
-## hack:
-#clean ::
-#	git checkout FrontBackmatter/Titlepage.tex
+# hack:
+clean ::
+	git checkout FrontBackmatter/Titlepage.tex
+
+backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
+	rm -f $@
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
