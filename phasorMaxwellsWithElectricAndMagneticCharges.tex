@@ -78,11 +78,11 @@ Switching to \( \BE = \BD/\epsilon_0, \BB = \mu_0 \BH\) fields (even though thes
 \end{subequations}
 
 Finally, using
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:260}
 \Bf \Bg = \Bf \cdot \Bg + I \Bf \cross \Bg,
 \end{dmath}
-
+%
 the divergence and curl contributions of each of the fields can be grouped
 \begin{subequations}
 \label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:280}
@@ -95,7 +95,7 @@ the divergence and curl contributions of each of the fields can be grouped
 \end{subequations}
 
 or
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:340}
 \spacegrad \lr{ \BE + c \BB I }
 =
@@ -103,7 +103,7 @@ or
 +
 c \rho_\txtm I - \lr{ \frac{\BJ}{\epsilon_0 c} + j k \BE }.
 \end{dmath}
-
+%
 Regrouping gives Maxwell's equation including both electric and magnetic sources
 \boxedEquation{eqn:phasorMaxwellsWithElectricAndMagneticCharges:360}{
 %\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:360}
@@ -147,28 +147,28 @@ That gives
 
 When there were only electric sources, it was observed that potential solutions were of the form \( \BE + c \BB I \propto \grad \wedge A \), whereas when there was only magnetic sources it was observed that potential solutions were of the form \( \BE + c \BB I \propto (\grad \wedge F) I \).  It seems reasonable to attempt a trial solution that contains both such contributions, say
 \index{spacetime gradient}
-
+%
 \begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:480}
 \BE + c \BB I = \grad \wedge A_\txte + \lr{\grad \wedge A_\txtm} I.
 \end{equation}
-
+%
 Without any loss of generality Lorentz gauge conditions can be imposed on the four-vector fields \( A_\txte, A_\txtm \).  Those conditions are
 \index{Lorentz gauge}
 \index{four potential!electric}
 \index{four potential!magnetic}
-
+%
 \begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:500}
 \grad \cdot A_\txte = \grad \cdot A_\txtm = 0.
 \end{equation}
-
+%
 Since \( \grad X = \grad \cdot X + \grad \wedge X \), for any four vector \( X \), the trial solution \cref{eqn:phasorMaxwellsWithElectricAndMagneticCharges:480} is reduced to
-
+%
 \begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:520}
 \BE + c \BB I = \grad A_\txte + \grad A_\txtm I.
 \end{equation}
-
+%
 Maxwell's equation is now
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:540}
 \frac{J}{\epsilon_0 c} + M I
 =
@@ -208,7 +208,7 @@ The result is a single Helmholtz equation for each of the electric and magnetic 
 \index{Lorentz gauge}
 
 Because a single frequency phasor relationship was implied the scalar components of each of these four potentials is determined by the Lorentz gauge condition.  For example
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:620}
 0
 =
@@ -236,16 +236,16 @@ A_\txte^0
 }
 e^{j k c t},
 \end{dmath}
-
+%
 so
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:640}
 A_\txte^0
 =\frac{ j} { k }
 \spacegrad \cdot
 \BA_\txte.
 \end{dmath}
-
+%
 The same sort of relationship will apply to the magnetic potential too.  This means that the Helmholtz equations can be solved in the three vector space as
 
 \begin{subequations}
@@ -263,7 +263,7 @@ The same sort of relationship will apply to the magnetic potential too.  This me
 \section{Recovering the fields}
 
 Relative to the observer frame implicitly specified by \( \gamma_0 \), here's an expansion of the curl of the electric four potential
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:720}
 \grad \wedge A_\txte
 =
@@ -294,7 +294,7 @@ A_\txte \grad
 - \lr{ \spacegrad A_\txte^0 + j k \BA_\txte }
 + \spacegrad \wedge \BA_\txte
 \end{dmath}
-
+%
 In the above expansion when the gradients appeared on the right of the field components, they are acting from the right (i.e. implicitly using the Hestenes dot convention.)
 
 The electric and magnetic fields can be picked off directly from above, and in the units implied by this choice of four-potential are
@@ -311,7 +311,7 @@ c \BB_\txte = \spacegrad \cross \BA_\txte.
 \index{electic field!in terms of potentials}
 
 For the fields due to the magnetic potentials
-
+%
 \begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:800}
 \lr{ \grad \wedge A_\txte } I
 =

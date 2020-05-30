@@ -28,25 +28,25 @@ Plot the power array-factor patterns for the two arrays on the same plot.
 \makeSubAnswer{}{advancedantenna:problemSet4:4a}
 
 The \( 40 \si{dB} \) level is equivalent to
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:20}
 20 \log_{10} R = 40,
 \end{dmath}
-
+%
 or
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:40}
 R = 10^{2} = 100.
 \end{equation}
-
+%
 The Chebyshev scaling factor for a five element array is
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:60}
 x_0 = \cosh\lr{ \inv{4} \cosh^{-1} R } = 2.01.
 \end{equation}
-
+%
 With \( x = x_0 \cos(u/2) \), the unnormalized array factor is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:160}
 \textrm{AF}(u)
 = T_4( x )
@@ -54,18 +54,18 @@ With \( x = x_0 \cos(u/2) \), the unnormalized array factor is
 =
 8 x_0^4 \cos^4(u/2) - 8 x_0^2 \cos^2(u/2) + 1.
 \end{dmath}
-
+%
 Since
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:80}
 \begin{aligned}
 \cos^2(u/2) &= \inv{2} \lr{ \cos(u) + 1 } \\
 \cos^4(u/2) &= \inv{8} \lr{ \cos(2 u) + 4 \cos(u) + 3 },
 \end{aligned}
 \end{equation}
-
+%
 the array factor can be expanded in \( \cos( m u ) \), as
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:100}
 \textrm{AF}(u)
 =
@@ -77,9 +77,9 @@ x_0^4 \cos(2 u)
 + \lr{ 4 x_0^4 - 4 x_0^2 } \cos(u)
 + 3 x_0^4 - 4 x_0^2 + 1.
 \end{dmath}
-
+%
 After normalization this is
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:120}
 \begin{aligned}
 \textrm{AF}(u) &= \alpha \cos( 2 u ) + \beta \cos(u ) + \gamma \\
@@ -88,9 +88,9 @@ After normalization this is
 \gamma &= \frac{ 3 x_0^4 - 4 x_0^2 + 1 }{8 x_0^4 - 8 x_0^2 + 1}
 \end{aligned}
 \end{equation}
-
+%
 The array coefficients are found to have the values
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:140}
 \begin{aligned}
 I_{-2} &= \frac{\alpha}{2} = 0.082 \\
@@ -100,7 +100,7 @@ I_{1} &= \frac{\beta}{2} = 0.25 \\
 I_{2} &= \frac{\alpha}{2} = 0.082.
 \end{aligned}
 \end{equation}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet4:4b}
 
 The array factor is defined by \cref{eqn:advancedantennaProblemSet4Problem4:120}, \cref{eqn:advancedantennaProblemSet4Problem4:140}, where \( u = \pi \sin\theta \cos\phi \).
@@ -112,26 +112,26 @@ The directivity is found to be 3.97 (5.98 \si{dB} ).
 \makeSubAnswer{}{advancedantenna:problemSet4:4d}
 
 The zeros of the array factor occur where the argument of
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:300}
 T_m(x_0 \cos(u/2)) = \cos( m \cos^{-1}\lr{ x_0 \cos(u/2) } ),
 \end{dmath}
-
+%
 equals \( -\pi/2 + n \pi \), or
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:280}
 u = 2 \cos^{-1} \lr{ \inv{x_0} \cos \lr{ \frac{\pi}{2 m}( 2 n -1 )} }.
 \end{dmath}
-
+%
 Compare this to the zeros of the uniform array factor, which was
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:180}
 \textrm{AF}(z)
 = \sum_{n = 0}^{N-1} z^n
 = \frac{1 - z^N}{1 - z}
 = z^{(N-1)/2} \frac{ z^{N/2} - z^{-N/2}}{z^{1/2} - z^{-1/2}}
 \end{equation}
-
+%
 so with \( z = e^{j u} \), the absolute array factor is
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem4:200}
 \Abs{\textrm{AF}(u)}
@@ -141,13 +141,13 @@ so with \( z = e^{j u} \), the absolute array factor is
 { \Abs{\sin\lr{N u/2}} }
 { \Abs{\sin\lr{u/2}} }.
 \end{dmath}
-
+%
 This has zeros where
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet4Problem4:220}
 u = \frac{ 2 n \pi}{N}, \qquad n \ne 0 \in \mathbb{Z}.
 \end{equation}
-
+%
 These two sets of zeros are plotted on the unit circle in the z-domain in \cref{fig:chebychevAndLinearZdomainZeros:chebychevAndLinearZdomainZerosFig4}.
 
 \mathImageFigure{../figures/ece1229-antenna/chebychevAndLinearZdomainZerosFig4}{Zeros of five element Chebyshev and uniform array elements on z-domain unit circle.}{fig:chebychevAndLinearZdomainZeros:chebychevAndLinearZdomainZerosFig4}{0.3}{ps4:ps4p4Chebychev.nb}

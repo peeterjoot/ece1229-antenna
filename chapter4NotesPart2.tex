@@ -14,19 +14,19 @@ To understand these differences in reflection coefficients, consider first the f
 \imageFigure{../figures/ece1229-antenna/verticalDipoleConfigurationFig1}{Vertical dipole configuration.}{fig:verticalDipoleConfiguration:verticalDipoleConfigurationFig1}{0.2}
 
 The wave vector has direction
-
+%
 \begin{equation}\label{eqn:chapter4Notes:560}
 \kcap = \zcap e^{\zcap \xcap \theta} = \zcap \cos\theta + \ycap \sin\theta.
 \end{equation}
-
+%
 Suppose that the (magnetic) vector potential is that of an infinitesimal dipole
-
+%
 \begin{equation}\label{eqn:chapter4Notes:580}
 \BA = \zcap \frac{\mu_0 I_0 l}{4 \pi r} e^{-j k r} %= \frac{A_r}{4 \pi r} e^{-j k r}
 \end{equation}
-
+%
 The electric field, in the far field, can be computed by computing the normal projection to the wave vector direction
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:600}
 \BE = -j \omega \lr{\BA \wedge \kcap} \cdot \kcap
 = -j \omega \frac{\mu_0 I_0 l}{4 \pi r} \lr{\zcap \wedge \lr{\zcap \cos\theta + \ycap \sin\theta} } \lr{\zcap \cos\theta + \ycap \sin\theta}
@@ -34,13 +34,13 @@ The electric field, in the far field, can be computed by computing the normal pr
 = -j \omega \frac{\mu_0 I_0 l}{4 \pi r} \sin\theta \lr{-\ycap \cos\theta + \zcap \sin\theta}
 = j \omega \frac{\mu_0 I_0 l}{4 \pi r} \sin\theta \ycap e^{\zcap \ycap \theta}.
 \end{dmath}
-
+%
 This is directed in the z-y plane rotated an additional \( \pi/2 \) past \( \kcap \).  The magnetic field must then be directed into the page, along the x axis.  This is sketched in \cref{fig:verticalDipoleConfiguration:verticalDipoleConfigurationFig2}.
 
 \imageFigure{../figures/ece1229-antenna/verticalDipoleConfigurationFig2}{Electric and magnetic field directions.}{fig:verticalDipoleConfiguration:verticalDipoleConfigurationFig2}{0.3}
 
 Referring to \citep{hecht1998hecht} (\texteqnref{4.40}) for the coefficient of reflection component
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:620}
 R
 =
@@ -51,7 +51,7 @@ n_t \cos\theta_i - n_i \cos\theta_t
 n_i \cos\theta_i + n_t \cos\theta_t
 }
 \end{dmath}
-
+%
 This is the Fresnel equation for the case when
 that corresponds to
 %continuity of the components of \( \BE \) and \( \BB \) that lie in the plane of reflection (where
@@ -65,14 +65,14 @@ that corresponds to
 \index{reflection coefficient}
 
 In the class notes, a horizontal dipole coming out of the page is indicated.  With the page representing the z-y plane, this is a magnetic vector potential directed along the x-axis direction
-
+%
 \begin{equation}\label{eqn:chapter4Notes:640}
 \BA = \xcap \frac{\mu_0 I_0 l}{4 \pi r} e^{-j k r}.
 %= \frac{A_r}{4 \pi r} e^{-j k r}
 \end{equation}
-
+%
 For a wave vector directed in the z-y plane as in \cref{eqn:chapter4Notes:560}, the electric far field is directed along
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:660}
 \lr{ \xcap \wedge \kcap } \cdot \kcap
 =
@@ -83,10 +83,10 @@ For a wave vector directed in the z-y plane as in \cref{eqn:chapter4Notes:560}, 
 }} } \kcap
 = \xcap.
 \end{dmath}
-
+%
 The electric far field lies completely in the plane of reflection.  From \citep{hecht1998hecht} (\texteqnref{4.34}), the Fresnel reflection coefficients is
 \index{Fresnel equations}
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:680}
 R =
 \frac{
@@ -96,13 +96,13 @@ n_i \cos\theta_i - n_t \cos\theta_t
 n_i \cos\theta_i + n_t \cos\theta_t
 },
 \end{dmath}
-
+%
 which approaches \( -1 \) when \( n_t \rightarrow \infty \).  This is consistent with the image theorem summation that Prof. Eleftheriades used in class.
 
 \paragraph{Azimuthal angle dependency of the reflection coefficient}
 
 Now consider a horizontal dipole directed along the y-axis.  For the same wave vector direction as above, the electric far field is now directed along
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:700}
 \lr{ \ycap \wedge \kcap } \cdot \kcap
 =
@@ -122,17 +122,17 @@ Now consider a horizontal dipole directed along the y-axis.  For the same wave v
 = \cos\theta \lr{ \ycap \cos\theta - \sin\theta \zcap }
 = \cos\theta \ycap e^{ \zcap \ycap \theta }.
 \end{dmath}
-
+%
 That is
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:720}
 \BE =
 -j \omega \frac{\mu_0 I_0 l}{4 \pi r} e^{-j k r}
 \cos\theta \ycap e^{ \zcap \ycap \theta }.
 \end{dmath}
-
+%
 This far field electric field lies in the plane of incidence (a direction of \( \thetacap \) rotated by \( \pi/2 \)), not in the plane of reflection.  The corresponding magnetic field should be directed along the plane of reflection, which is easily confirmed by calculation
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:740}
 \kcap \cross
 \lr{ \ycap \cos\theta - \sin\theta \zcap }
@@ -143,15 +143,15 @@ This far field electric field lies in the plane of incidence (a direction of \( 
 -\xcap \cos^2 \theta - \xcap \sin^2\theta
 = -\xcap.
 \end{dmath}
-
+%
 The far field magnetic field is seen to be
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:721}
 \BH =
 j \omega \frac{I_0 l}{4 \pi r} e^{-j k r}
 \cos\theta \xcap,
 \end{dmath}
-
+%
 so a reflection coefficient of \( 1 \) is required to calculate the power loss after a single ground reflection signal bounce for this relative orientation of antenna to the target.
 \index{ground reflection}
 

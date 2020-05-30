@@ -21,11 +21,11 @@
 %\label{chap:reciprocityTheorem}
 
 The class slides presented a derivation of the \textAndIndex{reciprocity theorem}, a theorem that contained the integral \index{curl} of
-
+%
 \begin{equation}\label{eqn:reciprocityTheorem:360}
 \int \lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot d\BS = \cdots
 \end{equation}
-
+%
 over a surface, where the RHS was a volume integral involving the fields and (electric and magnetic) current sources.
 The idea was to consider two different source loading configurations of the same system, and to show that the fields and sources in the two configurations can be related.
 
@@ -42,7 +42,7 @@ To derive the result in question, a simple way to start is to look at the diverg
 \end{subequations}
 
 so the \textAndIndex{divergence} is
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:380}
 \begin{aligned}
 \spacegrad \cdot
@@ -55,9 +55,9 @@ so the \textAndIndex{divergence} is
 &+\BH^{(a)} \cdot \lr{ \BM^{(b)} + j \omega \mu_0 \BH^{(b)} } +\BE^{(b)} \cdot \lr{ \BJ^{(a)} + j \omega \epsilon_0 \BE^{(a)} }.
 \end{aligned}
 \end{dmath}
-
+%
 The non-source terms cancel, leaving
-
+%
 %\begin{dmath}\label{eqn:reciprocityTheorem:440}
 \boxedEquation{eqn:reciprocityTheorem:440}{
 \spacegrad \cdot
@@ -67,13 +67,13 @@ The non-source terms cancel, leaving
 +\BH^{(a)} \cdot \BM^{(b)} +\BE^{(b)} \cdot \BJ^{(a)}
 }
 %\end{dmath}
-
+%
 Should we be surprised to have a relation of this form?  Probably not, given that the energy momentum relationship between the fields and currents of a single source has the form
-
+%
 \begin{equation}\label{eqn:reciprocityTheorem:600}
 \PD{t}{}\frac{\epsilon_0}{2} \left(\bcE^2 + c^2 \bcB^2\right) + \spacegrad \cdot \inv{\mu_0}(\bcE \cross \bcB) = -\bcE \cdot \bcJ.
 \end{equation}
-
+%
 (this is without magnetic sources \index{magnetic source}).
 
 This initially suggests that the reciprocity theorem can be expressed more generally in terms of the energy-momentum tensor.
@@ -82,7 +82,7 @@ However, there are some subtle differences since the time domain products lead t
 \paragraph{Far field integral form}
 \index{far field}
 Employing the \textAndIndex{divergence theorem} over a sphere the identity above takes the form
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:480}
 \int_S
 \lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS
@@ -93,9 +93,9 @@ Employing the \textAndIndex{divergence theorem} over a sphere the identity above
 }
 dV
 \end{dmath}
-
+%
 In the far field, the cross products are strictly radial.  That surface integral can be written as
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:500}
 \int_S
 \lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS
@@ -111,14 +111,14 @@ In the far field, the cross products are strictly radial.  That surface integral
 dS
 = 0
 \end{dmath}
-
+%
 The above expansions used \cref{eqn:reciprocityTheorem:540} to expand the terms of the form
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:560}
 \lr{ \BA \cross \lr{ \rcap \cross \BC } } \cdot \rcap
 = \BA \cdot \BC -\lr{ \BA \cdot \rcap } \lr{ \BC \cdot \rcap },
 \end{dmath}
-
+%
 in which only the first dot product survives due to the \index{transverse field} transverse nature of the fields.
 
 So in the far field we have a direct relation between the fields and sources of two source configurations of the same system of the form
@@ -159,7 +159,7 @@ An alternate, and very intuitive, explanation can be found in appendix A.1 \cite
 }
 
 Proof.
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:420}
 \spacegrad \cdot \lr{ \BA \cross \BB }
 =
@@ -172,7 +172,7 @@ Proof.
 \BB \cdot (\spacegrad \cross \BA)
 -\BB \cdot (\spacegrad \cross \BA).
 \end{dmath}
-
+%
 \makelemma{Triple cross product dotted}{thm:polarizationReview:520}{
 \begin{equation*}
 \lr{ \BA \cross \lr{ \BB \cross \BC } } \cdot \BD
@@ -183,7 +183,7 @@ Proof.
 }
 
 Proof.
-
+%
 \begin{dmath}\label{eqn:reciprocityTheorem:540}
 \lr{ \BA \cross \lr{ \BB \cross \BC } } \cdot \BD
 =
@@ -198,5 +198,5 @@ A_s B_r C_s D_r
 \lr{ \BA \cdot \BC } \lr{ \BB \cdot \BD }
 -\lr{ \BA \cdot \BB } \lr{ \BC \cdot \BD }.
 \end{dmath}
-
+%
 %\EndArticle

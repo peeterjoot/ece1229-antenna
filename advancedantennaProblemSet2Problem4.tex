@@ -6,11 +6,11 @@
 \index{infinitesimal electric dipole}
 
 Show that in the near field \( k r \rightarrow 0 \), the electric field of an infinitesimal electrical dipole of length \( l \) and current \( \BI = I \zcap \) can be derived from the field of an electric dipole moment \( \Bp = q l \zcap \). The electrostatic field of a dipole moment is given by,
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:20}
 \BE = \frac{ 3 \lr{ \Bp \cdot \rcap } \rcap - \Bp}{4 \pi \epsilon_0 r^3}.
 \end{dmath}
-
+%
 \index{infinitesimal electric dipole}
 \index{dipole moment}
 
@@ -19,22 +19,22 @@ Show that in the near field \( k r \rightarrow 0 \), the electric field of an in
 \makeanswer{advancedantenna:problemSet2:4}{
 
 To write the electrostatic field in spherical coordinates, first note that
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:40}
 \Bp \cdot \rcap
 = q l \zcap \cdot \lr{ \cos\phi \sin\theta, \sin\phi \sin\theta, \cos\theta }
 = q l \cos\theta,
 \end{dmath}
-
+%
 so the electrostatic dipole field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:60}
 \BE
 = q l \frac{3 \cos\theta \rcap - \zcap}{4 \pi \epsilon_0 r^3}.
 \end{dmath}
-
+%
 To calculate the radial component of this field, note that
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:80}
 \lr{3 \cos\theta \rcap - \zcap} \cdot \rcap
 =
@@ -42,15 +42,15 @@ To calculate the radial component of this field, note that
 =
 2 \cos\theta,
 \end{dmath}
-
+%
 so
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:100}
 E_r = q l \frac{\cos\theta}{2 \pi \epsilon_0 r^3}.
 \end{dmath}
-
+%
 For the \( \theta \) component, noting that \( \thetacap = \lr{\cos\theta \cos\phi, \cos\theta \sin\phi, -\sin\theta} \),
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:120}
 \lr{ 3 \cos\theta \rcap - \zcap } \cdot \thetacap
 =
@@ -58,57 +58,57 @@ For the \( \theta \) component, noting that \( \thetacap = \lr{\cos\theta \cos\p
 =
 \sin\theta,
 \end{dmath}
-
+%
 so
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:140}
 E_\theta = q l \frac{\sin\theta}{4 \pi \epsilon_0 r^3}.
 \end{dmath}
-
+%
 Finally the \( E_\phi \) component of this electrostatic field is zero since
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:160}
 \lr{ 3 \cos \theta \rcap - \zcap } \cdot \phicap = 0,
 \end{dmath}
-
+%
 because \( \rcap \) and \( \phicap \) are orthonormal, and \( \phicap \) lies in the x-y plane, always perpendicular to \( \zcap \).
 
 \paragraph{Current for the dipole configuration}
 \index{phasor!dipole current}
 
 A set of equal magnitude oscillating charges \( \pm q(t) \) separated by distance \( l \), have the phasor representation
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:280}
 q(t) = q e^{j \omega t}.
 \end{dmath}
-
+%
 The dipole moment associated with such a charge distribution is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:300}
 \Bp(t) = \lr{ +q \frac{l}{2} + (-q) \lr{\frac{-l}{2}} } e^{j \omega t} \zcap
 = q l e^{j \omega t} \zcap.
 \end{dmath}
-
+%
 This has the desired dipole moment magnitude \( \Bp = q l \zcap \).  The current for this dipole configuration is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:320}
 I(t)
 = \frac{dq(t)}{dt}
 = j \omega q e^{j \omega t},
 \end{dmath}
-
+%
 allowing a phasor identification for the current magnitude
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:340}
 I_0 = j \omega q.
 \end{dmath}
-
+%
 \paragraph{Near field equivalence}
 \index{dipole!near field}
 
 The near field electric field equations derived from the magnetic vector potential are expressed in terms of \( I_0 \), not \( q \).  Since the ratio of charge to permittivity is
 \index{permittivity}
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet2Problem4:180}
 \frac{q}{\epsilon_0}
 =
@@ -121,7 +121,7 @@ The near field electric field equations derived from the magnetic vector potenti
 -j I_0 \frac{ \eta }{k}
 ,
 \end{dmath}
-
+%
 the electric field components
 \cref{eqn:advancedantennaProblemSet2Problem4:100} and \cref{eqn:advancedantennaProblemSet2Problem4:140} calculated from the dipole moment take the form
 

@@ -32,7 +32,7 @@ In \citep{balanis1989advanced}, for a sourceless configuration, it is noted that
 \end{subequations}
 
 where
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:100}
 \spacegrad^2 \psi =
 \inv{\rho} \PD{\rho}{} \lr{ \rho \PD{\rho}{\psi}} + \inv{\rho^2}\PDSq{\phi}{\psi} + \PDSq{z}{\psi}.
@@ -42,35 +42,35 @@ where
 
 \index{coupled PDE}
 He applies separation of variables \index{separation of variables} to the last equation, ending up with the usual Bessel function solution, but the first two coupled equations are dismissed as coupled and difficult.  It looks like separation of variables works for this too, but we have to prep the system slightly by writing \( \psi = E_\rho + j E_\phi \), which gives
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:120}
 \spacegrad^2 \psi - \frac{\psi}{\rho^2} + \frac{2 j}{\rho^2} \PD{\phi}{\psi} = -\beta^2 \psi,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:140}
 \inv{\rho} \PD{\rho}{} \lr{ \rho \PD{\rho}{\psi}} + \inv{\rho^2}\PDSq{\phi}{\psi} + \PDSq{z}{\psi}
 - \frac{\psi}{\rho^2} + \frac{2 j}{\rho^2} \PD{\phi}{\psi} = -\beta^2 \psi.
 \end{dmath}
-
+%
 With a separation of variables substitution \( \psi = f(\rho) g(\phi) h(z) \) this gives
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:160}
 \inv{\rho f} \PD{\rho}{} \lr{ \rho \PD{\rho}{f}}
 + \inv{\rho^2 g}\PDSq{\phi}{g}
 + \inv{z} \PDSq{z}{h}
 - \frac{1}{\rho^2} + \frac{2 j}{\rho^2 g} \PD{\phi}{g} = -\beta^2.
 \end{dmath}
-
+%
 Assuming a solution for the function \( h \) of
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:180}
 \inv{z} \PDSq{z}{h} = -\alpha^2,
 \end{dmath}
-
+%
 the PDE is reduced to an equation in two functions
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:200}
 \inv{\rho f} \PD{\rho}{} \lr{ \rho \PD{\rho}{f}}
 + \inv{\rho^2 g}\PD{\phi}{}  \lr{ g + 2 j g}
@@ -78,31 +78,31 @@ the PDE is reduced to an equation in two functions
 - \frac{1}{\rho^2}
 = 0,
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:220}
 \frac{\rho}{f} \PD{\rho}{} \lr{ \rho \PD{\rho}{f}}
 + \inv{g}\PD{\phi}{}  \lr{ g + 2 j g}
 + \lr{ \beta^2 -\alpha^2 }\rho^2
 = 1.
 \end{dmath}
-
+%
 With the term in \( g \) having only \( \phi \) dependence, we can assume
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:240}
 \inv{g}\PD{\phi}{}  \lr{ g + 2 j g} = 1 - \gamma^2,
 \end{dmath}
-
+%
 for
-
+%
 \begin{dmath}\label{eqn:cylindricalFieldSolution:260}
 \frac{\rho}{f} \PD{\rho}{} \lr{ \rho \PD{\rho}{f}}
 - \gamma^2
 + \lr{ \beta^2 -\alpha^2 }\rho^2
 = 0.
 \end{dmath}
-
+%
 I'm not sure off hand if these can be solved in known special functions, especially since the constants in the mix are complex.
 
 %\EndArticle

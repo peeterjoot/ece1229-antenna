@@ -1,3 +1,9 @@
+- review spaces before and after equations, sections, paragraphs, chapter begin and end, problems, examples, subproblems
+
+- review equation grammar (periods and commas)
+
+- Add periods to chapter, section, subsection, makeexample, makeproblem, figure captions.
+
 - cref to a lemma isn't working (reciprocityTheorem.tex)?  shows up as eq.
 
 - figure out how to change listing header from figure to listing (seen an answer for this on tex.stackexchange).

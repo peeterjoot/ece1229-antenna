@@ -37,101 +37,101 @@ plate of dimensions \( 10 \lambda \times 10 \lambda \).
 
 This is an application of the Radar Cross Section equation
 %, and it doesn't appear that the horn aperture dimensions are relevant
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:120}
 \frac{P_\txtr}{P_\txtt}
 = \sigma \frac{G^2}{4 \pi} \lr{\frac{\lambda}{4 \pi n^2 \lambda^2}}^2
 = \sigma \frac{G^2}{4 \pi} \lr{\frac{1}{4 \pi n^2 \lambda}}^2.
 \end{dmath}
-
+%
 The same gain is used for transmission and reception, since both are for the same horn.  That gain (not in \si{dB}) is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:40}
 G = 10^{16.3/10} = 43.
 \end{dmath}
-
+%
 The wavelength is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:60}
 \lambda = \frac{3 \times 10^8 \,\si{m/s}}{10^{10} \,\si{m}} = 0.03 \,\si{m}.
 \end{dmath}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet1:6a}
 
 For the sphere the scattering area is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:80}
 \sigma = \pi r^2 = \pi ( 5 \lambda )^2 = 25 \pi \lambda^2
 \end{dmath}
-
+%
 so the ratio of delivered power to the transmitted power is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:100}
 \frac{P_\txtr}{P_\txtt}
 = 25 \pi \lambda^2 \frac{G^2}{4 \pi} \lr{\frac{1}{4 \pi n^2 \lambda}}^2
 = \frac{25 (43)^2}{64 \pi^2 n^4}
 = \frac{73}{n^4}.
 \end{dmath}
-
+%
 For the \( n = 200, 500 \) cases respectively, the delivered power ratio is
 
 \begin{enumerate}
 \item \( n = 200 \)
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:140}
 \frac{P_\txtr}{P_\txtt}
 = \frac{73}{200^4}
 = 4.6 \times 10^{-8}
 \end{dmath}
-
+%
 \item \( R = 500 \lambda \)
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:160}
 \frac{P_\txtr}{P_\txtt}
 = \frac{73}{500^4}
 = 1.2 \times 10^{-9}
 \end{dmath}
-
+%
 \end{enumerate}
 
 \makeSubAnswer{}{advancedantenna:problemSet1:6b}
 
 For the plate the scattering area is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:180}
 \sigma
 = 4 \pi \frac{\lr{ L W }^2}{\lambda^2 }
 = 4 \pi \frac{\lr{ 100 \lambda^2 }^2}{\lambda^2 }
 = 4 \pi \lambda^2 \times 10^4.
 \end{dmath}
-
+%
 so the ratio of delivered power to the transmitted power is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:200}
 \frac{P_\txtr}{P_\txtt}
 = 4 \pi \lambda ^2 \times 10^4 \frac{G^2}{4 \pi} \lr{\frac{1}{4 \pi n^2 \lambda}}^2
 = \frac{(43)^2 \times 10^4}{16 \pi^2 n^4}
 = \frac{1.2 \times 10^5}{n^4}.
 \end{dmath}
-
+%
 For the \( n = 200, 500 \) cases respectively, the delivered power ratio is
 
 \begin{enumerate}
 \item \( n = 200 \)
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:220}
 \frac{P_\txtr}{P_\txtt}
 = \frac{1.2 \times 10^5}{200^4}
 = 7.3 \times 10^{-5}.
 \end{dmath}
-
+%
 \item \( R = 500 \lambda \)
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem6:240}
 \frac{P_\txtr}{P_\txtt}
 = \frac{1.2 \times 10^5}{500^4}
 = 1.9 \times 10^{-6}.
 \end{dmath}
-
+%
 \end{enumerate}
 }

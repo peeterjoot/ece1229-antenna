@@ -26,11 +26,11 @@
 In \citep{tai1976approximate} a field for which directivities can be calculated exactly was used in comparisons of some directivity approximations
 \index{directivity}
 \index{electrical dipole!horizontal}
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:140}
 \BE = E_0 \lr{ \cos\theta \cos\phi \thetacap - \sin\phi \phicap }.
 \end{dmath}
-
+%
 (Observe that an inverse radial dependence in \(E_0\) must be implied here for this to be a valid far-field representation of the field.)
 
 Show that Tai \& Pereira's formula gives \( D_1 = 3 \), and \( D_2 = 1 \) respectively for this field.
@@ -53,25 +53,25 @@ E_\phi = -E_0 \sin\phi
 \end{subequations}
 
 Using \cref{eqn:taiAndPereira:10} from the paper, the directivities are
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:220}
 D_1 = \frac{2}{\int_0^\pi \cos^2 \theta \sin\theta d\theta}
 = \frac{2}{\evalrange{-\inv{3}\cos^3\theta}{0}{\pi}}
 = 3,
 \end{dmath}
-
+%
 and
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:240}
 D_2
 = \frac{2}{\int_0^\pi \sin\theta d\theta}
 = \frac{2}{\evalrange{-\cos\theta}{0}{\pi}}
 = 1.
 \end{dmath}
-
+%
 To find the exact directivity, first the Poynting vector is required.  That is
 \index{Poynting vector}
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:260}
 \BP
 = \frac{
@@ -91,13 +91,13 @@ To find the exact directivity, first the Poynting vector is required.  That is
 }{2 c \mu_0}
 \lr{ \cos^2\theta \cos^2\phi + \sin^2\phi },
 \end{dmath}
-
+%
 so the radiation intensity is
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:280}
 U(\theta, \phi) \propto \cos^2\theta \cos^2\phi + \sin^2\phi.
 \end{dmath}
-
+%
 The \( \thetacap \), and \( \phicap \) contributions to this intensity, and the total intensity are all plotted in
 \cref{fig:TaiAndPereiraSampleFieldThetaCapComponentThree}
 %\cref{fig:TaiAndPereiraSampleFieldThetaCapComponent:TaiAndPereiraSampleFieldThetaCapComponentFig1},
@@ -122,13 +122,13 @@ FIXME: did I save these under the right paths?  Recall thetacap and phicap rever
 %{fig:TaiAndPereiraSampleFieldAllComponents:TaiAndPereiraSampleFieldAllComponentsFig3}{0.3}
 
 Given this the total radiated power is
-
+%
 \begin{dmath}\label{eqn:taiAndPereira:300}
 P_\trad = \int_0^{2 \pi} \int_0^\pi
 \lr{ \cos^2\theta \cos^2\phi + \sin^2\phi } \sin\theta d\theta d\phi
 = \frac{8 \pi}{3}.
 \end{dmath}
-
+%
 Observe that the radiation intensity \( U \) can also be decomposed into two components, one for each component of the original \( \BE \) phasor.
 
 \begin{subequations}
@@ -152,13 +152,13 @@ D_\phi = \frac{4 \pi U_\phi}{P_\trad} = \frac{3}{2} \sin^2 \phi
 \end{subequations}
 
 The maximum of each of these partial directivities is both \( 3/2 \), giving a maximum directivity of
-
+%
 \begin{equation}\label{eqn:taiAndPereira:400}
 D_0 =
 \evalbar{D_\theta}{\tmax}
 +\evalbar{D_\phi}{\tmax} = 3,
 \end{equation}
-
+%
 the exact value from the paper.
 } % answer
 

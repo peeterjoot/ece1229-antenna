@@ -25,19 +25,19 @@
 \index{Poynting vector}
 
 The Poynting vector was written in an unfamiliar form
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:560}
 \bcW = \bcE \cross \bcH.
 \end{dmath}
-
+%
 I can roll with the use of a different symbol (i.e. not \(\BS\)) for the Poynting vector, but I'm used to seeing a \( \ifrac{c}{4\pi} \) factor (\citep{landau1980classical} and \citep{jackson1975cew}).  I remembered something like that in SI units too, so was slightly confused not to see it here.
 
 Per \citep{griffiths1999introduction} that something is a \( \mu_0 \), as in
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:580}
 \bcW = \inv{\mu_0} \bcE \cross \bcB.
 \end{dmath}
-
+%
 Note that the use of \( \bcH \) instead of \( \bcB \) is what wipes out the requirement for the \( \ifrac{1}{\mu_0} \) term since \( \bcH = \bcB/\mu_0 \), assuming linear media, and no magnetization.
 \index{linear media}
 \index{magnetization}
@@ -47,7 +47,7 @@ Note that the use of \( \bcH \) instead of \( \bcB \) is what wipes out the requ
 \index{far field}
 
 It was mentioned that
-
+%
 \begin{dmath}\label{eqn:advancedantennaL1:20}
 U(\theta, \phi)
 =
@@ -55,14 +55,14 @@ U(\theta, \phi)
 =
 \frac{1}{2 \eta_0} \lr{ \Abs{ E_\theta(\theta, \phi) }^2 + \Abs{ E_\phi(\theta, \phi) }^2},
 \end{dmath}
-
+%
 where the intrinsic impedance of free space is
 \index{intrinsic impedance}
-
+%
 \begin{dmath}\label{eqn:advancedantennaL1:480}
 \eta_0 = \sqrt{\frac{\mu_0}{\epsilon_0}} = 377 \Omega.
 \end{dmath}
-
+%
 (this is also \texteqnref{2-19} in the text.)
 
 To get an understanding where this comes from, consider the far field radial solutions to the electric and magnetic dipole problems, which have the respective forms (from \citep{griffiths1999introduction}) of
@@ -83,29 +83,29 @@ To get an understanding where this comes from, consider the far field radial sol
 \end{subequations}
 
 In neither case is there a component in the direction of propagation, and in both cases (using \( \mu_0 \epsilon_0 = 1/c^2\))
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:780}
 \Abs{\bcH}
 = \frac{\Abs{\bcE}}{\mu_0 c}
 = \Abs{\bcE} \sqrt{\frac{\epsilon_0}{\mu_0}}
 = \inv{\eta_0}\Abs{\bcE} .
 \end{dmath}
-
+%
 Note that the signs of \(\bcE\) vs. \(\bcB\) in \cref{eqn:chapter2Notes:740} and \cref{eqn:chapter2Notes:760} and are determined by the far field relation \( \BE = c \BB \cross \rcap \) (see: \texteqnref{9.19,9.39} \citep{jackson1975cew}).  The effect of dependency is that the Poynting vector will be radial, which will be seen below.
 
 A superposition of the phasors for such dipole fields, in the far field, will have the form
 \index{superposition}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:800}
 \begin{aligned}
 \BE &= \inv{r} \lr{ E_\theta(\theta, \phi) \thetacap + E_\phi(\theta, \phi) \phicap } \\
 \BB &= \inv{r c} \lr{ E_\theta(\theta, \phi) \thetacap - E_\phi(\theta, \phi) \phicap },
 \end{aligned}
 \end{dmath}
-
+%
 with a corresponding time averaged Poynting vector
 \index{Poynting vector!time average}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:820}
 \BW_\tav
 = \inv{2 \mu_0} \BE \cross \BB^\conj
@@ -120,7 +120,7 @@ with a corresponding time averaged Poynting vector
 \frac{\rcap}{2 \eta_0 r^2}
 \lr{ \Abs{E_\theta}^2 + \Abs{E_\phi}^2 },
 \end{dmath}
-
+%
 verifying \cref{eqn:advancedantennaL1:20} for a superposition of electric and magnetic dipole fields.  This can likely be shown for more general fields too.
 \index{superposition}
 
@@ -170,7 +170,7 @@ Intensity plots can use the same code, with the only difference being the interp
 %\begin{dmath}\label{eqn:chapter2Notes:540}
 %\rcap = \lr{\sin\theta \cos\phi, \sin\theta\sin\phi, \cos\theta}.
 %\end{dmath}
-
+%
 %A plot of nt to
 %For the choice of \( \BP_\trad \) above \( U \) happens to not depend on \( r \), so the surface parameterized by \( \rcap U = r^2 \BP_\trad \) visualizes the intensity at all points on the surface.
 %For more general \( r \) dependence, it is pointed out in
@@ -279,7 +279,7 @@ n & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\
 \index{polarization vector}
 
 The text introduces polarization vectors \( \rhocap \) , but doesn't spell out their form.  Consider a plane wave field of the form
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:840}
 \BE
 =
@@ -287,52 +287,52 @@ E_x e^{j \phi_x} e^{j \lr{ \omega t - k z }} \xcap
 +
 E_y e^{j \phi_y} e^{j \lr{ \omega t - k z }} \ycap.
 \end{dmath}
-
+%
 The \( x, y \) plane directionality of this phasor can be written
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:860}
 \Brho =
 E_x e^{j \phi_x} \xcap
 +
 E_y e^{j \phi_y} \ycap,
 \end{dmath}
-
+%
 so that
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:880}
 \BE = \Brho e^{j \lr{ \omega t - k z }}.
 \end{dmath}
-
+%
 Separating this direction and magnitude into factors
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:900}
 \Brho = \Abs{\BE} \rhocap,
 \end{dmath}
-
+%
 allows the phasor to be expressed as
 \index{phasor}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:920}
 \BE = \rhocap \Abs{\BE} e^{j \lr{ \omega t - k z }}.
 \end{dmath}
-
+%
 As an example, suppose that \( E_x = E_y \), and set \( \phi_x = 0 \).  Then
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:940}
 \rhocap = \xcap + \ycap e^{j \phi_y}.
 \end{dmath}
-
+%
 \input{polarizationReview.tex}
 
 \section{Phasor power}
 \index{power!phasor}
 
 In \S 2.13 the phasor power is written as
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:620}
 I^2 R/2,
 \end{dmath}
-
+%
 where \( I, R \) are the magnitudes of phasors in the circuit.
 
 I vaguely recall this relation, but had to refer back to
@@ -340,7 +340,7 @@ I vaguely recall this relation, but had to refer back to
 for the details.
 This relation expresses average power over a period associated with the frequency of the phasor
 \index{power!average}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:640}
 P
 = \inv{T} \int_{t_0}^{t_0 + T} p(t) dt
@@ -352,42 +352,42 @@ P
 dt
 = \inv{2} \Abs{\BV} \Abs{\BI} \cos\lr{ \phi_V - \phi_I }.
 \end{dmath}
-
+%
 Introducing the impedance for this circuit element
 \index{impedance}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:660}
 \BZ = \frac{ \Abs{\BV} e^{j\phi_V} }{ \Abs{\BI} e^{j\phi_I} } = \frac{\Abs{\BV}}{\Abs{\BI}} e^{j\lr{\phi_V - \phi_I}},
 \end{dmath}
-
+%
 this average power can be written in phasor form
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:680}
 \BP = \inv{2} \Abs{\BI}^2 \BZ,
 \end{dmath}
-
+%
 with
 \begin{dmath}\label{eqn:chapter2Notes:700}
 P = \Real \BP.
 \end{dmath}
-
+%
 Observe that we have to be careful to use the absolute value of the current phasor \( \BI \), since \( \BI^2 \) differs in phase from \( \Abs{\BI}^2 \).  This explains the conjugation in the \citep{irwin2007bec} definition of complex power, which had the form
 \index{power!complex}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:720}
 \BS = \BV_\trms \BI^\conj_\trms.
 \end{dmath}
-
+%
 \section{Radar cross section examples}
 \index{radar cross section}
 
 \paragraph{Flat plate.}
 \index{RCS!flat plate}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:960}
 \sigma_\tmax = \frac{4 \pi \lr{L W}^2}{\lambda^2}
 \end{dmath}
-
+%
 %\cref{fig:RCSsquareGeometry:RCSsquareGeometryFig1}.
 \imageFigure{../figures/ece1229-antenna/RCSsquareGeometryFig1}{Square geometry for RCS example.}{fig:RCSsquareGeometry:RCSsquareGeometryFig1}{0.1}
 
@@ -400,11 +400,11 @@ In the optical limit the radar cross section for a sphere
 
 %\cref{fig:RCSsphereGeometry:RCSsphereGeometryFig3}.
 \imageFigure{../figures/ece1229-antenna/RCSsphereGeometryFig3}{Sphere geometry for RCS example.}{fig:RCSsphereGeometry:RCSsphereGeometryFig3}{0.1}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:980}
 \sigma_\tmax = \pi r^2
 \end{dmath}
-
+%
 Note that this is smaller than the physical area \( 4 \pi r^2 \).
 
 \paragraph{Cylinder.}
@@ -412,21 +412,21 @@ Note that this is smaller than the physical area \( 4 \pi r^2 \).
 
 %\cref{fig:RCScylinderGeometry:RCScylinderGeometryFig1}.
 \imageFigure{../figures/ece1229-antenna/RCScylinderGeometryFig1}{Cylinder geometry for RCS example.}{fig:RCScylinderGeometry:RCScylinderGeometryFig1}{0.1}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:1000}
 \sigma_\tmax = \frac{ 2 \pi r h^2}{\lambda}
 \end{dmath}
-
+%
 \paragraph{Tridedral corner reflector}
 \index{RCS!corner reflector}
 
 %\cref{fig:trihedralCornerReflector:trihedralCornerReflectorFig6}.
 \imageFigure{../figures/ece1229-antenna/trihedralCornerReflectorFig6}{Trihedral corner reflector geometry for RCS example.}{fig:trihedralCornerReflector:trihedralCornerReflectorFig6}{0.1}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:1020}
 \sigma_\tmax = \frac{ 4 \pi L^4}{3 \lambda^2}
 \end{dmath}
-
+%
 \section{Scattering from a sphere vs frequency}
 \index{scattering}
 
@@ -435,23 +435,23 @@ Frequency dependence of spherical scattering is sketched in \cref{fig:sphericalS
 
 \begin{itemize}
 \item Low frequency (or small particles): Rayleigh
-
+%
 \begin{equation}\label{eqn:chapter2Notes:1040}
 \sigma = \lr{\pi r^2} 7.11 \lr{\kappa r}^4, \qquad \kappa = 2 \pi/\lambda.
 \end{equation}
-
+%
 \item Mie scattering (resonance),
 \index{Mie scattering}
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:1060}
 \sigma_\tmax(A) = 4 \pi r^2
 \end{dmath}
 \begin{dmath}\label{eqn:chapter2Notes:1080}
 \sigma_\tmax(B) = 0.26 \pi r^2.
 \end{dmath}
-
+%
 \item optical limit ( \(r \gg \lambda\) )
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:1100}
 \sigma = \pi r^2.
 \end{dmath}
@@ -471,11 +471,11 @@ Prof. Eleftheriades introduces the term \textAndIndex{EIRP}, the Effective Isotr
 \index{free space impedance}
 
 In class we've seen
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:111}
 \eta = \sqrt{\frac{\mu_0}{\epsilon_0}}.
 \end{dmath}
-
+%
 expressed as \( 120 \pi \approx 377 \).  It seemed curious to me that this was an exact value.  With
 
 \begin{itemize}
@@ -486,7 +486,7 @@ expressed as \( 120 \pi \approx 377 \).  It seemed curious to me that this was a
 the numeric value of \( \eta/\pi \) is \( 119.945 \) (\nbref{eta.jl}), which is close to \( 120 \).  It's pointed out in \citep{wiki:freespaceImpedance} that this is just the consequence of using \( c = 3 \times 10^8 \si{m/s} \).
 
 This can be seen by writing \( \eta \) in an alternate form
-
+%
 \begin{dmath}\label{eqn:chapter2Notes:112}
 \eta
 = \inv{c \epsilon_0} = \mu_0 c
@@ -494,7 +494,7 @@ This can be seen by writing \( \eta \) in an alternate form
 = 120 \pi \si{N m/A^2 s}
 = 120 \pi \Omega.
 \end{dmath}
-
+%
 \section{Notation}
 
 \begin{itemize}

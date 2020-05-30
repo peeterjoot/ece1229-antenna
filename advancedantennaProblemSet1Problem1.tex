@@ -12,11 +12,11 @@ The power radiated by a lossless antenna is 10 \si{W}. The corresponding radiati
 given by,
 \index{power density}
 \index{directivity}
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet1Problem1:20}
 U = B_0 \cos^3 \theta, \qquad 0 \le \theta < \pi/2, 0 \le \phi < 2 \pi.
 \end{equation}
-
+%
 Calculate
 \makesubproblem{}{advancedantenna:problemSet1:1a}
 the maximum power density at a distance of 1 \si{km}.
@@ -30,20 +30,20 @@ the directivity of the antenna (dimensionless and \si{dB}).
 
 The radiated power density is
 \index{radiated power density}
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet1Problem1:40}
 W_\txtr(r, \theta) = \frac{U}{r^2} = \frac{B_0 \cos^3 \theta}{r^2}, \qquad \si{W/m^2},
 \end{equation}
-
+%
 with the maximum at \( \theta = 0 \) of
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem1:60}
 \evalbar{W_\txtr(r)}{\tmax} = \frac{B_0}{r^2}, \qquad \si{W/m^2}.
 \end{dmath}
-
+%
 Since the average power density is
 \index{average power density}
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem1:80}
 P_\tav
 = \oiint U d\Omega
@@ -53,18 +53,18 @@ P_\tav
 = \frac{\pi B_0}{2}
 = 10 \qquad (\si{W}),
 \end{dmath}
-
+%
 the constant \( B_0 = 20/\pi \approx 6.37 \si{W} \), so the maximum power density at 1 \si{km} is
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet1Problem1:100}
 \evalbar{W_\txtr(1 \,\si{km})}{\tmax} = \frac{20}{\pi} \times 10^{-6} \approx 6.37 \times 10^{-6} \qquad (\si{W/m^2}).
 \end{equation}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet1:1b}
 
 The maximum directivity of the antenna is
 \index{maximum directivity}
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet1Problem1:120}
 D_0
 =
@@ -75,18 +75,18 @@ D_0
 \frac{4 \cancel{\pi B_0}}{\cancel{\pi B_0}/2}
 = 8,
 \end{dmath}
-
+%
 so the directivity is
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet1Problem1:160}
 D = 8 \cos^3 \theta.
 \end{equation}
-
+%
 In \si{dB} the maximum directivity is
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet1Problem1:140}
 D_0 = 10 \log_{10} 8 = 9 \, \si{dB}.
 \end{equation}
-
+%
 
 }

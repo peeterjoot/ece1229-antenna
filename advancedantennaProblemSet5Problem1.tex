@@ -7,11 +7,11 @@
 
 A \textAndIndex{rectangular aperture} lies along the x-y plane and has dimensions \( a \times b \). Let the electric
 field aperture distribution be given by,
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:20}
 \BE_{\textrm{ap}} = \ycap \cos\lr{ \frac{\pi}{a} x }.
 \end{dmath}
-
+%
 The aperture is cut out of an infinite perfectly electric conductor.
 The origin of the coordinate system is at the center of the aperture.
 
@@ -39,15 +39,15 @@ From the plot determine the 3dB beamwidth of the main lobe in the E and H planes
 \makeanswer{advancedantenna:problemSet5:1}{
 
 Following the transformation procedure of \citep{balanis2005antenna} \textfigref{12.5}, the equivalent source for this electric field is a magnetic current
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:40}
 \BM_\txts
 = - 2 \zcap \cross \ycap \cos\lr{ \frac{\pi}{a} x }
 = 2 \xcap \cos\lr{ \frac{\pi}{a} x }.
 \end{equation}
-
+%
 producing an electric vector potential that is approximately
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:60}
 \BF
 = \frac{\epsilon}{4 \pi r} \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \BM_\txts e^{-j k ( r - \rcap \cdot \Br' ) }
@@ -63,11 +63,11 @@ e^{j k \sin\theta \cos\phi x' - j \pi x'/a}
 \int_{-b/2}^{b/2} dy'
 e^{j k \sin\theta \sin\phi y' }.
 \end{dmath}
-
+%
 A symmetric interval around the origin has been chosen to avoid the introduction of complex phases.
 
 Each of these integrals is of the form
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:80}
 \int_{-c/2}^{c/2} dz'
 e^{j \alpha z' }
@@ -78,7 +78,7 @@ e^{j \alpha z' }
 =
 \frac{\sin\lr{\alpha c /2} }{\alpha/2}.
 \end{dmath}
-
+%
 With
 
 \begin{subequations}
@@ -92,7 +92,7 @@ Y = k \sin\theta \sin\phi,
 \end{subequations}
 
 the electric vector potential is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:100}
 \BF
 = \frac{\epsilon}{4 \pi r} e^{-j k r} \xcap
@@ -110,7 +110,7 @@ the electric vector potential is
 }{ X^2 - (\pi/a)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y/2}.
 \end{dmath}
-
+%
 Since
 \begin{subequations}
 \label{eqn:advancedantennaProblemSet5Problem1:120}
@@ -123,7 +123,7 @@ Since
 \end{subequations}
 
 this reduces to
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:180}
 \BF
 =
@@ -133,9 +133,9 @@ this reduces to
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
 \end{dmath}
-
+%
 The far field magnetic field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:200}
 \BH
 = -j \omega \BF_T
@@ -152,13 +152,13 @@ j k c \frac{\epsilon a b}{4 r } e^{-j k r} \lr{ \xcap - \lr{\xcap \cdot \rcap} \
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
 \end{dmath}
-
+%
 Since
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:280}
 \xcap = \sin\theta \cos\phi \rcap + \cos\theta \cos\phi \thetacap - \sin\phi \phicap,
 \end{dmath}
-
+%
 the far field magnetic field is
 
 \boxedEquation{eqn:advancedantennaProblemSet5Problem1:420}{
@@ -172,19 +172,19 @@ the far field magnetic field is
 }
 
 This can be related to the electric field noting that that the dual of the far field relationship
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:220}
 \BH_A = \inv{\eta} \rcap \cross \BE_A,
 \end{dmath}
-
+%
 is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:240}
 -\BE_F = \eta \rcap \cross \BH_F,
 \end{dmath}
-
+%
 so the far field electric field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:260}
 \BE
 = -\eta \rcap \cross \BH
@@ -195,9 +195,9 @@ so the far field electric field is
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
 \end{dmath}
-
+%
 That electric field direction is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:300}
 \rcap \cross \xcap
 =
@@ -205,7 +205,7 @@ That electric field direction is
 =
 \cos\theta \cos\phi \phicap + \sin\phi \thetacap,
 \end{dmath}
-
+%
 so the electric field is
 
 \boxedEquation{eqn:advancedantennaProblemSet5Problem1:440}{
@@ -223,7 +223,7 @@ Note that the electric and magnetic fields are perpendicular, as expected.
 \begin{enumerate}
 \item
 The polar coordinate of the electric field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:320}
 E_\theta =
 -\frac{j k a b}{4 r } e^{-j k r} \sin\phi
@@ -232,10 +232,10 @@ E_\theta =
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
 \end{dmath}
-
+%
 \item
 The azimuthal coordinate of the electric field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:340}
 E_\phi
 =
@@ -245,7 +245,7 @@ E_\phi
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Yb/2}.
 \end{dmath}
-
+%
 \item
 Now for the plots and numeric values requested for the given aperture size and source frequency.
 

@@ -43,7 +43,7 @@ The phasor form of Maxwell's equations for a source free region are
 \end{subequations}
 
 Since \( \BE = \xcap E(z) \), the magnetic field follows from \cref{eqn:ExPlaneWave:40}
-
+%
 \begin{dmath}\label{eqn:ExPlaneWave:120}
 -j \omega \BB
 = \spacegrad \cross \BE
@@ -57,16 +57,16 @@ E & 0 & 0
 \ycap \partial_z E(z)
 - \zcap \cancel{\partial_y E(z)},
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:ExPlaneWave:140}
 \BB =
 -\inv{j \omega} \partial_z E.
 \end{dmath}
-
+%
 This is constrained by \cref{eqn:ExPlaneWave:60}
-
+%
 \begin{dmath}\label{eqn:ExPlaneWave:160}
 j \omega \epsilon \xcap E
 =
@@ -85,15 +85,15 @@ j \omega \epsilon \xcap E
 + \zcap \partial_x \partial_z E
 }
 \end{dmath}
-
+%
 Since \( \partial_x \partial_z E = \partial_z \lr{ \partial_x E } = \partial_z \inv{\epsilon} \spacegrad \cdot \BD = \partial_z 0 \), this means
-
+%
 \begin{equation}\label{eqn:ExPlaneWave:180}
 \partial_{zz} E = -\omega^2 \epsilon\mu E = -k^2 E.
 \end{equation}
-
+%
 This is the usual starting place that we use to show that the plane wave has an exponential form
-
+%
 \begin{equation}\label{eqn:ExPlaneWave:200}
 \BE(z) =
 \xcap
@@ -103,23 +103,23 @@ E_{+} e^{-j k z}
 E_{-} e^{j k z}
 }.
 \end{equation}
-
+%
 The magnetic field from \cref{eqn:ExPlaneWave:140} is
-
+%
 \begin{dmath}\label{eqn:ExPlaneWave:220}
 \BB
 = \frac{j}{\omega} \lr{ -j k E_{+} e^{-j k z} + j k E_{-} e^{j k z} }
 = \inv{c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} },
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:ExPlaneWave:240}
 \BH
 = \inv{\mu c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }
 = \inv{\eta} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }.
 \end{dmath}
-
+%
 A solution requires zero divergence for the magnetic field, but that can be seen to be the case by inspection.
 } % answer
 

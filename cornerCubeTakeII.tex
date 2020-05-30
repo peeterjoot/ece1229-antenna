@@ -68,7 +68,7 @@ This problem can be tackled with the image theorem, which requires placement of 
 %\imageFigure{../figures/ece1229-antenna/cornerCubeImageSourcePlacementFig3}{Correct image source placement for the corner cube.}{fig:cornerCubeImageSourcePlacement:cornerCubeImageSourcePlacementFig3}{0.2}
 
 The sources are located one in each quadrant
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:800}
 \begin{aligned}
 \Bs_1 &= h \lr{ 1,1,0} \\
@@ -77,9 +77,9 @@ The sources are located one in each quadrant
 \Bs_4 &= h \lr{ 1,-1,0}
 \end{aligned}
 \end{equation}
-
+%
 and the point of measurement at \( \Br = r \rcap = r ( \sin\theta \cos\phi, \sin\theta \sin\phi, \cos\theta ) \).  If \( \Br_m = \Br - \Bs_m \) is the distance from the \( m \)th source to the observation point, then the squared distance is
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:840}
 r_m
 = \Abs{ \Br - \Bs_m }
@@ -91,7 +91,7 @@ r + \inv{2} \frac{\Bs_m^2}{r} - \rcap \cdot \Bs_m
 \approx
 r - \rcap \cdot \Bs_m.
 \end{dmath}
-
+%
 Those distances are
 \begin{subequations}
 \label{eqn:cornerCubeTakeII:860}
@@ -110,13 +110,13 @@ Those distances are
 \end{subequations}
 
 Suppose the magnetic vector potential has the structure of an infinitesimal dipole
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:20}
 \BA_m = \frac{\mu_0 I_0 }{4 \pi r_m} e^{-j k r_m} \zcap.
 \end{equation}
-
+%
 In the far field, the direction vectors for all the fields will be approximately
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:60}
 \zcap - \lr{ \zcap \cdot \rcap} \rcap
 =
@@ -124,19 +124,19 @@ In the far field, the direction vectors for all the fields will be approximately
 =
 - \sin\theta \thetacap.
 \end{dmath}
-
+%
 The far field electric field for each image source is approximately
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:80}
 \BE_m
 = -j \omega \BA_T
 =  j \omega \frac{\mu_0 I_0 }{4 \pi r} e^{-j k r_m} \sin\theta \thetacap
 =  j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r_m} \sin\theta \thetacap.
 \end{dmath}
-
+%
 Writing \( s = \sqrt{2} h \) for the distance from the origin to each of the image sources, the
 superposition of all the image sources is
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:480}
 \BE
 =  j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r} \sin\theta
@@ -147,9 +147,9 @@ e^{j k s \sin\theta \cos\lr{ \phi - \pi/4}}
 -e^{j k s \sin\theta \cos\lr{ \phi + \pi/4}}
  } \thetacap,
 \end{dmath}
-
+%
 or
-
+%
 %\begin{equation}\label{eqn:cornerCubeTakeII:960}
 \boxedEquation{eqn:cornerCubeTakeII:960}{
 \BE
@@ -160,9 +160,9 @@ or
 }.
 }
 %\end{equation}
-
+%
 The array factor can be picked off by inspection
-
+%
 %\begin{dmath}\label{eqn:cornerCubeTakeII:500}
 \boxedEquation{eqn:cornerCubeTakeII:500}{
 \textrm{AF}
@@ -173,31 +173,31 @@ The array factor can be picked off by inspection
 }.
 }
 %\end{dmath}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet3TakeII:3a}
 
 The radiation intensity is
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:540}
 U
 = \inv{2} \eta \lr{ \frac{k I_0  }{4 \pi} }^2 \sin^2 \theta \Abs{\textrm{AF}}^2
 = B_0 \sin^2 \theta
 \Abs{\textrm{AF}}^2.
 \end{equation}
-
+%
 This holds for both isolated antenna with \( \textrm{AF} = 1 \), and the corner cube with \( \Abs{\textrm{AF}}^2 \) given by \cref{eqn:cornerCubeTakeII:500}.
 
 For the isolated antenna, the radiation intensity is maximized at \( \theta = \pi/2 \), so
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:560}
 D_{0,\textrm{iso}}
 = \frac{4 \pi \times 1}{2 \pi \int_0^\pi \sin^3\theta d\theta}
 = \frac{2}{4/3}
 = \frac{3}{2}.
 \end{dmath}
-
+%
 For the corner cube the maximization problem is trickier.  As a first approximation, if \( k s \) is assumed to be small, then all the cosines in \cref{eqn:cornerCubeTakeII:500} are close to unity, and the array factor is zero.  The next order in \( k s \) expansion of the cosines is required
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:980}
 \textrm{AF}
 = 2 I_0 \lr{
@@ -209,22 +209,22 @@ For the corner cube the maximization problem is trickier.  As a first approximat
 =
 - I_0(k s \sin\theta)^2 \sin( 2 \phi ),
 \end{dmath}
-
+%
 so for small \( k s \)
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:1000}
 U = B_0
 (k s)^4 \sin^6 \theta \sin^2 (2 \phi).
 \end{dmath}
-
+%
 The radiation intensity is clearly maximized at \( \phi = \pi/4, \theta = \pi/2 \), so
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:1020}
 U_0 = B_0 (k s)^4
 \end{dmath}
-
+%
 The radiated power, again for small \( k s \), is
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:600}
 P_{\textrm{rad}}
 =
@@ -242,17 +242,17 @@ B_0 (k s)^4
 \lr{ \frac{32}{35} }
 = B_0 (k s)^4 4 \pi \frac{2}{35}.
 \end{dmath}
-
+%
 The approximate directivity of the corner cube is
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:700}
 D_{0,\textrm{ccube}} \approx \frac{4 \pi \times B_0 (ks)^4}{B_0 (ks)^4 4 \pi \frac{2}{35}} = \frac{35}{2} \approx 17.5.
 \end{equation}
-
+%
 almost 12 times greater than the directivity of the isolated radiator.
 
 The posted solution omits the \( \sin^2 \theta \) contribution from the element factor.  That results in
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:601}
 P_{\textrm{rad}}
 \approx
@@ -266,31 +266,31 @@ B_0 (k s)^4
 \lr{ \frac{16}{15} }
 = B_0 (k s)^4 4 \pi \frac{1}{15},
 \end{dmath}
-
+%
 and
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:701}
 D_{0,\textrm{ccube}} \approx \frac{4 \pi \times B_0 (ks)^4}{B_0 (ks)^4 4 \pi \frac{1}{15}} = 15.
 \end{equation}
-
+%
 Note that the baseline directivity without the \( \sin^2\theta \)  element factor is unity, since
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:702}
 4 \pi /2 \pi \int_0^\pi \sin\theta d\theta = 1,
 \end{equation}
-
+%
 so such a relative approximation is still correct for the dipole up to an order of magnitude.
 
 \makeSubAnswer{}{advancedantenna:problemSet3TakeII:3b}
 
 The radiation resistance was defined implicitly by the relation
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:720}
 P_{\textrm{rad}} = \inv{2} \Abs{I_0}^2 R_\txtr,
 \end{equation}
-
+%
 so the ratio of radiation resistance will just be the ratio of the radiated powers
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:740}
 \frac{R_{\txtr,\textrm{ccube}}}{R_{\txtr,\textrm{iso}}}
 =
@@ -300,11 +300,11 @@ so the ratio of radiation resistance will just be the ratio of the radiated powe
 =
 \frac{ 3 (k s)^4}{35}.
 \end{equation}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet3TakeII:3d}
 
 The x-y plane is found at \( \theta = \pi/2 \) where the array factor is
-
+%
 \begin{dmath}\label{eqn:cornerCubeTakeII:501}
 \textrm{AF}
 = 2
@@ -313,7 +313,7 @@ The x-y plane is found at \( \theta = \pi/2 \) where the array factor is
 -\cos\lr{ 2 \pi \frac{s}{\lambda} \cos\lr{ \phi + \pi/4}}
 }.
 \end{dmath}
-
+%
 This is plotted against both \( \alpha = s/\lambda = \sqrt{2} h/\lambda\), and \( \phi \) in \cref{fig:arrayFactorXY:arrayFactorXYCorrectedFig4}, which shows that there are generally four lobes for any value of \( s \), except for the smallest values where the pattern is near zero.
 
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYCorrectedFig4}{Plot of \( \Abs{\textrm{AF}}^2 \) in XY plane with \( \alpha = h/\lambda \).}{fig:arrayFactorXY:arrayFactorXYCorrectedFig4}{0.3}{ps3:ps3Q3plotsCorrected.nb}
@@ -343,7 +343,7 @@ for \( \alpha = 0.69 \).
 
 The code for the numerical calculations can be found in \nbref{ps3:ps3Q3plotsCorrected.nb}.  The results are
 %The listing of \cref{mat:cornerCubeTakeII:20} shows the code used for the numerical calculation.  The results are
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:820}
 \begin{aligned}
 D_0[h = \lambda/8] &= 17.1 \\
@@ -351,9 +351,9 @@ D_0[h = \lambda/4] &= 15.9 \\
 D_0[h = \lambda/2] &= 14.3.
 \end{aligned}
 \end{equation}
-
+%
 If the \( \sin^2\theta \) contribution of the element factor is omitted (as the posted solution does in the directivity approximation), the directivities are all slightly less
-
+%
 \begin{equation}\label{eqn:cornerCubeTakeII:821}
 \begin{aligned}
 D_0[h = \lambda/8] &= 14.6 \\

@@ -25,22 +25,22 @@
 It seems worthwhile to review how a generally polarized field phasor leads to linear, circular, and elliptic geometries.
 
 The most general field polarized in the \( x, y \) plane has the form
-
+%
 \begin{dmath}\label{eqn:polarizationReview:20}
 \BE
 = \lr{ \xcap a e^{j \alpha} + \ycap b e^{j \beta} } e^{j \lr{ \omega t -k z }}
 = \lr{ \xcap a e^{j \lr{\alpha - \beta}/2} + \ycap b e^{j \lr{ \beta - \alpha}/2} } e^{j \lr{ \omega t -k z + \lr{\alpha + \beta}/2 }}.
 \end{dmath}
-
+%
 Knowing to factor out the average phase angle above is only because I tried initially without that and things got ugly and messy.  I guessed this would help (it does).
 
 Let \( \bcE = \Real \BE = \xcap x + \ycap y \), \( \theta = \omega t + (\alpha + \beta)/2 \), and \( \phi = (\alpha - \beta)/2 \), so that
-
+%
 \begin{dmath}\label{eqn:polarizationReview:40}
 \BE
 = \lr{ \xcap a e^{j \phi} + \ycap b e^{-j \phi} } e^{j \theta }.
 \end{dmath}
-
+%
 The coordinates can now be read off
 
 \begin{subequations}
@@ -54,7 +54,7 @@ The coordinates can now be read off
 \end{subequations}
 
 or in matrix form
-
+%
 \begin{dmath}\label{eqn:polarizationReview:100}
 \begin{bmatrix}
 x/a \\
@@ -70,10 +70,10 @@ y/b \\
 \sin\theta
 \end{bmatrix}.
 \end{dmath}
-
+%
 The goal is to eliminate all the \( \theta \) (i.e. time dependence), converting the parametric relationship into a conic form.
 Assuming that neither \( \cos\theta \), nor \( \sin\theta \) are zero for now (those are special cases and lead to linear polarization), inverting the matrix will allow the \( \theta \) dependence to be eliminated
-
+%
 \begin{dmath}\label{eqn:polarizationReview:120}
 \inv{\sin\lr{ 2\phi }}
 \begin{bmatrix}
@@ -90,7 +90,7 @@ y/b \\
 \sin\theta
 \end{bmatrix}.
 \end{dmath}
-
+%
 Squaring and summing both rows of these equation gives
 \begin{dmath}\label{eqn:polarizationReview:140}
 1
@@ -124,51 +124,51 @@ Squaring and summing both rows of these equation gives
 -2 \frac{x y}{a b} \cos \lr{2\phi}
 }
 \end{dmath}
-
+%
 Time to summarize and handle the special cases.
 
 \begin{enumerate}
 \item To have \( \cos\phi = 0 \), the phase angles must satisfy \( \alpha - \beta = \lr{ 1 + 2 k } \pi, \, k \in \mathbb{Z} \).
 
 For this case \cref{eqn:polarizationReview:50} reduces to
-
+%
 \begin{dmath}\label{eqn:polarizationReview:160}
 -\frac{x}{a} = \frac{y}{b},
 \end{dmath}
-
+%
 which is just a line.
 
 \makeexample{Linear polarization.}{example:polarizationReview:1}{
 
 Let \( \alpha = 0, \beta = -\pi \), so that the phasor has the value
-
+%
 \begin{dmath}\label{eqn:polarizationReview:260}
 \BE = \lr{ \xcap a - \ycap b } e^{j \omega t}
 \end{dmath}
-
+%
 \item For have \( \sin\phi = 0 \), the phase angles must satisfy \( \alpha - \beta = 2 \pi k, \, k \in \mathbb{Z} \).
 
 For this case \cref{eqn:polarizationReview:50} reduces to
-
+%
 \begin{dmath}\label{eqn:polarizationReview:180}
 \frac{x}{a} = \frac{y}{b},
 \end{dmath}
-
+%
 also just a line.
 } % example
 
 \makeexample{Elliptical polarization.}{example:polarizationReview:2}{
 
 Let \( \alpha = \beta = 0 \), so that the phasor has the value
-
+%
 \begin{dmath}\label{eqn:polarizationReview:280}
 \BE = \lr{ \xcap a + \ycap b } e^{j \omega t}
 \end{dmath}
-
+%
 \item Last is the circular and elliptically polarized case.  The system is clearly elliptically polarized if \( \cos(2 \phi) = 0\), or \( \alpha - \beta = (\pi/2)( 1 + 2 k ), k \in \mathbb{Z}\).  When that is the case and \( a = b \) also holds, the ellipse is a circle.
 
 When the \( \cos( 2 \phi) = 0 \) condition does not hold, a rotation of coordinates
-
+%
 \begin{dmath}\label{eqn:polarizationReview:200}
 \begin{bmatrix}
 x \\
@@ -184,16 +184,16 @@ u \\
 v
 \end{bmatrix}
 \end{dmath}
-
+%
 where
 %where \( \mu = \pi( 1 + 2 k )/2 \) if \( a = b \), or for \( a \ne b \)
 %
 \begin{dmath}\label{eqn:polarizationReview:220}
 \mu = \inv{2} \tan^{-1} \lr{ \frac{ 2 \cos (\alpha - \beta)}{b - a}}
 \end{dmath}
-
+%
 puts the trajectory into a standard (but messy) conic form
-
+%
 \begin{dmath}\label{eqn:polarizationReview:240}
 1 = \frac{u^2}{ab} \lr{
 \frac{b}{a} \cos^2 \mu
@@ -207,14 +207,14 @@ puts the trajectory into a standard (but messy) conic form
 - \inv{2} \sin\lr{2 \mu + \alpha - \beta}
 }
 \end{dmath}
-
+%
 It isn't obvious to me that the factors of the \( u^2, v^2 \) terms are necessarily positive, which is required for the conic to be an ellipse and not a hyperbola.
 } % example
 
 \makeexample{Circular polarization.}{example:polarizationReview:n}{
 
 With \( a = b = E_0 \), \( \alpha = 0 \), \( \beta = \pm \pi/2 \), all the circular polarization conditions are met, leaving the phasor with values
-
+%
 \begin{dmath}\label{eqn:polarizationReview:300}
 \BE = E_0 \lr{ \xcap \pm j \ycap } e^{j \omega t}
 \end{dmath}

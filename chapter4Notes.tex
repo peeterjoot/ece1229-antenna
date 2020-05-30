@@ -85,7 +85,7 @@ Finally, a plot of the real and imaginary parts of \( E_\theta = \frac{ j k }{r}
 
 It is interesting to look at the far electric field associated with an arbitrary spherical magnetic vector potential, assuming all of the radial dependence is in the spherical envelope.  That is
 \index{far field}
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:20}
 \BA = \frac{e^{-j k r}}{r} \lr{
  \rcap a_r\lr{ \theta, \phi }
@@ -93,13 +93,13 @@ It is interesting to look at the far electric field associated with an arbitrary
 +\phicap a_\phi\lr{ \theta, \phi }
 }.
 \end{dmath}
-
+%
 The electric field is
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:40}
 \BE = - j \omega \BA - j \frac{1}{\omega \mu_0 \epsilon_0 } \spacegrad \lr{\spacegrad \cdot \BA }.
 \end{dmath}
-
+%
 \index{divergence!spherical coordinates}
 \index{gradient!spherical coordinates}
 The divergence and gradient in spherical coordinates are
@@ -123,7 +123,7 @@ The divergence and gradient in spherical coordinates are
 \end{subequations}
 
 For the assumed potential, the divergence is
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:120}
 \spacegrad \cdot \BA
 =
@@ -143,11 +143,11 @@ e^{-j k r}
 -j k \frac{a_r}{r}
 e^{-j k r}.
 \end{dmath}
-
+%
 The last approximation dropped all the \( 1/r^2 \) terms that will be small compared to \( 1/r \) contribution that dominates when \( r \rightarrow \infty \), the far field.
 
 The gradient can now be computed
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:140}
 \spacegrad \lr{\spacegrad \cdot \BA } \approx
 -j k
@@ -195,11 +195,11 @@ e^{-j k r}
 - k^2 \rcap \frac{a_r}{r}
 e^{-j k r}.
 \end{dmath}
-
+%
 Again, a far field approximation has been used to kill all the \( 1/r^2 \) terms.
 
 The far field approximation of the electric field is now possible
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:160}
 \begin{aligned}
 \BE
@@ -233,7 +233,7 @@ e^{-j k r}
 }.
 \end{aligned}
 \end{dmath}
-
+%
 Observe the perfect, somewhat miraculous seeming, cancellation of all the radial components of the field.  If \( \BA_\txtT \) is the non-radial projection of \( \BA \), the electric far field is just
 
 \boxedEquation{eqn:chapter4Notes:180}{
@@ -311,13 +311,13 @@ j k \lr{ \thetacap a_\phi
 =
 \inv{c} \BE_{\textrm{ff}}.
 \end{dmath}
-
+%
 The approximation above drops the \( 1/r^2 \) terms.  Since
-
+%
 \begin{equation}\label{eqn:chapter4Notes:240}
 \inv{\mu_0 c} = \inv{\mu_0} \sqrt{\mu_0\epsilon_0} = \sqrt{\frac{\epsilon_0}{\mu_0}} = \inv{\eta},
 \end{equation}
-
+%
 the magnetic far field can be expressed in terms of the electric far field as
 \index{far field!magnetic}
 \boxedEquation{eqn:chapter4Notes:260}{
@@ -345,13 +345,13 @@ Assuming a plane wave representation for both fields
 \end{subequations}
 
 The cross product relation between the fields follows from the Maxwell-Faraday law of induction
-
+%
 \begin{equation}\label{eqn:chapter4Notes:340}
 0 = \spacegrad \cross \bcE + \PD{t}{\bcB},
 \end{equation}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:360}
 0
 =
@@ -366,15 +366,15 @@ j \omega \BB e^{j \lr{\omega t - \Bk \cdot \Bx}}
 \lr{ - \Bk \cross \BE + \omega \BB } j
 e^{j \lr{\omega t - \Bk \cdot \Bx}},
 \end{dmath}
-
+%
 or
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:380}
 \BH
 = \frac{ k}{k c \mu_0 } \kcap \cross \BE
 = \inv{ \eta } \kcap \cross \BE,
 \end{dmath}
-
+%
 which also finds \cref{eqn:chapter4Notes:260}, but with much less work and less mess.
 
 \section{Transverse only nature of the far-field fields}
@@ -407,18 +407,18 @@ so by the same logic
 
 In the far field the electric field must equal its transverse projection
 \index{electric field!transverse projection}
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:520}
 \BE = \Proj_\T \lr{-j \omega \BA
 - j \frac{1}{\omega \mu_0 \epsilon_0 } \spacegrad \lr{\spacegrad \cdot \BA } }.
 \end{dmath}
-
+%
 Since by \cref{eqn:chapter4Notes:140} the scalar potential term has only a radial component, that leaves
 \index{scalar potential}
-
+%
 \begin{dmath}\label{eqn:chapter4Notes:540}
 \BE = -j \omega \Proj_\T \BA,
 \end{dmath}
-
+%
 which provides \cref{eqn:chapter4Notes:180} with slightly less work.
 

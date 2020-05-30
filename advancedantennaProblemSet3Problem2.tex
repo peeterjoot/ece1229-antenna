@@ -22,14 +22,14 @@ Use numerical integration to calculate the radiation resisistance of the  \( l =
 \makeSubAnswer{}{advancedantenna:problemSet3:2a}
 
 Assuming a \( \zcap \) oriented dipole, in the far field, the electric field is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:20}
 E_\theta \approx j \eta \frac{I_0 e^{-j k r}}{ 2 \pi r }
 \lr{
 \frac{\cos\lr{ \frac{k l}{2} \cos\theta} - \cos\lr{\frac{kl}{2}}}{\sin\theta}
 }.
 \end{dmath}
-
+%
 %an average Poynting vector of
 %
 %\begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:40}
@@ -45,7 +45,7 @@ Writing
 \( l = \alpha \lambda \), and noting that
 the magnetic field is \( H_\phi \approx E_\theta/\eta \),
 the radiation intensity \( U = r^2 W_{\textrm{av}} \) is
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:60}
 U =
 \eta \frac{\Abs{I_0}^2}{8 \pi^2}
@@ -53,7 +53,7 @@ U =
 \frac{\cos\lr{ \pi \alpha \cos\theta} - \cos\lr{ \pi \alpha }}{\sin\theta}
 }^2.
 \end{dmath}
-
+%
 In \cref{fig:longDipole:longDipoleFig1} \( F(\theta) = 8 \pi^2 U /\eta \Abs{I_0}^2 \) is plotted for \( \alpha \in \setlr{0.5, 1, 1.25, 2.0 } \).  For \( \alpha = 1.25 \) some very small side lobes are just barely visible.  For \( \alpha = 2 \) the single lobe directivity is lost, and a significant split of the radiation field along two different directions can be observed.  These individual features can be explored more easily in
 %\href{http://goo.gl/OjK4oc}{http://goo.gl/OjK4oc}
 \nbref{longDipolesWithLengthControl.cdf}
@@ -72,11 +72,11 @@ The side lobes for the \( \alpha = 1.25 \) case do not show up very well in the 
 \makeSubAnswer{}{advancedantenna:problemSet3:2b}
 
 The directivity is given by
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:80}
 D_0 = \frac{4 \pi \evalbar{F(\theta)}{\textrm{max}}}{2 \pi \int_0^\pi F(\theta) \sin \theta d\theta}.
 \end{dmath}
-
+%
 These values, calculated in \nbref{ps3:directivityLongDipole.nb} using the Mathematica functions NMaximize and NIntegrate, are
 
 \captionedTable{Directivities.}{tab:advancedantennaProblemSet3Problem2:10}{
@@ -94,13 +94,13 @@ The largest directivity for these specific values of \( l \) is found at \( l = 
 \makeSubAnswer{}{advancedantenna:problemSet3:2c}
 
 The radiation resistance is implicitly defined by
-
+%
 \begin{equation}\label{eqn:advancedantennaProblemSet3Problem2:100}
 P_{\textrm{rad}} = \int U d\Omega = \inv{2} \Abs{I_0}^2 R_\txtr,
 \end{equation}
-
+%
 or, with \( \eta = 120 \pi \Omega \),
-
+%
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:120}
 R_\txtr
 = \frac{2}{\Abs{I_0}^2} \int U d\Omega
@@ -118,7 +118,7 @@ R_\txtr
 \frac{ \lr{\cos\lr{ \pi \alpha \cos\theta} - \cos\lr{ \pi \alpha }}^2 }{\sin\theta}
 d\theta.
 \end{dmath}
-
+%
 This numerical integration was computed in \nbref{ps3:longDipolesSelectedLengths.nb} and for the lengths in this problem are
 
 \captionedTable{Radiation resistances.}{tab:advancedantennaProblemSet3Problem2:20}{
