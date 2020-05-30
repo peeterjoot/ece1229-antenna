@@ -54,7 +54,7 @@
 \newcommand{\myTitle}{Advanced Antenna Theory\xspace}
 \newcommand{\mySubtitle}{Notes and problems from UofT ECE1229H 2015\xspace}
 \newcommand{\myDegree}{}
-\newcommand{\myName}{Peeter Joot\ peeterjoot@protonmail.com\xspace}
+\newcommand{\myName}{Peeter Joot\ peeterjoot@pm.me\xspace}
 \newcommand{\myProf}{}
 \newcommand{\myOtherProf}{}
 \newcommand{\mySupervisor}{}
@@ -134,6 +134,12 @@
 % 5. Setup code listings
 % ****************************************************************************************************
 \usepackage{listings}
+\let\origlstlisting=\lstlisting
+\let\endoriglstlisting=\endlstlisting
+\renewenvironment{lstlisting}
+    {\mathcode`\-=\hyphenmathcode
+     \everymath{}\mathsurround=0pt\origlstlisting}
+    {\endoriglstlisting}
 %\lstset{emph={trueIndex,root},emphstyle=\color{BlueViolet}}%\underbar} % for special keywords
 \lstset{language=[LaTeX]Tex,%C++,
     keywordstyle=\color{RoyalBlue},%\bfseries,
@@ -213,7 +219,7 @@
     %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
     pdftitle={\myTitle},%
     pdfauthor={\textcopyright\ \myName},%
-    pdfsubject={physics modeling},%
+    pdfsubject={antenna theory},%
     pdfkeywords={Advanced Antenna Theory} {ECE1229H} {University of Toronto},%
     pdfcreator={pdfLaTeX},%
     pdfproducer={LaTeX with hyperref and classicthesis}%

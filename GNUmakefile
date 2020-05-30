@@ -16,7 +16,8 @@ SOURCE_DIRS += $(FIGURES)
 GENERATED_SOURCES += matlab.tex 
 GENERATED_SOURCES += mathematica.tex 
 GENERATED_SOURCES += julia.tex 
-
+GENERATED_SOURCES += backmatter.tex
+ 
 EPS_FILES := $(wildcard $(FIGURES)/*.eps)
 PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 
@@ -76,3 +77,8 @@ ps4julia.tex : ../METADATA ../julia/METADATA
 
 ps3mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps3/ ) > $@
+
+backmatter.tex: ../latex/classicthesis_mine/backmatter_with_parts.tex
+	rm -f $@
+	ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
+

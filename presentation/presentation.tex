@@ -1,0 +1,112 @@
+%
+% Copyright © 2015 Peeter Joot, Xingqi Zhang.  All Rights Reserved.
+%
+\documentclass[handout]{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+\usetheme{Warsaw}
+%\usepackage{ngerman}
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+
+\PassOptionsToPackage{square,numbers}{natbib}
+
+\usepackage{figpath}
+
+% args: scale, filename
+\newcommand{\onefigure}[2]{%
+\includegraphics[#1]{\figpath{}#2}%
+}
+
+% args: scale, filename, caption
+%\newcommand{\makefigure}[3]{%
+%\begin{figure}%
+%\onefigure{scale=#1}{#2}\caption{#3}%
+%\end{figure}%
+%}
+\newcommand{\makefigure}[3]{%
+\begin{figure}%
+\onefigure{scale=#1}{#2}%
+\end{figure}%
+}
+
+% doesn't work with these other packages.
+%\usepackage{floatrow}%
+% args: (scale, filename, caption) x 2
+%\newcommand{\twofigures}[6]{%
+%\begin{figure}[!h]%
+%	\begin{floatrow}%
+%		\includegraphics[scale=#1]{\figpath{}#2}\caption{#3}%
+%		\includegraphics[scale=#4]{\figpath{}#5}\caption{#6}%
+%	\end{floatrow}%
+%\end{figure}%
+%}
+
+\usepackage{subfig}
+
+% scale, path, scale, path, caption
+%\newcommand{\twofigures}[5]{%
+%\begin{figure}%
+%\centering%
+%\subfloat[][]{\onefigure{scale=#1}{#2}}%
+%\qquad%
+%\subfloat[][]{\onefigure{scale=#3}{#4}}%
+%\caption{#5}%
+%\end{figure}%
+%}
+\newcommand{\twofigures}[5]{%
+\begin{figure}%
+\centering%
+\subfloat[][]{\onefigure{scale=#1}{#2}}%
+\qquad%
+\subfloat[][]{\onefigure{scale=#3}{#4}}%
+\end{figure}%
+}
+
+\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage{scrfontsizes}
+\usepackage{tikz}
+
+%(1) Title with your name (1 page)
+%(2) Introduction (1 page)
+%(3) Description of the topic/problem (1 page)
+%(4) Historical overview of the topic (1 page)
+%(5) Reflectarray Design Overview (1 page)
+%(6) Theory/Analysis (5 page)
+%(7) Advantages/Disadvantages (1 page)
+%(8) Bandwidth Considerations (1 page)
+%    Bandwidth Enhancement Methods
+%(9) Application(s) (4-5 page)
+%    Reconfigurable/scannable reflectarrays
+%(10) Transmitarray (1 page)
+%(11) Future directions (2-1 page)
+%(12) Summary (1 page)
+%(13) Bibliography (at least 10 references) (1 page)
+
+\begin{document}
+\title{Reflectarray}
+\author{Xingqi Zhang, Haroon Siddiqui, Peeter Joot}
+
+\date{\today}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Table of contents}
+\tableofcontents
+\end{frame}
+
+\input{xingqi.tex}
+\input{peeter.tex}
+
+\begin{frame}[plain]
+%\begin{frame}[allowframebreaks,plain]
+\frametitle{Bibliography}
+\changefontsizes{7}
+\bibliography{Bibliography}
+\bibliographystyle{plainnat}
+\end{frame}
+
+\end{document}
