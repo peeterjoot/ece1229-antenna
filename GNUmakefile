@@ -1,17 +1,23 @@
 THISDIR := ece1229-antenna
 THISBOOK := ece1229
 
+BIBLIOGRAPHY_PATH := classicthesis_mine
+HAVE_OWN_CONTENTS := 1
+HAVE_OWN_TITLEPAGE := 1
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/Index.tex
+MY_CLASSICTHESIS_FRONTBACK_FILES += ../latex/classicthesis_mine/FrontBackmatter/ContentsAndFigures.tex
+BOOKTEMPLATE := ../latex/classicthesis_mine/ClassicThesis2.tex
+
 include make.revision
 include ../latex/make.bookvars
 
 #ONCEFLAGS := -justonce
 
 SOURCE_DIRS += appendix
-# FIXME:
-# 1) including this incorrectly adds figures/*pdf to the ./.gitignore file
-# 2) also not seeing this result in figure dependencies. touch figures/etalonFig1.pdf
-FIGURES := ../figures/$(THISBOOK)
+FIGURES := ../figures/$(THISDIR)
 SOURCE_DIRS += $(FIGURES)
+
+PRIMARY_SOURCES += FrontBackmatter/preface.tex
 
 GENERATED_SOURCES += matlab.tex 
 GENERATED_SOURCES += mathematica.tex 
@@ -24,6 +30,10 @@ PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 THISBOOK_DEPS += $(PDFS_FROM_EPS)
 THISBOOK_DEPS += macros_mathematica.sty
 
+#CLEAN_TARGETS += *.sp FrontBackmatter/*.sp
+#DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
+
+.PHONY: spellcheck
 include ../latex/make.rules
 
 problemSets : advancedantennaProblemSet1.pdf advancedantennaProblemSet2.pdf advancedantennaProblemSet3.pdf advancedantennaProblemSet4.pdf advancedantennaProblemSet5.pdf
@@ -78,7 +88,16 @@ ps4julia.tex : ../METADATA ../julia/METADATA
 ps3mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps3/ ) > $@
 
-backmatter.tex: ../latex/classicthesis_mine/backmatter_with_parts.tex
+backmatter.tex: ../latex/classicthesis_mine/backmatter2.tex
 	rm -f $@
-	ln -s ../latex/classicthesis_mine/backmatter_with_parts.tex backmatter.tex
+	ln -s ../latex/classicthesis_mine/backmatter2.tex backmatter.tex
 
+spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
+
+%.sp : %.tex
+	spellcheck $^
+	touch $@
+
+## hack:
+#clean ::
+#	git checkout FrontBackmatter/Titlepage.tex

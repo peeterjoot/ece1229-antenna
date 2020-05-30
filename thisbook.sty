@@ -1,3 +1,71 @@
+%\usepackage{easy-todo}
+%\usepackage[disable]{easy-todo}
+
+% this one seems to generate question marks.  Think that it's also supposed to be used with something that generates
+% an explicit todo list somewhere in the text.
+%\usepackage{todo}
+
+% doesn't work right.  boxes are doubled, two per TODO.
+%\usepackage{todonotes}
+%\setlength{\marginparwidth}{2cm}
+
+% don't see any output when using this package:
+%\usepackage{fixme}
+%\newcommand{\todo}[1]{\fxnote{#1}}
+
+\newcommand{\todo}[1]{}
+
+%----------------------------------------
+\newcommand{\mychapter}[1]{%
+\chapter{#1}%
+\thispagestyle{empty}%
+}
+%-----------------------------------------
+% https://tex.stackexchange.com/questions/258188/put-a-dot-above-a-bold-symbol-in-an-equation
+% swap the order to get a bigger dot.
+%\newcommand{\dotBJ}[0]{\mathbf{\dispdot{J}}}
+% better:
+% https://tex.stackexchange.com/a/128302/15
+\newcommand{\dispdot}[2][.2ex]{\dot{\raisebox{0pt}[\dimexpr\height+#1][\depth]{$#2$}}}% \dispdot[<displace>]{<stuff>}
+\newcommand{\dotBJ}[0]{\dispdot{\mathbf{J}}}
+
+% https://tex.stackexchange.com/a/112359/15
+
+%\usepackage{mmacells}
+\usepackage{array}
+\usepackage{peeters_tablebox}
+
+%-------------------------------------------------------------------------------------
+
+%\newcommand{\boldTextAndIndex}[1]{\textbf{#1}\index{#1}}
+%\newcommand{\boldTextAndIndex}[1]{{\color{Maroon}{#1}}\index{#1}}
+\newcommand{\boldTextAndIndex}[1]{%
+{\color{Maroon}{#1}}%
+\index{#1}%
+}
+
+%-----------------------------------------
+%\usepackage{censor}
+
+%-----------------------------------------
+\usepackage{macros_lcal}
+\usepackage{macros_cal}
+
+%--------------------------------------------------------------------
+%\usepackage{enumerate}
+%\usepackage{mathtools}
+
+%--------------------------------------------------------------------
+
+%\usepackage{txfonts} % \ointclockwise
+
+%--------------------------------------------------------------------
+
+%\usepackage{peeters_braket}
+
+%--------------------------------------------------------------------
+%\usepackage{siunitx} % \ang{}
+
 %--------------------------------------------------------------------
 
 \usepackage{matlab}
@@ -85,3 +153,11 @@
 
 %--------------------------------------------------------------------
 \usepackage{macros_qed}
+
+%--------------------------------------------------------------------
+% amsthm Command openbox already defined
+% https://tex.stackexchange.com/a/41553/15
+% alternatively ( https://tex.stackexchange.com/a/386742/15 )
+% \let\openbox\undefined
+\let\openbox\relax
+\usepackage{amsthm}
