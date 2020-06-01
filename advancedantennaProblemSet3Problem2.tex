@@ -58,19 +58,12 @@ In \cref{fig:longDipole:longDipoleFig1} \( F(\theta) = 8 \pi^2 U /\eta \Abs{I_0}
 %\href{http://goo.gl/OjK4oc}{http://goo.gl/OjK4oc}
 \nbref{longDipolesWithLengthControl.cdf}
 which provides a Manipulate based interactive control for varying the \( l/\lambda \) ratio.
-
 \mathImageFigure{../figures/ece1229-antenna/longDipoleFig1}{Polar plot of radiation intensities for some electric z-axis oriented dipoles.}{fig:longDipole:longDipoleFig1}{0.3}{ps3:longDipolesSelectedLengthsSavedLabeledPlot.nb}
-
 It is much more satisfactory to view these in a three dimensional plot as in \nbref{ps3:longDipoleInteractiveLength.nb}, and \cref{fig:longDipoleLequals2Lambda:longDipoleLequals2LambdaFig1}, but such a visualization does not work well for overlaid intensity patterns.
-
 \mathImageFigure{../figures/ece1229-antenna/longDipoleLequals2LambdaFig1}{Double wavelength radiation intensity.}{fig:longDipoleLequals2Lambda:longDipoleLequals2LambdaFig1}{0.3}{ps3:longDipoleInteractiveLength.nb}
-
 The side lobes for the \( \alpha = 1.25 \) case do not show up very well in the plot above.  The log polar plot of \cref{fig:ps3p2:ps3p2Fig1} shows this detail better.
-
 \mathImageFigure{../figures/ece1229-antenna/ps3p2Fig1}{Log polar plot of radiation intensities for some electric z-axis oriented dipoles.}{fig:ps3p2:ps3p2Fig1}{0.4}{ps3:p2.jl}
-
 \makeSubAnswer{}{advancedantenna:problemSet3:2b}
-
 The directivity is given by
 %
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem2:80}
@@ -78,7 +71,6 @@ D_0 = \frac{4 \pi \evalbar{F(\theta)}{\textrm{max}}}{2 \pi \int_0^\pi F(\theta) 
 \end{dmath}
 %
 These values, calculated in \nbref{ps3:directivityLongDipole.nb} using the Mathematica functions NMaximize and NIntegrate, are
-
 \captionedTable{Directivities.}{tab:advancedantennaProblemSet3Problem2:10}{
 \begin{tabular}{|l||l|l|l|l|}
 \hline
@@ -88,11 +80,8 @@ These values, calculated in \nbref{ps3:directivityLongDipole.nb} using the Mathe
 \hline
 \end{tabular}
 }
-
 The largest directivity for these specific values of \( l \) is found at \( l = 1.25 \lambda \).
-
 \makeSubAnswer{}{advancedantenna:problemSet3:2c}
-
 The radiation resistance is implicitly defined by
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet3Problem2:100}
