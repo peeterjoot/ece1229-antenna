@@ -2,9 +2,9 @@
 % Copyright © 2015 Peeter Joot.  All Rights Reserved.
 % Licenced as described in the file LICENSE under the root directory of this GIT repository.
 %
-\makeoproblem{Mobile power reception.}{advancedantenna:problemSet2:5}{2015 problem set 2, p5}{
+\makeoproblem{Mobile power reception.}{advancedantenna:problemSet2:5}{2015 ps2, p5}{
 \index{mobile reception}
-
+%
 A mobile is located 5 \si{km} from a base station and uses a vertical wire antenna of gain 2.55 \si{dB} to receive cellular radio signals.
 The carrier frequency used is 900 \si{MHz} and the EIRP of the base station is 30 \si{mW}.
 If the base station and mobile are located 50 \si{m} and 1.5 \si{m} above ground respectively, calculate the power level received at the mobile.
@@ -36,7 +36,7 @@ where all the radial (non-transverse) components of the magnetic vector potentia
 
 \paragraph{Reflection coefficient}
 \index{reflection coefficient}
-
+%
 To determine the sign of the reflection coefficient for a vertical dipole configuration, consider a wave vector directed in the z-y plane at an angle \( \theta \) from the pole
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet2Problem5:60}
@@ -82,7 +82,7 @@ For no transmission the transmitted speed of the radiation \( v_\txtt \rightarro
 
 \paragraph{Effects of ground reflection}
 \index{ground reflection}
-
+%
 %An exact vector sum of the reflected and line of sight field components is possible.
 Let
 
@@ -208,7 +208,7 @@ P_\txtr
 %
 The total power received is just 5.6 \si{pW}, assuming no polarization losses (we know the polarization at the mobile, but not for the base station.)
 \index{vertical dipole!polarization}
-
+%
 In an attempt to avoid calculator errors for this problem I scripted the numerical calculations in \nbref{ps2p5.jl}.  That wasn't entirely successful on submission, since I used 5 \si{m} instead of 1.5 \si{m}!
 
 %\href{https://github.com/peeterjoot/julia/blob/master/ece1229/ps2p5.jl}{https://github.com/peeterjoot/julia/blob/master/ece1229/ps2p5.jl}

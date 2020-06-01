@@ -25,7 +25,7 @@
 %These notes repeat (mostly word for word) the previous notes 'Maxwell's (phasor) equations in Geometric Algebra'.  Electric charges and currents have been replaced with magnetic charges and currents, and the appropriate relations modified accordingly.
 \index{magnetic charge}
 \index{magnetic current}
-
+%
 In \citep{balanis2005antenna} \S 3.3, treating magnetic charges and currents, and no electric charges and currents, is a demonstration of the required (curl) form for the electric field, and potential form for the electric field.  Not knowing what to name this, I'll call the associated equations the dual-Maxwell's equations.
 
 I was wondering how this derivation would proceed using the Geometric Algebra (GA) formalism.
@@ -51,7 +51,7 @@ The dual-Maxwell's equations, omitting electric charges and currents, are
 
 Assuming linear media \( \bcB = \mu_0 \bcH \), \( \bcD = \epsilon_0 \bcE \), and phasor relationships of the form \( \bcE = \Real \lr{ \BE(\Br) e^{j \omega t}} \) for the fields and the currents, these reduce to
 \index{linear media}
-
+%
 \begin{subequations}
 \label{eqn:phasorDualMaxwellsGA:99}
 \begin{dmath}\label{eqn:phasorDualMaxwellsGA:100}
@@ -84,7 +84,7 @@ I = \xcap \ycap \zcap.
 \index{geometric product}
 \index{wedge product}
 \index{cross product}
-
+%
 The electric and magnetic field equations, respectively, are
 
 \begin{subequations}
@@ -161,7 +161,7 @@ These duality transformations are motivated by the observation that in the GA fo
 
 \section{Constructing a potential representation}
 \index{potential representation}
-
+%
 The starting point of the argument in the text was the observation that the triple product \( \spacegrad \cdot \lr{ \spacegrad \cross \Bx } = 0 \) for any (sufficiently continuous) vector \( \Bx \).  This triple product is a completely antisymmetric sum, and the equivalent statement in GA is \( \spacegrad \wedge \spacegrad \wedge \Bx = 0 \) for any vector \( \Bx \).  This follows from \( \Ba \wedge \Ba = 0 \), true for any vector \( \Ba \), including the gradient operator \( \spacegrad \), provided those gradients are acting on a sufficiently continuous blade.
 
 In the absence of electric charges,
@@ -225,7 +225,7 @@ the quantity in braces is in fact the Lorentz gauge condition, so in the Lorentz
 
 \section{Maxwell's equation in Four vector form}
 \index{four vector}
-
+%
 The four vector form of Maxwell's equation follows from \cref{eqn:phasorDualMaxwellsGA:300} after pre-multiplying by \( \gamma^0 \).
 
 With
@@ -253,7 +253,7 @@ Maxwell's equation is
 %\end{boxed}
 }
 \index{dual-Maxwell's equation!covariant}
-
+%
 Here \( \setlr{ \gamma_\mu } \) is used as the basis of the four vector Minkowski space, with \( \gamma_0^2 = -\gamma_k^2 = 1 \) (i.e. \(\gamma^\mu \cdot \gamma_\nu = {\delta^\mu}_\nu \)), and \( \gamma_a \gamma_0 = \sigma_a \) where \( \setlr{ \sigma_a} \) is the Pauli basic (i.e. standard basis vectors for \R{3}).
 
 Let's demonstrate this, one piece at a time.  Observe that the action of the spacetime gradient on a phasor, assuming that all time dependence is in the exponential, is
@@ -308,7 +308,7 @@ which recovers \cref{eqn:phasorDualMaxwellsGA:700} as desired.
 
 \section{Helmholtz equation directly from the GA form}
 \index{Helmholtz equation}
-
+%
 It is easier to find \cref{eqn:phasorDualMaxwellsGA:550} from the GA form of Maxwell's \cref{eqn:phasorDualMaxwellsGA:700} than the traditional curl and divergence equations.  Note that
 %
 \begin{dmath}\label{eqn:phasorDualMaxwellsGA:820}

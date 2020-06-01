@@ -54,7 +54,7 @@ and
 %
 These are the phasor forms of the continuity equations
 \index{continuity equation}
-
+%
 \begin{subequations}
 \begin{dmath}\label{eqn:chapter3Notes:220}
 \spacegrad \cdot \BM = - j \omega \rho_\txtm
@@ -66,7 +66,7 @@ These are the phasor forms of the continuity equations
 
 \paragraph{Integral forms}
 \index{Maxwell's equation!integral forms}
-
+%
 The integral forms of Maxwell's equations follow from Stokes' theorem and the divergence theorems.  Stokes' theorem is a relation between the integral of the curl and the outwards normal differential area element of a surface, to the boundary of that surface, and applies to any surface with that boundary
 \index{Stokes' theorem}
 \index{divergence theorem}
@@ -113,11 +113,11 @@ Applying these to \cref{eqn:chapter3Notes:99} gives
 
 \section{Constitutive relations}
 \index{constitutive relations}
-
+%
 For linear isotropic homogeneous materials, the following constitutive relations apply
 \index{linear media}
 \index{homogeneous media}
-
+%
 \begin{itemize}
 \item \( \BD = \epsilon \BE \)
 \item \( \BB = \mu \BH \)
@@ -137,7 +137,7 @@ In AM radio, will see ferrite cores with the inductors, which introduces non-uni
 
 \section{Boundary conditions}
 \index{boundary conditions}
-
+%
 For good electric conductor \( \BE = 0 \).
 For good magnetic conductor \( \BB = 0 \).
 
@@ -145,21 +145,21 @@ For good magnetic conductor \( \BB = 0 \).
 
 \section{Linear time invariant}
 \index{linear time invariant}
-
+%
 Linear time invariant meant that the impulse response \( h(t,t') \) was a function of just the difference in times \( h(t,t') = h(t-t') \).
 \index{linear time invariant}
 \index{impulse response}
-
+%
 \section{Green's functions}
 \index{Green's function}
-
+%
 For electromagnetic problems the impulse function sources \( \delta(\Br - \Br') \) also has a direction, and can yield any of \( E_x, E_y, E_z \).  A tensor impulse response is required.
 
 Some overview of an approach that uses such tensor Green's functions is outlined on the slides.  It gets really messy since we require four tensor Green's functions to handle electric and magnetic current and charges.  Because of this complexity, we don't go down this path, and use potentials instead.
 
 In \S 3.5 \citep{balanis2005antenna} and the class notes, a verification of the spherical wave form for the Helmholtz Green's function was developed.  This was much simpler than the same verification I did in \citep{phy456:helmoltzGreens}.  Part of the reason for that was that I worked in Cartesian coordinates, which made things much messier.  The other part of the reason, for treating a neighbourhood of \( \Abs{\Br - \Br'} \sim 0 \), I verified the convolution, whereas Prof. Eleftheriades argues that a verification that \( \int \lr{\spacegrad^2 + k^2} G(\Br, \Br') dV' = 1\) is sufficient.  Balanis, on the other hand, argues that knowing the solution for \( k \ne 0 \) must just be the solution for \( k = 0 \) (i.e. the Poisson solution) provided it is multiplied by the \( e^{-j k r} \) factor.
 \index{Helmholtz equation!Green's function}
-
+%
 Note that back when I did that derivation, I used a different sign convention for the Green's function, and in QM we used a positive sign instead of the negative in \( e^{-j k r } \).
 
 %\section{Mathematica notebooks}
