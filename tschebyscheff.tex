@@ -25,7 +25,7 @@
 In ancient times (i.e. 2nd year undergrad) I recall being very impressed with Chebyscheff polynomials for designing lowpass filters.  I'd used Chebyscheff filters for the hardware we used for a speech recognition system our group built in the design lab.  One of the benefits of these polynomials is that the oscillation in the \( \Abs{x} < 1 \) interval is strictly bounded.   This same property, as well as the unbounded nature outside of the \( [-1,1] \) interval turns out to have applications to antenna array design.
 
 The Chebyscheff polynomials are defined by
-
+%
 \begin{subequations}
 \label{eqn:chebyscheff:20}
 \begin{equation}\label{eqn:chebyscheff:40}
@@ -35,7 +35,7 @@ T_m(x) = \cos\lr{ m \cos^{-1} x }, \quad \Abs{x} < 1
 T_m(x) = \cosh\lr{ m \cosh^{-1} x }, \quad \Abs{x} > 1.
 \end{equation}
 \end{subequations}
-
+%
 \paragraph{Range restrictions and hyperbolic form.}
 
 Prof. Eleftheriades's notes made a point to point out the definition in the \( \Abs{x} > 1 \) interval, but that can also be viewed as a consequence instead of a definition if the range restriction is removed.  For example, suppose \( x = 7 \), and let
@@ -151,7 +151,7 @@ The first couple polynomials are plotted in \cref{fig:Chebychev:ChebychevFig1}.
 \index{Cheybshev polynomials!products}
 %
 In \citep{abramowitz1964handbook} a few properties can be found for these polynomials
-
+%
 \begin{subequations}
 \label{eqn:chebyscheff:380}
 \begin{equation}\label{eqn:chebyscheff:100}
@@ -174,5 +174,5 @@ T_m(x) = 2 x T_{m-1} - T_{m-2}
 \right.
 \end{dmath}
 \end{subequations}
-
+%
 %\EndArticle

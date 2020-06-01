@@ -29,13 +29,13 @@
 \generatetitle{ECE1229H Advanced Antenna Theory.  Lecture 1: Introduction.  Taught by Prof.\ G.V. Eleftheriades}
 %\chapter{Introduction}
 \label{chap:advancedantennaL1}
-
+%
 %\section{Disclaimer}
 %
 %Peeter's lecture notes from class.  These may be incoherent and rough.
 %
 \section{What is an antenna?}
-
+%
 An antenna is a linear passive device that converts a bounded EM wave to an unbounded one.
 
 %FIXME: F1
@@ -48,14 +48,14 @@ Issues of interest:
 \end{itemize}
 
 If we have a source we can do the opposite, using the antenna to broadcast instead of receive.  This is, in fact, how all the antenna discussion to follow proceeds, where we talk of the power radiated by the antenna.  Perhaps this is because it is easier to develop the mathematics for the field produced by a moving charge distribution, than the mathematics to determine the currents produced by a field acting on a free charge distribution?
-
+%
 \section{Antenna Pattern}
-
+%
 \begin{itemize}
 \item A mathematical function (graphical representation) describing the radiation properties of the antenna as a function of space coordinates
 \item Usually this is done in the far field for the power flux density, radiation indesity, or field strength as a function of directional coordinates \(\lr{ \theta, \phi }\).
 \end{itemize}
-
+%
 %\section{Description of various antennas from google image search}
 %
 %F2
@@ -77,7 +77,7 @@ For linearly polarized antennas we define the \( \BE \) and \( \BH \) principle 
 \end{itemize}
 
 See \textfigref{2.2, 2.3} in \citep{balanis2005antenna} for a couple examples of the plane patterns.
-
+%
 \section{Radiation Power Density}
 \index{radiation power density}
 %
@@ -100,7 +100,7 @@ P_\trad = P_\tav = \oiint_S \BW_\tav \cdot \ncap ds = \inv{2} \oiint \Real \time
 The integration element is illustrated in \cref{fig:farfieldsurfaceElement:farfieldsurfaceElementFig1}.
 
 %\imageFigure{../figures/ece1229-antenna/farfieldsurfaceElementFig1}{Far field surface}{fig:farfieldsurfaceElement:farfieldsurfaceElementFig1}{0.2}
-
+%
 \section{Isotropic radiator (antenna)}
 \index{isotropic radiator}
 %
@@ -124,7 +124,7 @@ The total radiated power, integrating over a far field spherical surface is
 \end{dmath}
 %
 Here \( d\Omega = \sin\theta d\theta d\phi \) is an element of solid angle.
-
+%
 \section{Radiation intensity}
 \index{radiation intensity}
 %
@@ -177,7 +177,7 @@ U_\tiso = r^2 \BW_\tiso = \frac{P_0}{2 \pi}
 \end{dmath}
 %
 FIXME: \( \BW_\tiso \) a vector, \(U_\tiso\) not?
-
+%
 \section{Directivity}
 \index{directivity}
 %
@@ -290,7 +290,7 @@ Integrating over a far field sphere
 \DrawMyBox[thick, Maroon, rounded corners]{1}
 This can be used to check that the directivity is correct.
 }
-
+%
 \section{Maximum directivity}
 \index{directivity!maximum}
 %
@@ -382,7 +382,7 @@ D_0 = \frac{ 4\pi A_0 }{\pi A_0} = 4.
 %
 This is bigger than the \( 2.86 \) approximation, since this is a wide beam.  That approximation works better for a more directed radiator.
 }
-
+%
 \section{Directivity measurement}
 \index{directivity!dB}
 %
@@ -417,7 +417,7 @@ D_0 \approx \frac{32 \ln 2}{\theta_{1r}^2 + \theta_{2r}^2},
 also improves with \( n \).  Values for both are tabulated in \
 \citep{balanis2005antenna}
 tab. 2.1.
-
+%
 %%%\section{Directivity vs. Gain}
 %%%
 %%%Gain = 4 \pi \frac{Uthetaphi}{P_\tin}
