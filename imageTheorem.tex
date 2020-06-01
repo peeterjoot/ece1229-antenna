@@ -16,9 +16,9 @@
 \section{Image theorem}
 \index{image theorem}
 %\label{chap:imageTheorem}
-
+%
 In the last problem set we examined the array factor for a corner cube configuration, shown in \cref{fig:homework3:homework3Fig1}.
-
+%
 \imageFigure{../figures/ece1229-antenna/homework3Fig1}{A corner-cube antenna.}{fig:homework3:homework3Fig1}{0.2}
 %
 \paragraph{Motivation}
@@ -28,13 +28,13 @@ This is a horizontal dipole antenna placed next to a metallic corner.  The radia
 It turns out that the idea of the Image Theorem is to find a source configuration that contains the specified source, but contains enough other sources that the tangential component of the electric field superposition is zero on the conducting surface, as required by Maxwell's equations.  This allows the boundary to be completely removed from the problem.
 %
 Thinking of the corner cube configuration as a reflection problem, I positioned sources as in \cref{fig:incorrectImagePlacementForCornerCube:incorrectImagePlacementForCornerCubeFig2}.
-
+%
 \imageFigure{../figures/ece1229-antenna/incorrectImagePlacementForCornerCubeFig2}{Incorrect Image Theorem source placement for corner cube.}{fig:incorrectImagePlacementForCornerCube:incorrectImagePlacementForCornerCubeFig2}{0.2}
 
 Because of the horizontal orientation of the dipole, I argued that the reflection coefficient should be -1.  The reflection point is a bit messy to calculate, and it turns out to zeroth order in \( h/r \) the \( \sin\theta \) magnitude scaling of the reflected (far-field) field is present for both reflected rays.  I though that this was probably because the observation point lays at the same altitude for both the line of sight ray and the reflected ray.
-
+%
 Attempting this problem as a reflection problem makes it much more difficult than it needs to be.  It turns out that the correct image source placement for this problem is that of \cref{fig:cornerCubeImageSourcePlacement:cornerCubeImageSourcePlacementFig3}.
-
+%
 \imageFigure{../figures/ece1229-antenna/cornerCubeImageSourcePlacementFig3}{Correct image source placement for the corner cube.}{fig:cornerCubeImageSourcePlacement:cornerCubeImageSourcePlacementFig3}{0.2}
 
 This wasn't at all obvious to me.  The key is understanding that the goal of the image source placement isn't to figure out how the reflection will occur, but to manufacture a source configuration for which the tangential component of the electric field is zero on the conducting surface.
@@ -145,7 +145,7 @@ I \ncap \wedge \kcap
 So, provided the image source in the second quadrant is oppositely oriented (sign inversion), the tangential components of the two will sum to zero on that surface.
 
 Thinking back to the corner cube, it is clear that an image source opposite to the source across from one of the walls will result in a zero tangential electric field along this boundary as is the case here (say the y-z plane).  A second pair of sources opposite from each other anywhere else also about the y-z plane will not change that zero tangential electric field on this surface, but if the signs of the sources is alternated as in \cref{fig:cornerCubeImageSourcePlacement:cornerCubeImageSourcePlacementFig3} it will also result in zero tangential electric field on the z-x plane, which has the desired boundary value effects for both surfaces of the corner cube.
-
+%
 Once the image sources are placed, the problem can be tackled with the boundary removed.
 %
 %\EndNoBibArticle

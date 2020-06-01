@@ -154,7 +154,7 @@ Linear time invariant meant that the impulse response \( h(t,t') \) was a functi
 \index{Green's function}
 %
 For electromagnetic problems the impulse function sources \( \delta(\Br - \Br') \) also has a direction, and can yield any of \( E_x, E_y, E_z \).  A tensor impulse response is required.
-
+%
 Some overview of an approach that uses such tensor Green's functions is outlined on the slides.  It gets really messy since we require four tensor Green's functions to handle electric and magnetic current and charges.  Because of this complexity, we don't go down this path, and use potentials instead.
 
 In \S 3.5 \citep{balanis2005antenna} and the class notes, a verification of the spherical wave form for the Helmholtz Green's function was developed.  This was much simpler than the same verification I did in \citep{phy456:helmoltzGreens}.  Part of the reason for that was that I worked in Cartesian coordinates, which made things much messier.  The other part of the reason, for treating a neighbourhood of \( \Abs{\Br - \Br'} \sim 0 \), I verified the convolution, whereas Prof. Eleftheriades argues that a verification that \( \int \lr{\spacegrad^2 + k^2} G(\Br, \Br') dV' = 1\) is sufficient.  Balanis, on the other hand, argues that knowing the solution for \( k \ne 0 \) must just be the solution for \( k = 0 \) (i.e. the Poisson solution) provided it is multiplied by the \( e^{-j k r} \) factor.
