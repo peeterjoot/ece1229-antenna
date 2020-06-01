@@ -21,13 +21,13 @@
 \index{dual-Maxwell's equations}
 %\chapter{Maxwell's (phasor) equations in Geometric Algebra}
 \label{chap:phasorDualMaxwellsGA}
-
+%
 %These notes repeat (mostly word for word) the previous notes 'Maxwell's (phasor) equations in Geometric Algebra'.  Electric charges and currents have been replaced with magnetic charges and currents, and the appropriate relations modified accordingly.
 \index{magnetic charge}
 \index{magnetic current}
 %
 In \citep{balanis2005antenna} \S 3.3, treating magnetic charges and currents, and no electric charges and currents, is a demonstration of the required (curl) form for the electric field, and potential form for the electric field.  Not knowing what to name this, I'll call the associated equations the dual-Maxwell's equations.
-
+%
 I was wondering how this derivation would proceed using the Geometric Algebra (GA) formalism.
 %
 \section{Dual-Maxwell's equation in GA phasor form}
@@ -98,9 +98,9 @@ The electric and magnetic field equations, respectively, are
 \end{subequations}
 %
 where \( \omega = k c \), and \( 1 = c^2 \epsilon_0 \mu_0 \) have also been used to eliminate some of the mess of constants.
-
+%
 Summing these (first scaling \cref{eqn:phasorDualMaxwellsGA:280} by \( I \)), gives Maxwell's equation in its GA phasor form
-
+%
 \boxedEquation{eqn:phasorDualMaxwellsGA:300}{
 %\begin{equation}\label{eqn:phasorDualMaxwellsGA:300}
 \lr{ \spacegrad + j k } \lr{ \BE + c \BB I } = \lr{c \rho_\txtm - \BM} I.
@@ -216,7 +216,7 @@ The fields \( \BF \) and \( \phi_m \) are assumed to be phasors, say \( \bcA = \
 shows that in
 \cref{eqn:phasorDualMaxwellsGA:540}
 the quantity in braces is in fact the Lorentz gauge condition, so in the Lorentz gauge, the vector potential satisfies a non-homogeneous Helmholtz equation.
-
+%
 \boxedEquation{eqn:phasorDualMaxwellsGA:550}{
 %\begin{dmath}\label{eqn:phasorDualMaxwellsGA:550}
 \spacegrad^2 \BF + k^2 \BF = -\epsilon_0 \BM.
@@ -227,7 +227,7 @@ the quantity in braces is in fact the Lorentz gauge condition, so in the Lorentz
 \index{four vector}
 %
 The four vector form of Maxwell's equation follows from \cref{eqn:phasorDualMaxwellsGA:300} after pre-multiplying by \( \gamma^0 \).
-
+%
 With
 \begin{subequations}
 \label{eqn:phasorDualMaxwellsGA:600}
@@ -246,7 +246,7 @@ M = M^\mu \gamma_\mu = \lr{ c \rho_\txtm, \BM },
 \end{subequations}
 %
 Maxwell's equation is
-
+%
 \boxedEquation{eqn:phasorDualMaxwellsGA:700}{
 %\begin{boxed}\label{eqn:phasorDualMaxwellsGA:720}
 \grad G = -\epsilon_0 M.
