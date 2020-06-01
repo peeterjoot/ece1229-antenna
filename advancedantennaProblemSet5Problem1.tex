@@ -25,7 +25,7 @@ An expression for \( E_\phi(\theta, \phi) \)
 \item
 Consider an aperture of dimensions \( a = b = 10 \si{cm} \) at \( f = 9.8 \si{GHz} \).
 \end{enumerate}
-
+%
 \makesubproblem{}{advancedantenna:problemSet5:1a}
 Plot the E-plane and H-plane patterns (power).
 \makesubproblem{}{advancedantenna:problemSet5:1b}
@@ -35,9 +35,9 @@ From the plot determine the levels of the first sidelobe in the E and H planes.
 \makesubproblem{}{advancedantenna:problemSet5:1d}
 From the plot determine the 3dB beamwidth of the main lobe in the E and H planes.
 } % makeoproblem
-
+%
 \makeanswer{advancedantenna:problemSet5:1}{
-
+%
 Following the transformation procedure of \citep{balanis2005antenna} \textfigref{12.5}, the equivalent source for this electric field is a magnetic current
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:40}
@@ -254,7 +254,7 @@ an aperture of dimensions \( a = b = 10 \si{cm} \) at \( f = 9.8 \si{GHz} \) is 
 \mathImageFigure{../figures/ece1229-antenna/sphericalPolarPlotFig6}{Electric field power pattern, 0 \si{dB} to -40 \si{dB}.}{fig:sphericalPolarPlot:sphericalPolarPlotFig6}{0.4}{ps5:problem1plot.nb}
 \end{enumerate}
 \makeSubAnswer{}{advancedantenna:problemSet5:1a}
-
+%
 The maximum field is found at \( \theta = 0 \).
 The value of \( \phi \) is inconsequential, so we have an infinite number of E-plane surfaces, and can pick the \( \theta = \phi = 0 \) wave vector direction for simplicity.  For such a wave vector direction \( \Ecap = \ycap, \Hcap = \xcap \), and the corresponding E-plane and H-plane power fields are plotted in 
 \cref{fig:hplane:hplaneFig2}.
@@ -272,9 +272,9 @@ These fields are also plotted on a log scale in \cref{fig:eplanePolar:eplanePola
 \mathImageTwoFigures{../figures/ece1229-antenna/eplanePolarFig4}{../figures/ece1229-antenna/hplanePolarFig5}{E,H-plane (power) for \( \phi =0 \), \si{dB} scale.}{fig:eplanePolar:eplanePolarFig4}{scale=0.5}{ps5:vecE.m}
 %\mathImageFigure{../figures/ece1229-antenna/eplanePolarFig4}{E-plane (power) for \( \phi =0 \), \si{dB} scale.}{fig:eplanePolar:eplanePolarFig4}{0.3}{ps5:vecE.m}
 %\mathImageFigure{../figures/ece1229-antenna/hplanePolarFig5}{H-plane (power) for \( \phi =0 \), \si{dB} scale.}{fig:hplanePolar:hplanePolarFig5}{0.3}{ps5:vecE.m}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet5:1b}
-
+%
 For the E-plane the zeros are found at
 \ang{27}, \ang{50}, \ang{90}, \ang{130}, and \ang{153}.
 
@@ -282,9 +282,9 @@ For the H-plane the zeros are found at
 \ang{18}, \ang{38}, \ang{67}, \ang{113}, \ang{142}, \ang{162}.
 
 These were determined numerically, but these can also be visually verified against the \si{dB} power plots above, which are marked in degrees.
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet5:1c}
-
+%
 For the E-plane the sidelobe peaks are found at
 \ang{35}, \ang{60}, \ang{120}, \ang{145}, with respective levels (\si{dB}) of
  -25,
@@ -301,8 +301,8 @@ For the H-plane the sidelobe peaks are found at
  -13.2666.
 
 These were also calculated numerically, but can also be visually verified against the \si{dB} power plots above.
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet5:1d}
-
+%
 The -3 \si{dB} point of the main lobe is found where \( \Abs{\BE} = 10^{-3/20} \).  For the E-plane this is at \ang{10}, and for the H-plane this is found at \ang{8}.
 }

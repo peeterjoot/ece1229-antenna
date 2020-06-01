@@ -8,31 +8,31 @@
 Consider a symmetrically placed horizontal dipole antenna, next to a metallic corner cube.
 
 \imageFigure{../figures/ece1229-antenna/homework3Fig1}{A corner-cube antenna.}{fig:homework3:homework3Fig1}{0.2}
-
+%
 \makesubproblem{}{advancedantenna:problemSet3:3a}
-
+%
 Estimate the directivity enhancement of the antenna in \cref{fig:homework3:homework3Fig1} compared to the isolated antenna.
-
+%
 \makesubproblem{}{advancedantenna:problemSet3:3b}
-
+%
 Estimate the radiation resistance of the antenna in \cref{fig:homework3:homework3Fig1} compared to the isolated antenna.
-
+%
 \makesubproblem{}{advancedantenna:problemSet3:3c}
-
+%
 Calculate the array factor of the antenna in \cref{fig:homework3:homework3Fig1}.
-
+%
 \makesubproblem{}{advancedantenna:problemSet3:3d}
-
+%
 Plot the array-factor directivity pattern in the x-y plane for \( 0 < \phi \le 2 \pi \).
-
+%
 \makesubproblem{}{advancedantenna:problemSet3:3e}
-
+%
 By using numerical integration calculate the directivity of the array factor for \( h = (1/8) \lambda, h = (1/4) \lambda \) and \( h = (1/2) \lambda \).
 
 } % makeoproblem
-
+%
 \makeanswer{advancedantenna:problemSet3:3}{
-
+%
 To compare intensity with and without the corner cube, it probably makes sense to set the origin at the location of the radiator in the corner-cube antenna.  Such a geometry
 is sketched in 2D looking down, in
 %\cref{fig:cornerCubeGeometry:cornerCubeGeometryFig2}.
@@ -159,9 +159,9 @@ The far field component of the electric fields directed towards the reflection p
 After reflection, for \( r \gg h \), the direction of each of these fields will be approximately \( -\thetacap \), with an inversion from a reflection coefficient \( R = -1 \) due to the horizontal dipole configuration.  The superposition calculation requires only the summing of the phases that differ due to optical path length differences.
 
 All the pieces required to start answering the specific subquestions of this problem are now at hand.  These will be answered below slightly out of order, starting with
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet3:3c}
-
+%
 The path length for the image sources are
 %
 \begin{dmath}\label{eqn:advancedantennaProblemSet3Problem3:440}
@@ -217,7 +217,7 @@ What will be of more interest isn't the array factor, but its absolute square
 \end{dmath}
 %
 \makeSubAnswer{}{advancedantenna:problemSet3:3a}
-
+%
 The radiation intensity is
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet3Problem3:540}
@@ -296,9 +296,9 @@ D_{0,\textrm{ccube}} \approx \frac{4 \pi \times 1}{2 \pi/3} = 6,
 \end{equation}
 %
 a factor of 4 greater than the directivity of the isolated radiator.
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet3:3b}
-
+%
 The radiation resistance was defined implicitly by the relation
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet3Problem3:720}
@@ -318,7 +318,7 @@ so the ratio of radiation resistance will just be the ratio of the radiated powe
 \end{equation}
 %
 \makeSubAnswer{}{advancedantenna:problemSet3:3d}
-
+%
 The x-y plane is found at \( \theta = \pi/2 \) where the absolute square array factor is
 %
 \begin{equation}\label{eqn:advancedantennaProblemSet3Problem3:760}
@@ -345,9 +345,9 @@ This is also plotted in
 \cref{fig:arrayFactorXY:arrayFactorXYFig5} for a few selected values of \( h = \alpha \lambda \).
 
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYFig5}{Polar plot of \( \Abs{\textrm{AF}}^2 \) in XY plane for various values of \( \alpha = h/\lambda \).}{fig:arrayFactorXY:arrayFactorXYFig5}{0.3}{ps3:ps3Q3plotsAndMiscIntegrals.nb}
-
+%
 \makeSubAnswer{}{advancedantenna:problemSet3:3e}
-
+%
 The code for the numerical calculations can be found in \nbref{ps3:ps3Q3plotsAndMiscIntegrals.nb}.  The results are
 %The listing of \cref{mat:advancedantennaProblemSet3Problem3:20} shows the code used for the numerical calculation.  The results are
 %
