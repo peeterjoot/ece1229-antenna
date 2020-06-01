@@ -24,9 +24,9 @@ Plot the power array factor with a tool like Matlab to verify your predictions.
 \makeSubAnswer{}{advancedantenna:problemSet4:3a}
 %
 The array geometry assuming is illustrated in \cref{fig:ps4p3:ps4p3Fig3}.
-
+%
 \imageFigure{../figures/ece1229-antenna/ps4p3Fig3}{Five element array on z-axis.}{fig:ps4p3:ps4p3Fig3}{0.2}
-
+%
 With \( \Br_m = m d \zcap, m \in [-2,2] \), the array factor is
 %
 \begin{dmath}\label{eqn:advancedantennaProblemSet4Problem3:20}
@@ -72,11 +72,11 @@ With \( z = e^{ j k d \cos\theta } \), we can assume a binomial representation o
 %
 Normalizing so that \( \textrm{AF} = 1 \) at \( \Omega = k d \cos\theta \rightarrow 0 \), gives
 %
-%\begin{dmath}\label{eqn:advancedantennaProblemSet4Problem3:80}
-\boxedEquation{eqn:advancedantennaProblemSet4Problem3:80}{
+\begin{dmath}\label{eqn:advancedantennaProblemSet4Problem3:80}
+%\boxedEquation{eqn:advancedantennaProblemSet4Problem3:80}{
 \textrm{AF} = \inv{8} \lr{ 3 + 4 \cos u + \cos 2 u } = \cos^4 (u/2),
-}
-%\end{dmath}
+%}
+\end{dmath}
 %
 where \( u = 5 \pi \cos\theta/4 \).  The substitution \( u = -j \ln z \), puts the array factor in explicit polynomial form
 %

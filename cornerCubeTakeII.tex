@@ -131,29 +131,29 @@ e^{j k s \sin\theta \cos\lr{ \phi - \pi/4}}
 %
 or
 %
-%\begin{equation}\label{eqn:cornerCubeTakeII:960}
-\boxedEquation{eqn:cornerCubeTakeII:960}{
+\begin{dmath}\label{eqn:cornerCubeTakeII:960}
+%\boxedEquation{eqn:cornerCubeTakeII:960}{
 \BE
 =  2 j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r} \sin\theta
 \lr{
 \cos\lr{ k s \sin\theta \cos\lr{ \phi - \pi/4}}
 -\cos\lr{ k s \sin\theta \cos\lr{ \phi + \pi/4}}
 }.
-}
-%\end{equation}
+%}
+\end{dmath}
 %
 The array factor can be picked off by inspection
 %
-%\begin{dmath}\label{eqn:cornerCubeTakeII:500}
-\boxedEquation{eqn:cornerCubeTakeII:500}{
+\begin{dmath}\label{eqn:cornerCubeTakeII:500}
+%\boxedEquation{eqn:cornerCubeTakeII:500}{
 \textrm{AF}
 = 2 I_0
 \lr{
 \cos\lr{ k s \sin\theta \cos\lr{ \phi - \pi/4}}
 -\cos\lr{ k s \sin\theta \cos\lr{ \phi + \pi/4}}
 }.
-}
-%\end{dmath}
+%}
+\end{dmath}
 %
 \makeSubAnswer{}{advancedantenna:problemSet3TakeII:3a}
 The radiation intensity is
@@ -293,7 +293,7 @@ The x-y plane is found at \( \theta = \pi/2 \) where the array factor is
 %
 This is plotted against both \( \alpha = s/\lambda = \sqrt{2} h/\lambda\), and \( \phi \) in \cref{fig:arrayFactorXY:arrayFactorXYCorrectedFig4}, which shows that there are generally four lobes for any value of \( s \), except for the smallest values where the pattern is near zero.
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYCorrectedFig4}{Plot of \( \Abs{\textrm{AF}}^2 \) in XY plane with \( \alpha = h/\lambda \).}{fig:arrayFactorXY:arrayFactorXYCorrectedFig4}{0.3}{ps3:ps3Q3plotsCorrected.nb}
-
+%
 This is also plotted in
 \cref{fig:arrayFactorXY:arrayFactorXYCorrectedFig5} for a few selected values of \( \alpha \).
 %, and in a log scale \cref{fig:ps3p3LogScale25:ps3p3LogScale25Fig1} for these same \( \alpha \) values, plus one additional.
@@ -302,7 +302,7 @@ This is also plotted in
 %\mathImageFigure{../figures/ece1229-antenna/ps3p3LogScale25Fig1}{Log polar plot of \( \textrm{AF} \) in XY plane for various values of \( \alpha = s/\lambda \).}{fig:ps3p3LogScale25:ps3p3LogScale25Fig1}{0.3}{ps3:p3.jl}
 To plot the squared array factor, the physically significant range \( \phi \in [0, \pi/2] \) can be used, because all of the negative sign contributions from quadrant III will be flipped into quadrant I.
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYSqCorrectedFig5}{Polar plot of \( \Abs{\textrm{AF}}^2 \) for \( \theta = 0.\)}{fig:arrayFactorXYSqCorrected:arrayFactorXYSqCorrectedFig5}{0.3}{ps3:ps3Q3plotsCorrected.nb}
-
+%
 It's more fun to visualize this in 3D as in, and a manipulate control for visualizing \( \Abs{\textrm{AF}}^2 \) is available at
 %\href{http://goo.gl/IVaiw2}{http://goo.gl/IVaiw2}
 \nbref{cornerCubeArrayFactorSq.cdf}

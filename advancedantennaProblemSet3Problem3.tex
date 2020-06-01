@@ -36,10 +36,10 @@ To compare intensity with and without the corner cube, it probably makes sense t
 is sketched in 2D looking down, in
 %\cref{fig:cornerCubeGeometry:cornerCubeGeometryFig2}.
 \cref{fig:cornerCubeGeometry:cornerCubeGeometryFig3}.
-
+%
 %\imageFigure{../figures/ece1229-antenna/cornerCubeGeometryFig2}{Corner cube geometry.}{fig:cornerCubeGeometry:cornerCubeGeometryFig2}{0.3}
 \imageFigure{../figures/ece1229-antenna/cornerCubeGeometryFig3}{Corner cube geometry.}{fig:cornerCubeGeometry:cornerCubeGeometryFig3}{0.3}
-
+%
 The primary source is located at \( \BS_0 = (0,0,0) \) and the image sources at \( \BS_\txtx = (-2h, 0, 0), \BS_y = (0, -2h, 0) \) behind the planes with the \( \xcap \) and \( \ycap \) normals respectively.  There are three wave vectors directions of interest, \( \kcap_{0} \) for the line of sight direction, \( \kcap_\txty \) for the reflection originating at the image source behind the z-x plane at \( -2 h \ycap \), and \( \kcap_\txtx \) for the reflection originating at the image source behind the y-z plane at \( -2 h \xcap \).  The points of reflection are \( \Bp_\txty \) and \( \Bp_\txtx \) respectively.
 
 Suppose the magnetic vector potential has the structure of an infinitesimal dipole
@@ -186,22 +186,22 @@ k r_y
 %
 The superposition of the LOS and reflection (image source) fields, in the far field, is
 %
-%\begin{dmath}\label{eqn:advancedantennaProblemSet3Problem3:480}
-\boxedEquation{eqn:advancedantennaProblemSet3Problem3:480}{
+\begin{dmath}\label{eqn:advancedantennaProblemSet3Problem3:480}
+%\boxedEquation{eqn:advancedantennaProblemSet3Problem3:480}{
 \BE
 =  j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r} \sin\theta
 \lr{ 1 - e^{-j k h \sin\theta \cos\phi } - e^{-j k h \sin\theta \sin\phi } } \thetacap.
-}
-%\end{dmath}
+%}
+\end{dmath}
 %
 This provides the array factor
 %
-%\begin{dmath}\label{eqn:advancedantennaProblemSet3Problem3:500}
-\boxedEquation{eqn:advancedantennaProblemSet3Problem3:500}{
+\begin{dmath}\label{eqn:advancedantennaProblemSet3Problem3:500}
+%\boxedEquation{eqn:advancedantennaProblemSet3Problem3:500}{
 \textrm{AF}
 = 1 - e^{-j k h \sin\theta \cos\phi } - e^{-j k h \sin\theta \sin\phi }.
-}
-%\end{dmath}
+%}
+\end{dmath}
 %
 What will be of more interest isn't the array factor, but its absolute square
 %
@@ -337,12 +337,12 @@ With \( h = \alpha \lambda \), this is
 \end{equation}
 %
 A plot against both \( \alpha, \phi \) is found in \cref{fig:arrayFactorXY:arrayFactorXYFig4}, which shows that there are generally four lobes for any value of \( h \).
-
+%
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYFig4}{Plot of \( \Abs{\textrm{AF}}^2 \) in XY plane with \( \alpha = h/\lambda \).}{fig:arrayFactorXY:arrayFactorXYFig4}{0.3}{ps3:ps3Q3plotsAndMiscIntegrals.nb}
-
+%
 This is also plotted in
 \cref{fig:arrayFactorXY:arrayFactorXYFig5} for a few selected values of \( h = \alpha \lambda \).
-
+%
 \mathImageFigure{../figures/ece1229-antenna/arrayFactorXYFig5}{Polar plot of \( \Abs{\textrm{AF}}^2 \) in XY plane for various values of \( \alpha = h/\lambda \).}{fig:arrayFactorXY:arrayFactorXYFig5}{0.3}{ps3:ps3Q3plotsAndMiscIntegrals.nb}
 %
 \makeSubAnswer{}{advancedantenna:problemSet3:3e}
