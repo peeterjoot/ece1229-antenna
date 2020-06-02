@@ -10,7 +10,7 @@
 
 - review equation grammar (periods and commas)
 
-- Add periods to chapter, section, subsection, makeexample, makeproblem, figure captions.
+- Add periods to makeexample, makeproblem, figure captions.
 
 - cref to a lemma isn't working (reciprocityTheorem.tex)?  shows up as eq.
 
