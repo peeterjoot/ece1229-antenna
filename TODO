@@ -1,7 +1,3 @@
-- mathematica workbook names too long.
-
-- periods in chapter, section, subsection, paragraph, figure captions, problem statements
-
 - some hand drawn figures too big.
 
 - finish 6x9 conversion review.
@@ -9,8 +5,6 @@
 - review spaces itemize, imageFigure, mathImage
 
 - review equation grammar (periods and commas)
-
-- Add periods to makeexample, makeproblem, figure captions.
 
 - cref to a lemma isn't working (reciprocityTheorem.tex)?  shows up as eq.
 
