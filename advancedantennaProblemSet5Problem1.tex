@@ -47,24 +47,27 @@ Following the transformation procedure of \citep{balanis2005antenna} \textfigref
 %
 producing an electric vector potential that is approximately
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:60}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:60}
+\begin{aligned}
 \BF
-= \frac{\epsilon}{4 \pi r} \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \BM_\txts e^{-j k ( r - \rcap \cdot \Br' ) }
-= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \cos\lr{ \frac{\pi}{a} x' } e^{j k \rcap \cdot \Br' }
-= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \cos\lr{ \frac{\pi}{a} x' }
-e^{j k \sin\theta \lr{\cos\phi x' + \sin\phi y'} }
-= \frac{\epsilon}{4 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx'
+&= \frac{\epsilon}{4 \pi r} \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \BM_\txts e^{-j k ( r - \rcap \cdot \Br' ) } \\
+&= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \cos\lr{ \frac{\pi}{a} x' } e^{j k \rcap \cdot \Br' } \\
+&= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx' \int_{-b/2}^{b/2} dy' \cos\lr{ \frac{\pi}{a} x' }
+e^{j k \sin\theta \lr{\cos\phi x' + \sin\phi y'} } \\
+&= \frac{\epsilon}{4 \pi r} e^{-j k r} \xcap \int_{-a/2}^{a/2} dx'
 \lr{
 e^{j k \sin\theta \cos\phi x' + j \pi x'/a}
 +
 e^{j k \sin\theta \cos\phi x' - j \pi x'/a}
-}
+} \times \\
+&\qquad
 \int_{-b/2}^{b/2} dy'
 e^{j k \sin\theta \sin\phi y' }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 A symmetric interval around the origin has been chosen to avoid the introduction of complex phases.
-
+%
 Each of these integrals is of the form
 %
 \begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:80}
@@ -92,23 +95,30 @@ Y = k \sin\theta \sin\phi,
 %
 the electric vector potential is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:100}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:100}
+\begin{aligned}
 \BF
-= \frac{\epsilon}{4 \pi r} e^{-j k r} \xcap
+&= \frac{\epsilon}{4 \pi r} e^{-j k r} \xcap 
+\frac{ \sin\lr{ Y b/2 } }{ Y/2} 
+\times \\
+&\qquad 
 \lr{
 \frac{ \sin\lr{ (X + \pi/a) a/2 } }{ (X + \pi/a)/2}
 +
 \frac{ \sin\lr{ (X - \pi/a) a/2 } }{ (X - \pi/a)/2}
 }
+\\
+&= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap
 \frac{ \sin\lr{ Y b/2 } }{ Y/2}
-= \frac{\epsilon}{2 \pi r} e^{-j k r} \xcap
-\frac{
+\times \\
+&\qquad \frac{
 (X - \pi/a) \sin\lr{ X a/2 + \pi/2 }
 +
 (X + \pi/a) \sin\lr{ X a/2 - \pi/2 }
 }{ X^2 - (\pi/a)^2}
-\frac{ \sin\lr{ Y b/2 } }{ Y/2}.
-\end{dmath}
+.
+\end{aligned}
+\end{equation}
 %
 Since
 \begin{subequations}

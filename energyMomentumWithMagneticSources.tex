@@ -229,16 +229,17 @@ T^{a b} =
 %
 so that the remaining energy momentum conservation equation, extended to both electric \index{electric source} and magnetic sources \index{magnetic source}, is
 %
-\boxedEquation{eqn:energyMomentumWithMagneticSources:460}{
-%\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:460}
-%\boxed{
-\inv{c^2} \PD{t}{} \lr{ \bcE \cross \bcH }
-+ \lr{ \rho \BE + \mu_0 \bcJ \cross \bcH }
-+ \lr{ \rho_\txtm \bcH + \epsilon_0 \bcE \cross \bcM }
+%\boxedEquation{eqn:energyMomentumWithMagneticSources:460}{
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:460}
+\begin{aligned}
+\inv{c^2} &\PD{t}{} \lr{ \bcE \cross \bcH }
++ \lr{ \rho \BE + \mu_0 \bcJ \cross \bcH } \\
+&\quad + \lr{ \rho_\txtm \bcH + \epsilon_0 \bcE \cross \bcM }
 =
 \Be_a \spacegrad \cdot \lr{ T^{a b} \Be_b }.
-}
-%\end{dmath}
+\end{aligned}
+\end{equation}
+%}
 %
 On the LHS we have the rate of change of momentum density, the electric Lorentz force density terms, the dual (magnetic) Lorentz force density terms, and on the RHS the the \textAndIndex{momentum flux} terms.
 %
@@ -425,7 +426,7 @@ j \BE^{(a)} \cdot { \BE^{(b)} }^\conj
 }
 \end{dmath}
 %
-Taking the difference,
+Permuting indexes and taking the difference kills all the time dependentent terms, even without averaging
 %
 \begin{equation}\label{eqn:energyMomentumWithMagneticSources:640}
 \begin{aligned}
@@ -434,16 +435,19 @@ Taking the difference,
 &=
 \inv{2} \Real
 \lr{
-  j \omega \BE^{(a)} \cdot { \BE^{(b)} }^\conj
-- j \omega \BE^{(b)} \cdot { \BE^{(a)} }^\conj
-+ j \omega \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
-- j \omega \BE^{(b)} \cdot \BE^{(a)} e^{ 2 j \omega t }
+j \omega
+\lr{
+   \BE^{(a)} \cdot { \BE^{(b)} }^\conj
+-  \BE^{(b)} \cdot { \BE^{(a)} }^\conj
++  \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
+-  \BE^{(b)} \cdot \BE^{(a)} e^{ 2 j \omega t }
+}
 } \\
 &=
 - \omega \Imag
 \lr{
   \BE^{(a)} \cdot { \BE^{(b)} }^\conj
-+ \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
+%+ \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
 },
 \end{aligned}
 \end{equation}
@@ -453,7 +457,7 @@ so we have
 \begin{dmath}\label{eqn:energyMomentumWithMagneticSources:660}
 0
 =
-\timeaverage{
+%\timeaverage{
 \spacegrad \cdot \Real \lr{
 \BE^{(a)} \cross {\BH^{(b)}}^\conj
 -\BE^{(b)} \cross {\BH^{(a)}}^\conj
@@ -474,10 +478,10 @@ so we have
 -\BE^{(b)} \cdot { \BJ^{(a)} }^\conj
 +\BE^{(a)} \cdot { \BJ^{(b)} }^\conj
 }
-}_{\textrm{av}}.
+%}_{\textrm{av}}.
 \end{dmath}
 %
-Observe that the perfect cancellation of the time derivative terms only occurs when the cross product differences were those of the phasors.  When those cross differences are those of the actual fields, like those in the Poynting theorem, there is a frequency dependent term is that expansion.
+%Observe that the perfect cancellation of the time derivative terms only occurs when the cross product differences were those of the phasors.  When those cross differences are those of the actual fields, like those in the Poynting theorem, there is a frequency dependent term is that expansion.
 %
 \paragraph{Followup Questions}
 %
