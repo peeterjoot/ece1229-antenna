@@ -277,16 +277,17 @@ so
 %
 Similarly, for the cross product
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:540}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:540}
+\begin{aligned}
 \bcE \cross \bcH
-=
+&=
 \inv{4}
 \lr{
 \BE \cross \BH e^{2 j \omega t}
 + \BE \cross \BH^\conj + \BE^\conj \cross \BH
 + \lr{ \BE^\conj \cross \BH^\conj } e^{-2 j \omega t}
-}
-=
+} \\
+&=
 \inv{2}
 \Real
 \lr{
@@ -294,7 +295,8 @@ Similarly, for the cross product
 +
 \BE \cross \BH e^{2 j \omega t}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Given phasor representations of the sources \( \bcM = \BM e^{j \omega t}, \bcJ = \BJ e^{j \omega t} \), \cref{eqn:energyMomentumWithMagneticSources:40} can be recast into (a messy) phasor form
 %
@@ -344,7 +346,7 @@ The reciprocity theorem had a striking similarity to the \textAndIndex{Poynting 
 %Repeating the divergence calculation of the reciprocity derivation in the time domain shows that the \textAndIndex{reciprocity theorem} as stated also has a dependency on single frequency sources and fields
 Here's a repetition of the reciprocity divergence calculation without the single frequency (phasor) assumption
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:600}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:600}
 \begin{aligned}
 \spacegrad \cdot &\lr{
 \bcE^{(a)} \cross \bcH^{(b)}
@@ -377,7 +379,7 @@ Here's a repetition of the reciprocity divergence calculation without the single
 +\bcE^{(b)} \cdot \bcJ^{(a)}
 -\bcE^{(a)} \cdot \bcJ^{(b)}
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 What do these time derivative terms look like in the \textAndIndex{frequency domain}?
 %

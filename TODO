@@ -1,5 +1,3 @@
-- audit: overlapped equation numbers with the equations.
-
 - review equation grammar (periods and commas)
 
 - cref to a lemma isn't working (reciprocityTheorem.tex)?  shows up as eq.
