@@ -1,4 +1,4 @@
-- review equation grammar (periods and commas)
+- should use proof environment for the lemmas.
 
 - cref to a lemma isn't working (reciprocityTheorem.tex)?  shows up as eq.
 
