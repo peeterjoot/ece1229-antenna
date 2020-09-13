@@ -1,2 +1,4 @@
 ece1229.V0.2.4.pdf (in progress)
 - url fixes.
+- spellcheck.
+- thethe.py pass.
