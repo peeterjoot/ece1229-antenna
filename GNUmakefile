@@ -29,12 +29,16 @@ PDFS_FROM_EPS := $(subst eps,pdf,$(EPS_FILES))
 
 THISBOOK_DEPS += $(PDFS_FROM_EPS)
 THISBOOK_DEPS += macros_mathematica.sty
+DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
 
-#CLEAN_TARGETS += *.sp FrontBackmatter/*.sp
-#DO_SPELL_CHECK := $(shell cat spellcheckem.txt)
+include ../latex/make.rules
 
 .PHONY: spellcheck
-include ../latex/make.rules
+spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
+
+%.sp : %.tex
+	spellcheck $^
+	touch $@
 
 $(THISBOOK).pdf :: $(EXTERNAL_DEPENDENCIES)
 
@@ -89,12 +93,6 @@ ps4julia.tex : ../METADATA ../julia/METADATA
 
 ps3mathematica.tex : ../METADATA ../mathematica/METADATA
 	(cd .. ; ./METADATA -mathematica -latex -ece1229 -filter ece1229/ps3/ ) > $@
-
-spellcheck: $(patsubst %.tex,%.sp,$(filter-out $(DONT_SPELL_CHECK),$(DO_SPELL_CHECK)))
-
-%.sp : %.tex
-	spellcheck $^
-	touch $@
 
 # hack:
 clean ::
