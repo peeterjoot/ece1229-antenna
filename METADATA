@@ -7,7 +7,7 @@ my @ece1229 =
    TITLE => qq(Fundamental parameters of Antennas),
    DATE => 'January 22, 2015',
    REF => 'chapter2Notes',
-   URL => 'http://peeterjoot.com/archives/math2015/chapter2Notes.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/chapter2Notes.pdf',
    WHAT => qq(Reading notes for chapter 2.)
 }
 ,{
@@ -15,7 +15,7 @@ my @ece1229 =
    TITLE => qq(Polarization review),
    DATE => 'January 24, 2015',
    REF => 'polarizationReview',
-   URL => 'http://peeterjoot.com/archives/math2015/polarizationReview.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/polarizationReview.pdf',
    WHAT => qq()
 }
 ,{
@@ -23,7 +23,7 @@ my @ece1229 =
    TITLE => qq(Fundamental parameters of Antennas),
    DATE => 'January 26, 2015',
    REF => 'advancedantennaProblemSet1',
-   URL => 'http://peeterjoot.com/archives/math2015/advancedantennaProblemSet1.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/advancedantennaProblemSet1.pdf',
    WHAT => qq()
 }
 ,{
@@ -31,7 +31,7 @@ my @ece1229 =
    TITLE => qq(Maxwell's equations),
    DATE => 'January 28, 2015',
    REF => 'chapter3Notes',
-   URL => 'http://peeterjoot.com/archives/math2015/chapter3Notes.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/chapter3Notes.pdf',
    WHAT => qq()
 }
 ,{
@@ -39,7 +39,7 @@ my @ece1229 =
    TITLE => qq(On Tai and Pereira's half power beamwidth approximations),
    DATE => 'January 31, 2015',
    REF => 'taiAndPereira',
-   URL => 'http://peeterjoot.com/archives/math2015/taiAndPereira.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/taiAndPereira.pdf',
    WHAT => qq()
 }
 ,{
@@ -47,7 +47,7 @@ my @ece1229 =
    TITLE => qq(Maxwell's (phasor) equations in Geometric Algebra),
    DATE => 'February 01, 2015',
    REF => 'phasorMaxwellsGA',
-   URL => 'http://peeterjoot.com/archives/math2015/phasorMaxwellsGA.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/phasorMaxwellsGA.pdf',
    WHAT => qq()
 }
 ,{
@@ -55,7 +55,7 @@ my @ece1229 =
    TITLE => qq(Maxwell's (phasor) equations in Geometric Algebra),
    DATE => 'February 03, 2015',
    REF => 'phasorDualMaxwellsGA',
-   URL => 'http://peeterjoot.com/archives/math2015/phasorDualMaxwellsGA.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/phasorDualMaxwellsGA.pdf',
    WHAT => qq()
 }
 ,{
@@ -63,7 +63,7 @@ my @ece1229 =
    TITLE => qq(Phasor form of (extended) Maxwell's equations in Geometric Algebra),
    DATE => 'February 03, 2015',
    REF => 'phasorMaxwellsWithElectricAndMagneticCharges',
-   URL => 'http://peeterjoot.com/archives/math2015/phasorMaxwellsWithElectricAndMagneticCharges.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/phasorMaxwellsWithElectricAndMagneticCharges.pdf',
    WHAT => qq()
 }
 ,{
@@ -71,7 +71,7 @@ my @ece1229 =
    TITLE => qq(Linear wire antennas),
    DATE => 'February 16, 2015',
    REF => 'chapter4Notes',
-   URL => 'http://peeterjoot.com/archives/math2015/chapter4Notes.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/chapter4Notes.pdf',
    WHAT => qq()
 }
 ,{
@@ -79,7 +79,7 @@ my @ece1229 =
    TITLE => qq(Fundamental parameters and Field radiation),
    DATE => 'February 17, 2015',
    REF => 'advancedantennaProblemSet2',
-   URL => 'http://peeterjoot.com/archives/math2015/advancedantennaProblemSet2.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/advancedantennaProblemSet2.pdf',
    WHAT => qq()
 }
 ,{
@@ -87,7 +87,7 @@ my @ece1229 =
    TITLE => qq(energy momentum conservation with magnetic sources),
    DATE => 'February 20, 2015',
    REF => 'energyMomentumWithMagneticSources',
-   URL => 'http://peeterjoot.com/archives/math2015/energyMomentumWithMagneticSources.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/energyMomentumWithMagneticSources.pdf',
    WHAT => qq()
 }
 ,{
@@ -95,7 +95,7 @@ my @ece1229 =
    TITLE => qq(Reciprocity theorem in Geometric Algebra),
    DATE => 'February 21, 2015',
    REF => 'reciprocityTheoremGA',
-   URL => 'http://peeterjoot.com/archives/math2015/reciprocityTheoremGA.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/reciprocityTheoremGA.pdf',
    WHAT => qq()
 }
 ,{
@@ -103,7 +103,7 @@ my @ece1229 =
    TITLE => qq(Maxwell's equations in tensor form with magnetic sources),
    DATE => 'February 22, 2015',
    REF => 'gaMagneticSourcesToTensorToVector',
-   URL => 'http://peeterjoot.com/archives/math2015/gaMagneticSourcesToTensorToVector.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gaMagneticSourcesToTensorToVector.pdf',
    WHAT => qq()
 }
 ,{
@@ -111,7 +111,7 @@ my @ece1229 =
    TITLE => qq(Duality transformation of the far field fields.),
    DATE => 'February 27, 2015',
    REF => 'dualFarField',
-   URL => 'http://peeterjoot.com/archives/math2015/dualFarField.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/dualFarField.pdf',
    WHAT => qq()
 }
 ,{
@@ -119,7 +119,7 @@ my @ece1229 =
    TITLE => qq(Duality transformation),
    DATE => 'March 02, 2015',
    REF => 'dualityTransformation',
-   URL => 'http://peeterjoot.com/archives/math2015/dualityTransformation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/dualityTransformation.pdf',
    WHAT => qq()
 }
 ,{
@@ -127,7 +127,7 @@ my @ece1229 =
    TITLE => qq(Resolving fields into components parallel to the reflecting plane),
    DATE => 'March 07, 2015',
    REF => 'resolvingFieldsIncidentOnPlane',
-   URL => 'http://peeterjoot.com/archives/math2015/resolvingFieldsIncidentOnPlane.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/resolvingFieldsIncidentOnPlane.pdf',
    WHAT => qq()
 }
 ,{
@@ -135,7 +135,7 @@ my @ece1229 =
    TITLE => qq(Parallel projection of electromagnetic fields with Geometric Algebra),
    DATE => 'March 08, 2015',
    REF => 'gaFieldProjection',
-   URL => 'http://peeterjoot.com/archives/math2015/gaFieldProjection.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/gaFieldProjection.pdf',
    WHAT => qq()
 }
 ,{
@@ -143,7 +143,7 @@ my @ece1229 =
    TITLE => qq(Dipoles and corner cube antennas),
    DATE => 'March 11, 2015',
    REF => 'advancedantennaProblemSet3',
-   URL => 'http://peeterjoot.com/archives/math2015/advancedantennaProblemSet3.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/advancedantennaProblemSet3.pdf',
    WHAT => qq()
 }
 ,{
@@ -151,7 +151,7 @@ my @ece1229 =
    TITLE => qq(Tschebyscheff polynomials),
    DATE => 'March 13, 2015',
    REF => 'tschebyscheff',
-   URL => 'http://peeterjoot.com/archives/math2015/tschebyscheff.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/tschebyscheff.pdf',
    WHAT => qq()
 }
 ,{
@@ -159,7 +159,7 @@ my @ece1229 =
    TITLE => qq(Image theorem),
    DATE => 'March 14, 2015',
    REF => 'imageTheorem',
-   URL => 'http://peeterjoot.com/archives/math2015/imageTheorem.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/imageTheorem.pdf',
    WHAT => qq()
 }
 ,{
@@ -167,7 +167,7 @@ my @ece1229 =
    TITLE => qq(Corner cube image factor),
    DATE => 'March 16, 2015',
    REF => 'cornerCubeTakeII',
-   URL => 'http://peeterjoot.com/archives/math2015/cornerCubeTakeII.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/cornerCubeTakeII.pdf',
    WHAT => qq()
 }
 ,{
@@ -175,7 +175,7 @@ my @ece1229 =
    TITLE => qq(Reciprocity theorem),
    DATE => 'March 16, 2015',
    REF => 'reciprocityTheorem',
-   URL => 'http://peeterjoot.com/archives/math2015/reciprocityTheorem.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/reciprocityTheorem.pdf',
    WHAT => qq()
 }
 ,{
@@ -183,7 +183,7 @@ my @ece1229 =
    TITLE => qq(Chebychev antenna design),
    DATE => 'March 22, 2015',
    REF => 'chebychevDesign',
-   URL => 'http://peeterjoot.com/archives/math2015/chebychevDesign.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/chebychevDesign.pdf',
    WHAT => qq()
 }
 ,{
@@ -191,7 +191,7 @@ my @ece1229 =
    TITLE => qq(Antenna array design with Chebychev polynomials),
    DATE => 'March 23, 2015',
    REF => 'chebychevSecondMethod',
-   URL => 'http://peeterjoot.com/archives/math2015/chebychevSecondMethod.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/chebychevSecondMethod.pdf',
    WHAT => qq()
 }
 ,{
@@ -199,7 +199,7 @@ my @ece1229 =
    TITLE => qq(Antenna array design),
    DATE => 'March 29, 2015',
    REF => 'advancedantennaProblemSet4',
-   URL => 'http://peeterjoot.com/archives/math2015/advancedantennaProblemSet4.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/advancedantennaProblemSet4.pdf',
    WHAT => qq()
 }
 ,{
@@ -207,7 +207,7 @@ my @ece1229 =
    TITLE => qq(Aperture and Patch Antennas),
    DATE => 'April 15, 2015',
    REF => 'advancedantennaProblemSet5',
-   URL => 'http://peeterjoot.com/archives/math2015/advancedantennaProblemSet5.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/advancedantennaProblemSet5.pdf',
    WHAT => qq()
 }
 ,{
@@ -215,7 +215,7 @@ my @ece1229 =
    TITLE => qq(Tangential and normal field components),
    DATE => 'May 04, 2015',
    REF => 'normalAndTangentialFields',
-   URL => 'http://peeterjoot.com/archives/math2015/normalAndTangentialFields.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/normalAndTangentialFields.pdf',
    WHAT => qq()
 }
 ,{
@@ -223,7 +223,7 @@ my @ece1229 =
    TITLE => qq(coupled wave equation in cylindrical coordinates),
    DATE => 'May 05, 2015',
    REF => 'cylindricalFieldSolution',
-   URL => 'http://peeterjoot.com/archives/math2015/cylindricalFieldSolution.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/cylindricalFieldSolution.pdf',
    WHAT => qq()
 }
 ,{
@@ -231,7 +231,7 @@ my @ece1229 =
    TITLE => qq(Plane wave solution directly from Maxwell's equations),
    DATE => 'May 06, 2015',
    REF => 'ExPlaneWave',
-   URL => 'http://peeterjoot.com/archives/math2015/ExPlaneWave.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/ExPlaneWave.pdf',
    WHAT => qq()
 }
 ,{
@@ -239,7 +239,7 @@ my @ece1229 =
    TITLE => qq(Impedance transformation),
    DATE => 'May 16, 2015',
    REF => 'impedanceTransformation',
-   URL => 'http://peeterjoot.com/archives/math2015/impedanceTransformation.pdf',
+   URL => 'https://peeterjoot.com/archives/math2015/impedanceTransformation.pdf',
    WHAT => qq()
 }
 ) ; # @ece1229
