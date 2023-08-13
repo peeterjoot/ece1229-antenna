@@ -97,92 +97,104 @@ Once a \( \pcap' = \pcap \cross \ncap \) has been determined, regardless of it's
 %
 with (squared) length
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:300}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:300}
+\begin{aligned}
 \lr{ \kcap - \lr{ \kcap \cdot \pcap' } \pcap' }^2
-=
+&=
 1 + \lr{ \kcap \cdot \pcap' }^2 - 2 \lr{ \kcap \cdot \pcap' }^2
-=
+\\ &=
 1 - \lr{ \kcap \cdot \pcap' }^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 The \textAndIndex{angle of incidence}, relative to the normal to the reflection plane, follows from
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:320}
-\cos\theta = \kcap \cdot \frac{
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:320}
+\begin{aligned}
+\cos\theta &= \kcap \cdot \frac{
 \kcap - \lr{ \kcap \cdot \pcap' } \pcap' }{
 \sqrt{
 1 - \lr{ \kcap \cdot \pcap' }^2
 }
 }
-=
+\\ &=
 \sqrt{
 1 - \lr{ \kcap \cdot \pcap' }^2
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Expanding the dot product above gives
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:360}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:360}
+\begin{aligned}
 \kcap \cdot \pcap'
-=
+&=
 \kcap \cdot \lr{ \pcap \cross \ncap }
-=
+\\ &=
 \frac{1}{\Abs{\kcap \cross \ncap} } \kcap \cdot \lr{ \lr{\kcap \cross \ncap} \cross \ncap },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 where
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:380}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:380}
+\begin{aligned}
 \kcap \cdot \lr{ \lr{\kcap \cross \ncap} \cross \ncap }
-=
+&=
 k_r \epsilon_{r s t} \lr{\kcap \cross \ncap}_s n_t
-=
+\\ &=
 k_r \epsilon_{r s t} \epsilon_{s a b} k_a n_b n_t
-=
+\\ &=
 -k_r \delta_{r t}^{[a b]} k_a n_b n_t
-=
+\\ &=
 -k_r n_t \lr{ k_r n_t - k_t n_r }
-=
+\\ &=
 -1 + \lr{ \kcap \cdot \ncap}^2.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That gives
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:400}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:400}
+\begin{aligned}
 \kcap \cdot \pcap'
-=
+&=
 \frac{-1 + \lr{ \kcap \cdot \ncap}^2}{\sqrt{1 - \lr{ \kcap \cdot \ncap}^2} }
-=
+\\ &=
 -\sqrt{1 - \lr{ \kcap \cdot \ncap}^2},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:420}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:420}
+\begin{aligned}
 \cos\theta
-= \sqrt{ 1 - \lr{-\sqrt{1 - \lr{ \kcap \cdot \ncap}^2}}^2 }
-= \sqrt{ \lr{ \kcap \cdot \ncap}^2 }
-= \kcap \cdot \ncap.
-\end{dmath}
+&= \sqrt{ 1 - \lr{-\sqrt{1 - \lr{ \kcap \cdot \ncap}^2}}^2 }
+\\ &= \sqrt{ \lr{ \kcap \cdot \ncap}^2 }
+\\ &= \kcap \cdot \ncap.
+\end{aligned}
+\end{equation}
 %
 This surprisingly simple result makes so much sense, it is an awful admission of stupidity that I went through all the vector algebra to get it instead of just writing it down directly.
 
 The end result is the reflection angle is given by
 %
-%\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:340}
 \boxedEquation{eqn:resolvingFieldsIncidentOnPlane:340}{
 \theta = \cos^{-1} \kcap \cdot \ncap,
 }
-%\end{dmath}
 %
 where the reflection plane normal should off the back surface to get the sign right.  The only detail left is the vector direction of the reflected ray (as well as the direction for the transmitted ray if that is of interest).  The reflected ray direction flips the sign of the normal component of the ray
 %
-\begin{dmath}\label{eqn:resolvingFieldsIncidentOnPlane:440}
+\begin{equation}\label{eqn:resolvingFieldsIncidentOnPlane:440}
+\begin{aligned}
 \kcap'
-= -\lr{\kcap \cdot \ncap} \ncap + \lr{ \kcap \wedge \ncap} \ncap
-= -\lr{\kcap \cdot \ncap} \ncap + \kcap - \lr{ \ncap \kcap} \cdot \ncap
-= \kcap -2 \lr{\kcap \cdot \ncap} \ncap.
-\end{dmath}
+&= -\lr{\kcap \cdot \ncap} \ncap + \lr{ \kcap \wedge \ncap} \ncap
+\\ &= -\lr{\kcap \cdot \ncap} \ncap + \kcap - \lr{ \ncap \kcap} \cdot \ncap
+\\ &= \kcap -2 \lr{\kcap \cdot \ncap} \ncap.
+\end{aligned}
+\end{equation}
 %
 Here the sign of the normal doesn't matter since it only occurs quadratically.
 %

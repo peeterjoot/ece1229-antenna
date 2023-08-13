@@ -38,30 +38,34 @@ Assuming a phasor relationships of the form \( \bcE = \Real \lr{ \BE(\Br) e^{j \
 %
 Because \( \spacegrad \cdot \lr{ \spacegrad \cross \Bf } = 0 \) for any (sufficiently continuous) vector \( \Bf \), divergence relations between the currents and the charges follow from \cref{eqn:chapter3Notes:99}
 %
-\begin{dmath}\label{eqn:chapter3Notes:180}
+\begin{equation}\label{eqn:chapter3Notes:180}
+\begin{aligned}
 0
-= -\spacegrad \cdot \BM - j \omega \spacegrad \cdot \BB
-= -\spacegrad \cdot \BM - j \omega \rho_\txtm,
-\end{dmath}
+&= -\spacegrad \cdot \BM - j \omega \spacegrad \cdot \BB
+\\ &= -\spacegrad \cdot \BM - j \omega \rho_\txtm,
+\end{aligned}
+\end{equation}
 %
 and
 %
-\begin{dmath}\label{eqn:chapter3Notes:200}
+\begin{equation}\label{eqn:chapter3Notes:200}
+\begin{aligned}
 0
-= \spacegrad \cdot \BJ + j \omega \spacegrad \cdot \BD
-= \spacegrad \cdot \BJ + j \omega \rho,
-\end{dmath}
+&= \spacegrad \cdot \BJ + j \omega \spacegrad \cdot \BD
+\\ &= \spacegrad \cdot \BJ + j \omega \rho,
+\end{aligned}
+\end{equation}
 %
 These are the phasor forms of the continuity equations
 \index{continuity equation}
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:chapter3Notes:220}
+\begin{equation}\label{eqn:chapter3Notes:220}
 \spacegrad \cdot \BM = - j \omega \rho_\txtm
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:240}
+\end{equation}
+\begin{equation}\label{eqn:chapter3Notes:240}
 \spacegrad \cdot \BJ = -j \omega \rho.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \paragraph{Integral forms.}
@@ -71,15 +75,15 @@ The integral forms of Maxwell's equations follow from Stokes' theorem and the di
 \index{Stokes' theorem}
 \index{divergence theorem}
 %
-\begin{dmath}\label{eqn:chapter3Notes:260}
+\begin{equation}\label{eqn:chapter3Notes:260}
 \iint d\BA \cdot \lr{\spacegrad \cross \Bf} = \ointctrclockwise \Bf \cdot d\Bl.
-\end{dmath}
+\end{equation}
 %
 The divergence theorem, a special case of the general Stokes' theorem is
 %
-\begin{dmath}\label{eqn:chapter3Notes:280}
+\begin{equation}\label{eqn:chapter3Notes:280}
 \iiint_{V} \spacegrad \cdot \Bf \, dV = \iint_{\partial V} \Bf \cdot d\BA,
-\end{dmath}
+\end{equation}
 %
 where the integral is over the surface of the volume, and the area element of the bounding integral has an outwards normal orientation.
 
@@ -88,24 +92,24 @@ See \citep{gabookI:stokesTheoremGeometricAlgebra} for a derivation of this and v
 Applying these to \cref{eqn:chapter3Notes:99} gives
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:chapter3Notes:320}
+\begin{equation}\label{eqn:chapter3Notes:320}
 \ointctrclockwise d\Bl \cdot \BE = -
 \iint d\BA \cdot \lr{
 \BM + j \omega \BB
 }
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:340}
+\end{equation}
+\begin{equation}\label{eqn:chapter3Notes:340}
 \ointctrclockwise d\Bl \cdot \BH =
 \iint d\BA \cdot \lr{
 \BJ + j \omega \BD
 }
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:360}
+\end{equation}
+\begin{equation}\label{eqn:chapter3Notes:360}
 \iint_{\partial V} d\BA \cdot \BD = \iiint \rho \,dV
-\end{dmath}
-\begin{dmath}\label{eqn:chapter3Notes:380}
+\end{equation}
+\begin{equation}\label{eqn:chapter3Notes:380}
 \iint_{\partial V} d\BA \cdot \BB = \iiint \rho_\txtm \,dV.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \section{Constitutive relations.}

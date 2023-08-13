@@ -28,18 +28,18 @@ In this section, the form of Maxwell's equations to be used are expressed in ter
 %
 \begin{subequations}
 \label{eqn:energyMomentumWithMagneticSources:100}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:120}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:120}
 \spacegrad \cross \bcE = - \bcM - \mu_0 \PD{t}{\bcH}
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:140}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:140}
 \spacegrad \cross \bcH = \bcJ + \epsilon_0 \PD{t}{\bcE}
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:160}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:160}
 \spacegrad \cdot \bcE = \rho/\epsilon_0
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:180}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:180}
 \spacegrad \cdot \bcH = \rho_\txtm/\mu_0.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 \paragraph{Energy momentum conservation.}
@@ -47,31 +47,31 @@ In this section, the form of Maxwell's equations to be used are expressed in ter
 %
 With magnetic sources the Poynting and \textAndIndex{energy conservation} relationship has to be adjusted slightly.  Let's derive that result, starting with the \textAndIndex{divergence} of the \textAndIndex{Poynting vector}
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:20}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:20}
+\begin{aligned}
 \spacegrad \cdot \lr{ \bcE \cross \bcH }
-=
+&=
 \bcH \cdot \lr{ \spacegrad \cross \bcE }
 -\bcE \cdot \lr{ \spacegrad \cross \bcH }
-=
+\\ &=
 -\bcH \cdot \lr{ \mu_0 \partial_t \bcH + \bcM }
 -\bcE \cdot \lr{ \bcJ + \epsilon_0 \partial_t \bcE }
-=
+\\ &=
 - \mu_0 \bcH \cdot \partial_t \bcH - \bcH \cdot \bcM
 - \epsilon_0 \bcE \cdot \partial_t \bcE - \bcE \cdot \bcJ,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 
 \boxedEquation{eqn:energyMomentumWithMagneticSources:40}{
-%\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:40}
-%\boxed{
 \inv{2} \PD{t}{} \lr{ \epsilon_0 \bcE^2 + \mu_0 \bcH^2 }
 +
 \spacegrad \cdot \lr{ \bcE \cross \bcH }
 =
 - \bcH \cdot \bcM
 - \bcE \cdot \bcJ.
-%\end{dmath}
+%
 }
 %
 \paragraph{Momentum conservation.}
@@ -85,12 +85,13 @@ The usual relationship is only modified by one additional term.  Recall from ele
 %
 Note that \cref{eqn:energyMomentumWithMagneticSources:80} was likely not in SI units.  The next task is to generalize this classical relationship to incorporate the magnetic sources used in antenna theory.  With an eye towards the relativistic nature of the \textAndIndex{energy momentum tensor}, it is natural to assume that the remainder of the energy momentum tensor conservation relation can be found by taking the time derivatives of the Poynting vector.
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:200}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:200}
+\begin{aligned}
 \PD{t}{} \lr{ \bcE \cross \bcH }
-=
+&=
 \PD{t}{\bcE} \cross \bcH
 + \bcE \cross \PD{t}{\bcH }
-=
+\\ &=
 \inv{\epsilon_0}
 \lr{ \spacegrad \cross \bcH - \bcJ } \cross \bcH
 +
@@ -99,11 +100,12 @@ Note that \cref{eqn:energyMomentumWithMagneticSources:80} was likely not in SI u
 \lr{
 -
 \spacegrad \cross \bcE - \bcM },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:220}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:220}
 \begin{aligned}
 \inv{c^2} \PD{t}{} \lr{ \bcE \cross \bcH }
 &
@@ -113,14 +115,14 @@ or
 -\mu_0 \bcH \cross \lr{ \spacegrad \cross \bcH }  \\
 &\quad - \epsilon_0 \bcE \cross \lr{ \spacegrad \cross \bcE }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 The \( \mu_0 \bcJ \cross \bcH = \bcJ \cross \BB \) is a portion of the Lorentz force equation \index{Lorentz force equation} in its density form.  To put
 \cref{eqn:energyMomentumWithMagneticSources:220} into the desired form, the remainder of the
 Lorentz force equation
 \( \rho \bcE = \epsilon_0 \bcE \spacegrad \cdot \bcE \) must be added to both sides.  To extend the magnetic current term to its full dual (magnetic) Lorentz force \index{Lorentz force!dual} structure, the quantity to add to both sides is \( \rho_\txtm \bcH = \mu_0 \bcH \spacegrad \cdot \bcH \).  Performing these manipulations gives
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:240}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:240}
 \inv{c^2} \PD{t}{} \lr{ \bcE \cross \bcH }
 +
 \rho \BE + \mu_0 \bcJ \cross \bcH
@@ -138,27 +140,27 @@ Lorentz force equation
 -
 \bcE \cross \lr{ \spacegrad \cross \bcE }
 }.
-\end{dmath}
+\end{equation}
 %
 It seems slightly surprising the sign of the magnetic equivalent of the Lorentz force terms have an alternation of sign.  This is, however, consistent with the \textAndIndex{duality} transformations outlined in (\citep{balanis2005antenna} table 3.2)
 %
 \begin{subequations}
 \label{eqn:energyMomentumWithMagneticSources:260}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:280}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:280}
 \rho \rightarrow \rho_\txtm
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:300}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:300}
 \bcJ \rightarrow \bcM
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:320}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:320}
 \mu_0 \rightarrow \epsilon_0
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:340}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:340}
 \bcE \rightarrow \bcH
-\end{dmath}
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:360}
+\end{equation}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:360}
 \bcH \rightarrow -\bcE,
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 for
@@ -173,59 +175,63 @@ for
 %
 Comfortable that the LHS has the desired structure, the RHS can expressed as a divergence.  Just expanding one of the differences of vector products on the RHS does not obviously show that this is possible, for example
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:400}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:400}
+\begin{aligned}
 \Be_a \cdot
 \lr{
 \bcE \spacegrad \cdot \bcE
 -
 \bcE \cross \lr{ \spacegrad \cross \bcE }
 }
-=
+&=
 E_a \partial_b E_b
 -
 \epsilon_{a b c} E_b \epsilon_{c r s} \partial_r E_s
-=
+\\ &=
 E_a \partial_b E_b
 -
 \delta_{a b}^{[r s]} E_b \partial_r E_s
-=
+\\ &=
 E_a \partial_b E_b
 -
 E_b \lr{
 \partial_a E_b
 -\partial_b E_a
 }
-=
+\\ &=
   E_a \partial_b E_b
 - E_b \partial_a E_b
 + E_b \partial_b E_a.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This happens to equal
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:420}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:420}
+\begin{aligned}
 \spacegrad \cdot \lr{ \lr{E_a E_b - \inv{2} \delta_{a b} \bcE^2 } \Be_b }
-=
+&=
 \partial_b
 \lr{E_a E_b - \inv{2} \delta_{a b} \bcE^2 }
-=
+\\ &=
 E_b \partial_b E_a
 + E_a \partial_b E_b
 -
 \inv{2} \delta_{a b} 2 E_c \partial_b E_c
-=
+\\ &=
   E_b \partial_b E_a
 + E_a \partial_b E_b
 - E_b \partial_a E_b.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This allows a final formulation of the remaining energy momentum conservation equation in its divergence form.  Let
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:440}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:440}
 T^{a b} =
 \epsilon_0 \lr{ E_a E_b - \inv{2} \delta_{a b} \bcE^2 }
 + \mu_0 \lr{ H_a H_b - \inv{2} \delta_{a b} \bcH^2 },
-\end{dmath}
+\end{equation}
 %
 so that the remaining energy momentum conservation equation, extended to both electric \index{electric source} and magnetic sources \index{magnetic source}, is
 %
@@ -248,32 +254,34 @@ On the LHS we have the rate of change of momentum density, the electric Lorentz 
 %
 With frequency domain fields \( \bcE = \Real \BE e^{j \omega t}\) and \(\bcH = \Real \BH e^{j \omega t} \).  Using the electric field dot product as an example, note that we can write
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:480}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:480}
 \bcE = \inv{2} \lr{ \BE e^{j \omega t} + \BE^\conj e^{-j \omega t} },
-\end{dmath}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:500}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:500}
+\begin{aligned}
 \bcE^2
-=
+&=
 \inv{2} \lr{ \BE e^{j \omega t} + \BE^\conj e^{-j \omega t} }
 \cdot
 \inv{2} \lr{ \BE e^{j \omega t} + \BE^\conj e^{-j \omega t} }
-=
+\\ &=
 \inv{4} \lr{
 \BE^2 e^{2 j \omega t}
 + \BE \cdot \BE^\conj + \BE^\conj \cdot \BE
 +\lr{\BE^\conj}^2 e^{-2 j \omega t}
 }
-=
+\\ &=
 \inv{2} \Real
 \lr{
 \BE \cdot \BE^\conj
 +
 \BE^2 e^{2 j \omega t}
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Similarly, for the cross product
 %
@@ -300,7 +308,7 @@ Similarly, for the cross product
 %
 Given phasor representations of the sources \( \bcM = \BM e^{j \omega t}, \bcJ = \BJ e^{j \omega t} \), \cref{eqn:energyMomentumWithMagneticSources:40} can be recast into (a messy) phasor form
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:560}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:560}
 \begin{aligned}
 \inv{2} &\Real \inv{2} \PD{t}{} \lr{
 \epsilon_0 \BE \cdot \BE^\conj
@@ -322,12 +330,11 @@ Given phasor representations of the sources \( \bcM = \BM e^{j \omega t}, \bcJ =
 - \BE \cdot \BJ e^{2 j \omega t}
 }.
 \end{aligned}
-\end{dmath}
+\end{equation}
 %
 All the time dependence has been moved into the exponential factors, so the \( \epsilon_0 \BE \cdot \BE^\conj + \mu_0 \BH \cdot \BH^\conj  \) terms are killed by the time derivative operator.  Averaging over one period kills the rest of the oscillatory terms, leaving just
 
 \boxedEquation{eqn:energyMomentumWithMagneticSources:580}{
-%\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:580}
 0 =
 \spacegrad \cdot \lr{
 \BE \cross \BH^\conj
@@ -336,7 +343,6 @@ All the time dependence has been moved into the exponential factors, so the \( \
 \BH \cdot \BM^\conj
 +
 \BE \cdot \BJ^\conj.
-%\end{dmath}
 }
 %
 \paragraph{Comparison to the reciprocity theorem result.}
@@ -383,9 +389,10 @@ Here's a repetition of the reciprocity divergence calculation without the single
 %
 What do these time derivative terms look like in the \textAndIndex{frequency domain}?
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:620}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:620}
+\begin{aligned}
 \bcE^{(b)} \cdot \partial_t \bcE^{(a)}
-=
+&=
 \inv{4}
 \lr{
 \BE^{(b)} e^{j \omega t}
@@ -399,7 +406,7 @@ What do these time derivative terms look like in the \textAndIndex{frequency dom
 +
 {\BE^{(a)}}^\conj e^{-j \omega t}
 }
-=
+\\ &=
 \frac{j \omega}{4}
 \lr{
 \BE^{(b)} e^{j \omega t}
@@ -412,7 +419,7 @@ What do these time derivative terms look like in the \textAndIndex{frequency dom
 -
 {\BE^{(a)}}^\conj e^{-j \omega t}
 }
-=
+\\ &=
 \frac{\omega}{4}
 \lr{
 j \BE^{(a)} \cdot { \BE^{(b)} }^\conj
@@ -420,13 +427,14 @@ j \BE^{(a)} \cdot { \BE^{(b)} }^\conj
 +j \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
 -j { \BE^{(a)}}^\conj \cdot { \BE^{(b)} }^\conj e^{ -2 j \omega t }
 }
-=
+\\ &=
 \inv{2} \Real
 \lr{
   j \omega \BE^{(a)} \cdot { \BE^{(b)} }^\conj
 + j \omega \BE^{(a)} \cdot \BE^{(b)} e^{ 2 j \omega t }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Permuting indexes and taking the difference kills all the time dependent terms, even without averaging
 %
@@ -456,7 +464,7 @@ j \omega
 %
 so we have
 %
-\begin{dmath}\label{eqn:energyMomentumWithMagneticSources:660}
+\begin{equation}\label{eqn:energyMomentumWithMagneticSources:660}
 0
 =
 %\timeaverage{
@@ -482,7 +490,7 @@ so we have
 }
 %}_{\textrm{av}}
 .
-\end{dmath}
+\end{equation}
 %
 %Observe that the perfect cancellation of the time derivative terms only occurs when the cross product differences were those of the phasors.  When those cross differences are those of the actual fields, like those in the Poynting theorem, there is a frequency dependent term is that expansion.
 %

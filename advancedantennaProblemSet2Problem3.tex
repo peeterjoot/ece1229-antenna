@@ -10,9 +10,9 @@
 %
 Show that in a region of space where there are no sources, the electric field derived from the magnetic vector potential is given by the expression:
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet2Problem3:20}
+\begin{equation}\label{eqn:advancedantennaProblemSet2Problem3:20}
 \BE = \inv{j \omega \epsilon_0 \mu_0 } \spacegrad \cross \lr{\spacegrad \cross \BA}.
-\end{dmath}
+\end{equation}
 \index{electric far field}
 } % makeoproblem
 %
@@ -21,35 +21,39 @@ Show that in a region of space where there are no sources, the electric field de
 First consider the expansion of the curls
 \index{potential!curl of curl}
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet2Problem3:40}
+\begin{equation}\label{eqn:advancedantennaProblemSet2Problem3:40}
+\begin{aligned}
 \spacegrad \cross \lr{ \spacegrad \cross \BA }
-=
+&=
 \epsilon_{rst} \Be_r \partial_s \epsilon_{tbc} \partial_b A_c
-=
+\\ &=
 \delta_{rs}^{[bc]} \Be_r \partial_s \partial_b A_c
-=
+\\ &=
 \Be_r \partial_s \lr{ \partial_r A_s - \partial_s A_r },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet2Problem3:60}
+\begin{equation}\label{eqn:advancedantennaProblemSet2Problem3:60}
 \spacegrad \cross \lr{ \spacegrad \cross \BA }
 = \spacegrad \lr{ \spacegrad \cdot A} - \spacegrad^2 \BA.
-\end{dmath}
+\end{equation}
 %
 This supplies a strong hint of how to proceed.  The electric field can be expanded utilizing this relation and the Helmholtz equation relating \( \BA \) and \( \BJ \)
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet2Problem3:80}
+\begin{equation}\label{eqn:advancedantennaProblemSet2Problem3:80}
+\begin{aligned}
 \BE
-= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \spacegrad \lr{ \spacegrad \cdot \BA }
-= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \lr{
+&= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \spacegrad \lr{ \spacegrad \cdot \BA }
+\\ &= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \lr{
 \spacegrad \cross \lr{ \spacegrad \cross \BA } + \spacegrad^2 \BA
 }
-= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \lr{
+\\ &= -j \omega \BA - j \inv{ \omega \epsilon_0 \mu_0 } \lr{
 \spacegrad \cross \lr{ \spacegrad \cross \BA } - \lr{ k^2 \BA + \mu_0 \BJ }
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 However,
 %
@@ -63,13 +67,13 @@ However,
 %
 leaving
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet2Problem3:90}
+\begin{equation}\label{eqn:advancedantennaProblemSet2Problem3:90}
 \BE
 =
 - j \inv{ \omega \epsilon_0 \mu_0 }
 \spacegrad \cross \lr{ \spacegrad \cross \BA }
 + j \inv{ \omega \epsilon_0 } \BJ.
-\end{dmath}
+\end{equation}
 %
 Since \( \BJ = 0 \) in a region of space where there are no sources, the electric field in such a region is given by \cref{eqn:advancedantennaProblemSet2Problem3:20} as stated.
 }

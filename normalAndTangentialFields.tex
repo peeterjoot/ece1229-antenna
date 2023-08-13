@@ -87,7 +87,7 @@ After application of Stokes' and the divergence theorems Maxwell's equations hav
 %
 First consider one of the loop integrals, like \cref{eqn:normalAndTangentialFields:100}.  For an infinitesimal loop, that integral is
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:180}
+\begin{equation}\label{eqn:normalAndTangentialFields:180}
 \ointctrclockwise \bcE \cdot d\Bl
 \approx
 \mathcal{E}^{(1)}_x \Delta x
@@ -101,44 +101,46 @@ First consider one of the loop integrals, like \cref{eqn:normalAndTangentialFiel
 -\mathcal{E}^{(2)}_x } \Delta x
 + \inv{2} \PD{x}{\mathcal{E}^{(2)}} \Delta x \Delta y
 + \inv{2} \PD{x}{\mathcal{E}^{(1)}} \Delta x \Delta y.
-\end{dmath}
+\end{equation}
 %
 We let \( \Delta y \rightarrow 0 \) which kills off all but the first difference term.
 
 The RHS of \cref{eqn:normalAndTangentialFields:180} is approximately
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:200}
+\begin{equation}\label{eqn:normalAndTangentialFields:200}
 -\int d\BA \cdot \lr{ \PD{t}{\bcB} + \bcM }
 \approx
 - \Delta x \Delta y \lr{ \PD{t}{\mathcal{B}_z} + \mathcal{M}_z }.
-\end{dmath}
+\end{equation}
 %
 If the magnetic field contribution is assumed to be small in comparison to the magnetic current (i.e. infinite magnetic conductance), and if a linear magnetic current source of the form is also assumed
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:220}
+\begin{equation}\label{eqn:normalAndTangentialFields:220}
 \bcM_s = \lim_{\Delta y \rightarrow 0} \lr{\bcM \cdot \zcap} \zcap \Delta y,
-\end{dmath}
+\end{equation}
 %
 then the Maxwell-Faraday equation takes the form
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:240}
+\begin{equation}\label{eqn:normalAndTangentialFields:240}
 \lr{ \mathcal{E}^{(1)}_x
 -\mathcal{E}^{(2)}_x } \Delta x
 \approx
 - \Delta x \bcM_s \cdot \zcap.
-\end{dmath}
+\end{equation}
 %
 While \( \bcM \) may have components that are not normal to the interface, the surface current need only have a normal component, since only that component contributes to the surface integral.
 
 The coordinate expression of \cref{eqn:normalAndTangentialFields:240} can be written as
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:260}
+\begin{equation}\label{eqn:normalAndTangentialFields:260}
+\begin{aligned}
 - \bcM_s \cdot \zcap
-=
+&=
 \lr{ \bcE^{(1)} -\bcE^{(2)} } \cdot \lr{ \ycap \cross \zcap }
-=
+\\ &=
 \lr{ \lr{ \bcE^{(1)} -\bcE^{(2)} } \cross \ycap } \cdot \zcap.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This is satisfied when
 
@@ -156,9 +158,9 @@ Also note that the units of \( \bcM_s \) are volts/meter like the electric field
 \index{magnetic field!tangential}
 As above, assume a linear electric surface current density of the form
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:300}
+\begin{equation}\label{eqn:normalAndTangentialFields:300}
 \bcJ_s = \lim_{\Delta y \rightarrow 0} \lr{\bcJ \cdot \ncap} \ncap \Delta y,
-\end{dmath}
+\end{equation}
 %
 in units of amperes/meter (not amperes/meter-squared like \( \bcJ \).)
 
@@ -172,7 +174,7 @@ To apply the arguments above to Ampere's law, only the sign needs to be adjusted
 %
 Using the cylindrical pillbox surface with radius \( \Delta r \), height \( \Delta y \), and top and bottom surface areas \( \Delta A = \pi \lr{\Delta r}^2 \), the LHS of Gauss's law \cref{eqn:normalAndTangentialFields:140} expands to
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:320}
+\begin{equation}\label{eqn:normalAndTangentialFields:320}
 \int_{\partial V} \bcD \cdot d\BA
 \approx
 \mathcal{D}^{(2)}_y \Delta A
@@ -182,32 +184,32 @@ Using the cylindrical pillbox surface with radius \( \Delta r \), height \( \Del
 \approx
 \lr{ \mathcal{D}^{(2)}_y
 -\mathcal{D}^{(1)}_y } \Delta A.
-\end{dmath}
+\end{equation}
 %
 As with the Stokes integrals above it is assumed that the height is infinitesimal with respect to the radial dimension.  Letting that height \( \Delta y \rightarrow 0 \) kills  off the radially directed contributions of the flux through the sidewalls.
 
 The RHS expands to approximately
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:340}
+\begin{equation}\label{eqn:normalAndTangentialFields:340}
 \int_V \rho_\txte\,dV
 \approx
 \Delta A \Delta y \rho_\txte.
-\end{dmath}
+\end{equation}
 %
 Define a highly localized surface current density (coulombs/meter-squared) as
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:360}
+\begin{equation}\label{eqn:normalAndTangentialFields:360}
 \sigma_\txte = \lim_{\Delta y \rightarrow 0} \Delta y \rho_\txte.
-\end{dmath}
+\end{equation}
 %
 Equating \cref{eqn:normalAndTangentialFields:340} with \cref{eqn:normalAndTangentialFields:320} gives
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:380}
+\begin{equation}\label{eqn:normalAndTangentialFields:380}
 \lr{ \mathcal{D}^{(2)}_y
 -\mathcal{D}^{(1)}_y } \Delta A
 =
 \Delta A \sigma_\txte,
-\end{dmath}
+\end{equation}
 %
 or
 
@@ -219,9 +221,9 @@ or
 %
 The same argument can be applied to the magnetic flux.  Define a highly localized magnetic surface current density (webers/meter-squared) as
 %
-\begin{dmath}\label{eqn:normalAndTangentialFields:440}
+\begin{equation}\label{eqn:normalAndTangentialFields:440}
 \sigma_\txtm = \lim_{\Delta y \rightarrow 0} \Delta y \rho_\txtm,
-\end{dmath}
+\end{equation}
 %
 yielding the boundary relation
 

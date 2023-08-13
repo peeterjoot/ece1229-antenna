@@ -18,31 +18,36 @@ directivity of the dish at 12 \si{GHz}. If the distance from a geostationary sat
 Ignoring any concavity in the dish (which is probably parabolic, with physical area somewhere between \(\pi r^2\), and \( 2 \pi^2\)), the maximum effective area is
 \index{effective area}
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet1Problem2:20}
+\begin{equation}\label{eqn:advancedantennaProblemSet1Problem2:20}
+\begin{aligned}
 A_{\tem}
-= \epsilon_{\tem} A_\txtp
-= 0.7 \pi 0.75^2
-= 0.39 \pi
-= 1.24 \, (\si{m^2}).
-\end{dmath}
+&= \epsilon_{\tem} A_\txtp
+\\ &= 0.7 \pi 0.75^2
+\\ &= 0.39 \pi
+\\ &= 1.24 \, (\si{m^2}).
+\end{aligned}
+\end{equation}
 %
 The maximum directivity is
 % \nu \lambda = c
-\begin{dmath}\label{eqn:advancedantennaProblemSet1Problem2:40}
+\begin{equation}\label{eqn:advancedantennaProblemSet1Problem2:40}
+\begin{aligned}
 D_0
-= \frac{4 \pi A_\tem}{\lambda^2}
-= \frac{4 \pi A_\tem \nu^2}{c^2}
-= 4 \pi \times 1.24 \,\si{m^2} \times \lr{12 \times 10^{9} \, \si{s^{-1}} }^2/\lr{3 \times 10^8 \, \si{m/s}}^2
-= 2.5 \times 10^4.
-\end{dmath}
+&= \frac{4 \pi A_\tem}{\lambda^2}
+\\ &= \frac{4 \pi A_\tem \nu^2}{c^2}
+\\ &= 4 \pi \times 1.24 \,\si{m^2} \times \lr{12 \times 10^{9} \, \si{s^{-1}} }^2/\lr{3 \times 10^8 \, \si{m/s}}^2
+\\ &= 2.5 \times 10^4.
+\end{aligned}
+\end{equation}
 %
 The free-space loss factor at \( R = 37 \times 10^6 \, \si{m} \) is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet1Problem2:60}
+\begin{equation}\label{eqn:advancedantennaProblemSet1Problem2:60}
+\begin{aligned}
 \lr{\frac{\lambda}{4 \pi R}}^2
-=
+&=
 \lr{\frac{c}{4 \pi R \nu}}^2
-=
+\\ &=
 \lr{
 \frac
 {3 \times 10^8 \,\si{m/s}}
@@ -52,7 +57,8 @@ The free-space loss factor at \( R = 37 \times 10^6 \, \si{m} \) is
 \lr{ 12 \times 10^9 \, \si{s^{-1}}}
 }
 }^2
-= 2.9 \times 10^{-21}
-= -205 \, \si{dB}.
-\end{dmath}
+\\ &= 2.9 \times 10^{-21}
+\\ &= -205 \, \si{dB}.
+\end{aligned}
+\end{equation}
 }

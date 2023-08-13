@@ -25,69 +25,73 @@ Consider a normal field reflection between two interfaces, as sketched in \cref{
 The fields are
 \begin{subequations}
 \label{eqn:impedanceTransformation:20}
-\begin{dmath}\label{eqn:impedanceTransformation:40}
+\begin{equation}\label{eqn:impedanceTransformation:40}
 \BE^\txti = \xcap E_0 e^{-j k_1 z}
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:60}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:60}
 \BH^\txti = \ycap \frac{E_0}{\eta_1} e^{-j k_1 z}
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:80}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:80}
 \BE^\txtr = \xcap \Gamma E_0 e^{j k_1 z}
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:100}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:100}
 \BH^\txtr = -\ycap \Gamma \frac{E_0}{\eta_1} e^{j k_1 z}
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:120}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:120}
 \BE^\txtt = \xcap E_0 T e^{-j k_2 z}
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:140}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:140}
 \BH^\txtt = \ycap \frac{E_0}{\eta_1} T e^{-j k_2 z}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The field orientations have been picked so that the tangential component of the electric field is \( \xcap \) oriented for all of the incident, reflected, and transmitted components.  Requiring equality of the \textAndIndex{tangential field components} at the interface gives
 %
 \begin{subequations}
 \label{eqn:impedanceTransformation:160}
-\begin{dmath}\label{eqn:impedanceTransformation:180}
+\begin{equation}\label{eqn:impedanceTransformation:180}
 1 + \Gamma = T
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:200}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:200}
 \inv{\eta_1} - \frac{\Gamma}{\eta_1} = \frac{T}{\eta_2}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Solving for the \textAndIndex{transmission coefficient} gives
 %
-\begin{dmath}\label{eqn:impedanceTransformation:220}
+\begin{equation}\label{eqn:impedanceTransformation:220}
+\begin{aligned}
 T
-= \frac{2}{ 1 + \frac{\eta_1}{\eta_2} }
-= \frac{2 \eta_2}{ \eta_2 + \eta_1 },
-\end{dmath}
+&= \frac{2}{ 1 + \frac{\eta_1}{\eta_2} }
+\\ &= \frac{2 \eta_2}{ \eta_2 + \eta_1 },
+\end{aligned}
+\end{equation}
 %
 and for the \textAndIndex{reflection coefficient}
 %
-\begin{dmath}\label{eqn:impedanceTransformation:240}
+\begin{equation}\label{eqn:impedanceTransformation:240}
+\begin{aligned}
 \Gamma
-= T - 1
-= \frac{2 \eta_2 - \eta_1 - \eta_2}{ \eta_2 + \eta_1 }
-= \frac{\eta_2 - \eta_1 }{ \eta_2 + \eta_1 }.
-\end{dmath}
+&= T - 1
+\\ &= \frac{2 \eta_2 - \eta_1 - \eta_2}{ \eta_2 + \eta_1 }
+\\ &= \frac{\eta_2 - \eta_1 }{ \eta_2 + \eta_1 }.
+\end{aligned}
+\end{equation}
 %
 The total fields in medium 1 at the point \( z = -l \) are
 %
 \begin{subequations}
 \label{eqn:impedanceTransformation:260}
-\begin{dmath}\label{eqn:impedanceTransformation:280}
+\begin{equation}\label{eqn:impedanceTransformation:280}
 \BE^\txti + \BE^\txtr
 =
 \xcap E_0 \lr{ e^{ -j k_1 (-l)} + \Gamma e^{ j k_1 (-l) } }
-\end{dmath}
-\begin{dmath}\label{eqn:impedanceTransformation:300}
+\end{equation}
+\begin{equation}\label{eqn:impedanceTransformation:300}
 \BH^\txti + \BH^\txtr
 =
 \ycap \frac{E_0}{\eta_1} \lr{ e^{ -j k_1 (-l)} - \Gamma e^{ j k_1 (-l) }}.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The ratio of the electric field strength to the magnetic field strength is defined as the input impedance
@@ -98,27 +102,29 @@ Z_{\textrm{in}} \equiv \evalbar{\frac{E^\txti + E^\txtr}{H^\txti + H^\txtr}}{ z 
 %
 That is
 %
-\begin{dmath}\label{eqn:impedanceTransformation:340}
+\begin{equation}\label{eqn:impedanceTransformation:340}
+\begin{aligned}
 Z_{\textrm{in}}
-=
+&=
 \eta_1 \frac{
 e^{ j k_1 l} + \Gamma e^{ -j k_1 l }
 }{
 e^{ j k_1 l} - \Gamma e^{ -j k_1 l }
 }
-=
+\\ &=
 \eta_1 \frac{
 \lr{ \eta_1 + \eta_2} e^{ j k_1 l} + \lr{ \eta_2 - \eta_1} e^{ -j k_1 l }
 }{
 \lr{ \eta_1 + \eta_2} e^{ j k_1 l} - \lr{ \eta_2 - \eta_1} e^{ -j k_1 l }
 }
-=
+\\ &=
 \eta_1 \frac{
 \eta_2 \cos( k_1 l ) + \eta_1 j \sin( k_1 l)
 }{
 \eta_2 j \sin( k_1 l ) + \eta_1 \cos( k_1 l)
 },
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 

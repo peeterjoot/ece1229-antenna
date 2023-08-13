@@ -7,9 +7,9 @@
 A \textAndIndex{rectangular aperture} lies along the x-y plane and has dimensions \( a \times b \). Let the electric
 field aperture distribution be given by,
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:20}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:20}
 \BE_{\textrm{ap}} = \ycap \cos\lr{ \frac{\pi}{a} x }.
-\end{dmath}
+\end{equation}
 %
 The aperture is cut out of an infinite perfectly electric conductor.
 The origin of the coordinate system is at the center of the aperture.
@@ -70,27 +70,29 @@ A symmetric interval around the origin has been chosen to avoid the introduction
 %
 Each of these integrals is of the form
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:80}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:80}
+\begin{aligned}
 \int_{-c/2}^{c/2} dz'
 e^{j \alpha z' }
-=
+&=
 \evalrange{ \frac{e^{j \alpha z' }}{j \alpha} }{-c/2}{c/2}
-=
+\\ &=
 \frac{ e^{j \alpha c/2} - e^{-j \alpha c/2} }{ j \alpha }
-=
+\\ &=
 \frac{\sin\lr{\alpha c /2} }{\alpha/2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 With
 %
 \begin{subequations}
 \label{eqn:advancedantennaProblemSet5Problem1:360}
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:380}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:380}
 X = k \sin\theta \cos\phi
-\end{dmath}
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:400}
+\end{equation}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:400}
 Y = k \sin\theta \sin\phi,
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 the electric vector potential is
@@ -123,17 +125,17 @@ the electric vector potential is
 Since
 \begin{subequations}
 \label{eqn:advancedantennaProblemSet5Problem1:120}
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:140}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:140}
 \sin( z + \pi/2 ) + \sin( z - \pi/2 ) = 0
-\end{dmath}
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:160}
+\end{equation}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:160}
 \sin( z + \pi/2 ) - \sin( z - \pi/2 ) = 2 \cos z,
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 this reduces to
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:180}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:180}
 \BF
 =
 -\frac{\epsilon a b}{4 r} e^{-j k r} \xcap
@@ -141,37 +143,38 @@ this reduces to
 \cos\lr{ X a/2 }
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
-\end{dmath}
+\end{equation}
 %
 The far field magnetic field is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:200}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:200}
+\begin{aligned}
 \BH
-= -j \omega \BF_T
-=
+&= -j \omega \BF_T
+\\ &=
 j k c \frac{\epsilon a b}{4 r } e^{-j k r} \lr{ \xcap - \lr{\xcap \cdot \rcap} \rcap }
 \frac{
 \cos\lr{ X a/2 }
 }{ a^2 X^2/4 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}
-=
+\\ &=
 \frac{j k a b}{4 r \eta} e^{-j k r} \lr{ \xcap - \lr{ \xcap \cdot \rcap} \rcap }
 \frac{
 \cos\lr{ X a/2 }
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:280}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:280}
 \xcap = \sin\theta \cos\phi \rcap + \cos\theta \cos\phi \thetacap - \sin\phi \phicap,
-\end{dmath}
+\end{equation}
 %
 the far field magnetic field is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:420}
-%\boxedEquation{eqn:advancedantennaProblemSet5Problem1:420}{
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:420}
 \BH
 =
 \frac{j k a b}{4 r \eta} e^{-j k r} \lr{ \cos\theta \cos\phi \thetacap - \sin\phi \phicap}
@@ -179,47 +182,49 @@ the far field magnetic field is
 \cos\lr{ X a/2 }
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
-%}
-\end{dmath}
+\end{equation}
 This can be related to the electric field noting that the dual of the far field relationship
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:220}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:220}
 \BH_A = \inv{\eta} \rcap \cross \BE_A,
-\end{dmath}
+\end{equation}
 %
 is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:240}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:240}
 -\BE_F = \eta \rcap \cross \BH_F,
-\end{dmath}
+\end{equation}
 %
 so the far field electric field is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:260}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:260}
+\begin{aligned}
 \BE
-= -\eta \rcap \cross \BH
-=
+&= -\eta \rcap \cross \BH
+\\ &=
 -\frac{j k a b}{4 r } e^{-j k r} \rcap \cross \xcap
 \frac{
 \cos\lr{ X a/2 }
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 That electric field direction is
 %
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:300}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:300}
+\begin{aligned}
 \rcap \cross \xcap
-=
+&=
 \cos\theta \cos\phi \rcap \cross \thetacap - \sin\phi \rcap \cross \phicap
-=
+\\ &=
 \cos\theta \cos\phi \phicap + \sin\phi \thetacap,
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so the electric field is
 %
-%\boxedEquation{eqn:advancedantennaProblemSet5Problem1:440}{
-\begin{dmath}\label{eqn:advancedantennaProblemSet5Problem1:440}
+\begin{equation}\label{eqn:advancedantennaProblemSet5Problem1:440}
 \BE
 =
 -\frac{j k a b}{4 r } e^{-j k r} \lr{ \cos\theta \cos\phi \phicap + \sin\phi \thetacap }
@@ -227,8 +232,7 @@ so the electric field is
 \cos\lr{ X a/2 }
 }{ (X a/2)^2 - (\pi/2)^2}
 \frac{ \sin\lr{ Y b/2 } }{ Y b/2}.
-%}
-\end{dmath}
+\end{equation}
 Note that the electric and magnetic fields are perpendicular, as expected.
 %
 \begin{enumerate}

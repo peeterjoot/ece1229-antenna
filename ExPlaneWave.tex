@@ -44,47 +44,51 @@ The phasor form of Maxwell's equations for a source free region are
 %
 Since \( \BE = \xcap E(z) \), the magnetic field follows from \cref{eqn:ExPlaneWave:40}
 %
-\begin{dmath}\label{eqn:ExPlaneWave:120}
+\begin{equation}\label{eqn:ExPlaneWave:120}
+\begin{aligned}
 -j \omega \BB
-= \spacegrad \cross \BE
-=
+&= \spacegrad \cross \BE
+\\ &=
 \begin{vmatrix}
 \xcap & \ycap & \zcap \\
 \partial_x & \partial_y & \partial_z \\
 E & 0 & 0
 \end{vmatrix}
-=
+\\ &=
 \ycap \partial_z E(z)
 - \zcap \cancel{\partial_y E(z)},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:ExPlaneWave:140}
+\begin{equation}\label{eqn:ExPlaneWave:140}
 \BB =
 -\inv{j \omega} \partial_z E.
-\end{dmath}
+\end{equation}
 %
 This is constrained by \cref{eqn:ExPlaneWave:60}
 %
-\begin{dmath}\label{eqn:ExPlaneWave:160}
+\begin{equation}\label{eqn:ExPlaneWave:160}
+\begin{aligned}
 j \omega \epsilon \xcap E
-=
+&=
 \inv{\mu} \spacegrad \cross \BB
-=
+\\ &=
 -\inv{\mu j \omega}
 \begin{vmatrix}
 \xcap & \ycap & \zcap \\
 \partial_x & \partial_y & \partial_z \\
 0 & \partial_z E & 0
 \end{vmatrix}
-=
+\\ &=
 -\inv{\mu j \omega}
 \lr{
 -\xcap \partial_{z z} E
 + \zcap \partial_x \partial_z E
 }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 Since \( \partial_x \partial_z E = \partial_z \lr{ \partial_x E } = \partial_z \inv{\epsilon} \spacegrad \cdot \BD = \partial_z 0 \), this means
 %
@@ -106,19 +110,23 @@ E_{-} e^{j k z}
 %
 The magnetic field from \cref{eqn:ExPlaneWave:140} is
 %
-\begin{dmath}\label{eqn:ExPlaneWave:220}
+\begin{equation}\label{eqn:ExPlaneWave:220}
+\begin{aligned}
 \BB
-= \frac{j}{\omega} \lr{ -j k E_{+} e^{-j k z} + j k E_{-} e^{j k z} }
-= \inv{c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} },
-\end{dmath}
+&= \frac{j}{\omega} \lr{ -j k E_{+} e^{-j k z} + j k E_{-} e^{j k z} }
+\\ &= \inv{c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} },
+\end{aligned}
+\end{equation}
 %
 or
 %
-\begin{dmath}\label{eqn:ExPlaneWave:240}
+\begin{equation}\label{eqn:ExPlaneWave:240}
+\begin{aligned}
 \BH
-= \inv{\mu c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }
-= \inv{\eta} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }.
-\end{dmath}
+&= \inv{\mu c} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }
+\\ &= \inv{\eta} \lr{ E_{+} e^{-j k z} - E_{-} e^{j k z} }.
+\end{aligned}
+\end{equation}
 %
 A solution requires zero divergence for the magnetic field, but that can be seen to be the case by inspection.
 } % answer

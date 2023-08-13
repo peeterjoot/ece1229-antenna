@@ -29,69 +29,69 @@ Separate examinations of the phasor form of Maxwell's equation (with electric ch
 The vector curl and divergence form of Maxwell's equations are
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:20}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:20}
 \spacegrad \cross \bcE = -\PD{t}{\bcB} -\bcM
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:40}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:40}
 \spacegrad \cross \bcH = \bcJ + \PD{t}{\bcD}
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:60}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:60}
 \spacegrad \cdot \bcD = \rho
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:80}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:80}
 \spacegrad \cdot \bcB = \rho_\txtm.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 In phasor form these are
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:100}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:100}
 \spacegrad \cross \BE = - j k c \BB -\BM
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:120}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:120}
 \spacegrad \cross \BH = \BJ + j k c \BD
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:140}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:140}
 \spacegrad \cdot \BD = \rho
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:160}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:160}
 \spacegrad \cdot \BB = \rho_\txtm.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Switching to \( \BE = \BD/\epsilon_0, \BB = \mu_0 \BH\) fields (even though these aren't the primary fields in engineering), gives
 %
 \begin{subequations}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:180}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:180}
 \spacegrad \cross \BE = - j k (c \BB) -\BM
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:200}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:200}
 \spacegrad \cross (c \BB) = \frac{\BJ}{\epsilon_0 c} + j k \BE
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:220}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:220}
 \spacegrad \cdot \BE = \rho/\epsilon_0
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:240}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:240}
 \spacegrad \cdot (c \BB) = c \rho_\txtm.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 Finally, using
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:260}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:260}
 \Bf \Bg = \Bf \cdot \Bg + I \Bf \cross \Bg,
-\end{dmath}
+\end{equation}
 %
 the divergence and curl contributions of each of the fields can be grouped
 \begin{subequations}
 \label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:280}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:300}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:300}
 \spacegrad \BE = \rho/\epsilon_0 - \lr{ j k (c \BB) +\BM} I
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:320}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:320}
 \spacegrad (c \BB I) = c \rho_\txtm I - \lr{ \frac{\BJ}{\epsilon_0 c} + j k \BE },
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 or
@@ -106,12 +106,10 @@ c \rho_\txtm I - \lr{ \frac{\BJ}{\epsilon_0 c} + j k \BE }.
 %
 Regrouping gives Maxwell's equation including both electric and magnetic sources
 \boxedEquation{eqn:phasorMaxwellsWithElectricAndMagneticCharges:360}{
-%\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:360}
 \lr{ \spacegrad + j k } \lr{ \BE + c \BB I }
 =
 \inv{\epsilon_0 c} \lr{ c \rho - \BJ }
 + \lr{ c \rho_\txtm - \BM } I.
-%\end{dmath}
 }
 \index{Maxwell's equation!Geometric Algebra}
 %
@@ -169,34 +167,36 @@ Since \( \grad X = \grad \cdot X + \grad \wedge X \), for any four vector \( X \
 %
 Maxwell's equation is now
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:540}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:540}
+\begin{aligned}
 \frac{J}{\epsilon_0 c} + M I
-=
+&=
 \grad^2 \lr{ A_\txte + A_\txtm I }
-=
+\\ &=
 \gamma_0 \lr{ \spacegrad + j k }
 \gamma_0 \lr{ \spacegrad + j k }
 \lr{ A_\txte + A_\txtm I }
-=
+\\ &=
 \lr{ -\spacegrad + j k }
 \lr{ \spacegrad + j k }
 \lr{ A_\txte + A_\txtm I }
-=
+\\ &=
 -\lr{ \spacegrad^2 + k^2 }
 \lr{ A_\txte + A_\txtm I }.
-\end{dmath}
+\end{aligned}
+\end{equation}
 \index{Maxwell's equation!magnetic and electric potential separation}
 %
 Notice how tidily this separates into vector and trivector components.  Those are
 %
 \begin{subequations}
 \label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:560}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:580}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:580}
 -\lr{ \spacegrad^2 + k^2 } A_\txte = \frac{J}{\epsilon_0 c}
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:600}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:600}
 -\lr{ \spacegrad^2 + k^2 } A_\txtm = M.
-\end{dmath}
+\end{equation}
 \end{subequations}
 %
 The result is a single Helmholtz equation for each of the electric and magnetic four-potentials, and both can be solved completely independently.  This was claimed in class, but now the underlying reason is clear.
@@ -209,24 +209,25 @@ The result is a single Helmholtz equation for each of the electric and magnetic 
 %
 Because a single frequency phasor relationship was implied the scalar components of each of these four potentials is determined by the Lorentz gauge condition.  For example
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:620}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:620}
+\begin{aligned}
 0
-=
+&=
 \spacegrad \cdot \lr{ A_\txte e^{j k c t} }
-=
+\\ &=
 \lr{ \gamma^0 \inv{c} \PD{t}{} + \gamma^k \PD{x^k}{} } \cdot
 \lr{
 \gamma_0 A_\txte^0 e^{j k c t}
 + \gamma_m A_\txte^m e^{j k c t}
 }
-=
+\\ &=
 \lr{ \gamma^0 j k + \gamma^r \PD{x^r}{} } \cdot
 \lr{
 \gamma_0 A_\txte^0
 + \gamma_s A_\txte^s
 }
 e^{j k c t}
-=
+\\ &=
 \lr{
 j k
 A_\txte^0
@@ -235,27 +236,28 @@ A_\txte^0
 \BA_\txte
 }
 e^{j k c t},
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 so
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:640}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:640}
 A_\txte^0
 =\frac{ j} { k }
 \spacegrad \cdot
 \BA_\txte.
-\end{dmath}
+\end{equation}
 %
 The same sort of relationship will apply to the magnetic potential too.  This means that the Helmholtz equations can be solved in the three vector space as
 %
 \begin{subequations}
 \label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:660}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:680}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:680}
 \lr{ \spacegrad^2 + k^2 } \BA_\txte = -\frac{\BJ}{\epsilon_0 c}
-\end{dmath}
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:700}
+\end{equation}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:700}
 \lr{ \spacegrad^2 + k^2 } \BA_\txtm = -\BM.
-\end{dmath}
+\end{equation}
 \end{subequations}
 \index{Helmholtz equation!electric current density}
 \index{Helmholtz equation!magnetic current density}
@@ -264,36 +266,38 @@ The same sort of relationship will apply to the magnetic potential too.  This me
 %
 Relative to the observer frame implicitly specified by \( \gamma_0 \), here's an expansion of the curl of the electric four potential
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:720}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:720}
+\begin{aligned}
 \grad \wedge A_\txte
-=
+&=
 \inv{2}\lr{
 \grad A_\txte
 -
 A_\txte \grad
 }
-=
+\\ &=
 \inv{2}\lr{
 \gamma_0 \lr{ \spacegrad + j k } \gamma_0 \lr{  A_\txte^0 - \BA_\txte }
 -
 \gamma_0 \lr{  A_\txte^0 - \BA_\txte } \gamma_0 \lr{ \spacegrad + j k }
 }
-=
+\\ &=
 \inv{2}\lr{
 \lr{ -\spacegrad + j k }  \lr{  A_\txte^0 - \BA_\txte }
 -
  \lr{  A_\txte^0 + \BA_\txte }  \lr{ \spacegrad + j k }
 }
-=
+\\ &=
 \inv{2}\lr{
 - 2 \spacegrad A_\txte^0 + \cancel{ j k A_\txte^0 } - \cancel{ j k A_\txte^0 }
 + \spacegrad \BA_\txte - \BA_\txte \spacegrad
 - 2 j k \BA_\txte
 }
-=
+\\ &=
 - \lr{ \spacegrad A_\txte^0 + j k \BA_\txte }
 + \spacegrad \wedge \BA_\txte.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 In the above expansion when the gradients appeared on the right of the field components, they are acting from the right (i.e. implicitly using the Hestenes dot convention.)
 
@@ -312,12 +316,12 @@ c \BB_\txte = \spacegrad \cross \BA_\txte.
 %
 For the fields due to the magnetic potentials
 %
-\begin{dmath}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:800}
+\begin{equation}\label{eqn:phasorMaxwellsWithElectricAndMagneticCharges:800}
 \lr{ \grad \wedge A_\txte } I
 =
 - \lr{ \spacegrad A_\txte^0 + j k \BA_\txte } I
 - \spacegrad \cross \BA_\txte,
-\end{dmath}
+\end{equation}
 \index{magnetic field!in terms of potentials}
 %
 so the fields are

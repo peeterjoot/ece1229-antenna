@@ -99,48 +99,54 @@ Because the triple product \( \kcap \cdot \lr{\kcap \cross \ncap} = 0 \), the ta
 %
 Now the wave vector direction for the second quadrant ray on the plane is required.  Both \( \kcap' \) and \( \Bs' \) are reflections across the plane.  Any such reflection has the value
 %
-\begin{dmath}\label{eqn:imageTheorem:160}
+\begin{equation}\label{eqn:imageTheorem:160}
+\begin{aligned}
 \Bx'
-= \lr{ \Bx \wedge \ncap} \ncap - \lr{ \Bx \cdot \ncap } \ncap
-= - \lr{ \ncap \wedge \Bx + \ncap \cdot \Bx } \ncap
-= - \ncap \Bx \ncap.
-\end{dmath}
+&= \lr{ \Bx \wedge \ncap} \ncap - \lr{ \Bx \cdot \ncap } \ncap
+\\ &= - \lr{ \ncap \wedge \Bx + \ncap \cdot \Bx } \ncap
+\\ &= - \ncap \Bx \ncap.
+\end{aligned}
+\end{equation}
 %
 This multivector product nicely encapsulates the reflection operation.  Consider a reflection against the y-z plane with normal \( \Be_1 \) to verify that this works
 %
-\begin{dmath}\label{eqn:imageTheorem:180}
+\begin{equation}\label{eqn:imageTheorem:180}
+\begin{aligned}
 -\Be_1 \Bx \Be_1
-=
+&=
 -\Be_1 \lr{ x \Be_1 + y \Be_2 + z \Be_3 } \Be_1
-=
+\\ &=
 -\lr{ x - y \Be_2 \Be_1 + z \Be_3 \Be_1 } \Be_1
-=
+\\ &=
 -\lr{ x \Be_1 - y \Be_2 + z \Be_3 }
-=
+\\ &=
 - x \Be_1 + y \Be_2 + z \Be_3.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 This has the x component flipped in sign and the rest left untouched as desired for a reflection in the y-z plane.
 
 The second quadrant field will have \( \kcap' \cross \ncap \) terms in place of all the \( \kcap \cross \ncap \) terms of \cref{eqn:imageTheorem:140}.  We want to know how the two compare.  This calculation is simply done using the dual form of the cross product temporarily
 %
-\begin{dmath}\label{eqn:imageTheorem:200}
+\begin{equation}\label{eqn:imageTheorem:200}
+\begin{aligned}
 \kcap' \cross \ncap
-=
+&=
 -I \lr{ \kcap' \wedge \ncap}
-=
+\\ &=
 -I \gpgradetwo{\kcap' \ncap}
-=
+\\ &=
 -I \gpgradetwo{ {-\ncap \kcap \ncap} \ncap}
-=
+\\ &=
 I \gpgradetwo{ \ncap \kcap }
-=
+\\ &=
 I \ncap \wedge \kcap
-=
+\\ &=
 -\ncap \cross \kcap
-=
+\\ &=
 \kcap \cross \ncap.
-\end{dmath}
+\end{aligned}
+\end{equation}
 %
 So, provided the image source in the second quadrant is oppositely oriented (sign inversion), the tangential components of the two will sum to zero on that surface.
 
