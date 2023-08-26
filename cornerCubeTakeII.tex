@@ -140,12 +140,16 @@ e^{j k s \sin\theta \cos\lr{ \phi - \pi/4}}
 or
 %
 \begin{equation}\label{eqn:cornerCubeTakeII:960}
+\begin{aligned}
 \BE
-=  2 j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r} \sin\theta
-\lr{
+&=  2 j \eta k \frac{ I_0 }{4 \pi r} e^{-j k r} \sin\theta
+\Biglr{
 \cos\lr{ k s \sin\theta \cos\lr{ \phi - \pi/4}}
+\\
+&\quad
 -\cos\lr{ k s \sin\theta \cos\lr{ \phi + \pi/4}}
 }.
+\end{aligned}
 \end{equation}
 %
 The array factor can be picked off by inspection
@@ -219,8 +223,8 @@ P_{\textrm{rad}}
 &=
 B_0
 \int_0^{\pi/2} d\phi
-\int_0^{\pi} d\theta \sin \theta U(\theta, \phi)
-\approx
+\int_0^{\pi} d\theta \sin \theta U(\theta, \phi) \\
+&\approx
 B_0
 (k s)^4
 \int_0^{\pi/2} d\phi \sin^2(2 \phi)

@@ -88,19 +88,21 @@ After application of Stokes' and the divergence theorems Maxwell's equations hav
 First consider one of the loop integrals, like \cref{eqn:normalAndTangentialFields:100}.  For an infinitesimal loop, that integral is
 %
 \begin{equation}\label{eqn:normalAndTangentialFields:180}
-\ointctrclockwise \bcE \cdot d\Bl
-\approx
+\begin{aligned}
+\ointctrclockwise \bcE \cdot d\Bl \\
+&\approx
 \mathcal{E}^{(1)}_x \Delta x
 + \mathcal{E}^{(1)} \frac{\Delta y}{2}
 + \mathcal{E}^{(2)} \frac{\Delta y}{2}
 -\mathcal{E}^{(2)}_x \Delta x
 - \mathcal{E}^{(2)} \frac{\Delta y}{2}
-- \mathcal{E}^{(1)} \frac{\Delta y}{2}
-\approx
+- \mathcal{E}^{(1)} \frac{\Delta y}{2} \\
+&\approx
 \lr{ \mathcal{E}^{(1)}_x
 -\mathcal{E}^{(2)}_x } \Delta x
 + \inv{2} \PD{x}{\mathcal{E}^{(2)}} \Delta x \Delta y
 + \inv{2} \PD{x}{\mathcal{E}^{(1)}} \Delta x \Delta y.
+\end{aligned}
 \end{equation}
 %
 We let \( \Delta y \rightarrow 0 \) which kills off all but the first difference term.
