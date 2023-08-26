@@ -126,7 +126,7 @@ For the assumed potential, the divergence is
 %
 \begin{equation}\label{eqn:chapter4Notes:120}
 \begin{aligned}
-\spacegrad \cdot \BA
+&\spacegrad \cdot \BA \\
 &=
 \frac{a_r}{r^2} \PD{r}{} \lr{ r^2 \frac{e^{-j k r}}{r} }
 + \inv{r \sin\theta } \frac{e^{-j k r}}{r} \PD{\theta}{} \lr{\sin\theta a_\theta}
@@ -139,8 +139,8 @@ e^{-j k r}
 -j k \inv{r}
 }
 + \inv{r^2 \sin\theta } e^{-j k r} \PD{\theta}{} \lr{\sin\theta a_\theta}
-+ \inv{r^2 \sin\theta } e^{-j k r} \PD{\phi}{a_\phi}
-\approx
++ \inv{r^2 \sin\theta } e^{-j k r} \PD{\phi}{a_\phi} \\
+&\approx
 -j k \frac{a_r}{r}
 e^{-j k r}.
 \end{aligned}
@@ -152,13 +152,13 @@ The gradient can now be computed
 %
 \begin{equation}\label{eqn:chapter4Notes:140}
 \begin{aligned}
-\spacegrad \lr{\spacegrad \cdot \BA } \approx
+&\spacegrad \lr{\spacegrad \cdot \BA } \approx
 -j k
 \spacegrad
 \lr{
 \frac{a_r}{r}
 e^{-j k r}
-}
+} \\
 &=
 -j k \lr{
 \rcap \PD{r}{}
@@ -256,8 +256,8 @@ Application of the same assumed representation for the magnetic field gives
 \spacegrad \cross \BA
 \\ &=
 \frac{\rcap}{r \sin\theta} \partial_\theta \lr{A_\phi \sin\theta}
-+ \frac{\thetacap}{r} \lr{ \inv{\sin\theta} \partial_\phi A_r - \partial_r \lr{r A_\phi}}
-+ \frac{\phicap}{r} \lr{ \partial_r\lr{r A_\theta} - \partial_\theta A_r}
++ \frac{\thetacap}{r} \lr{ \inv{\sin\theta} \partial_\phi A_r - \partial_r \lr{r A_\phi}} \\
+&\quad+ \frac{\phicap}{r} \lr{ \partial_r\lr{r A_\theta} - \partial_\theta A_r}
 \\ &=
 \frac{\rcap}{r \sin\theta} \partial_\theta \lr{
 \frac{e^{-j k r}}{r} a_\phi
@@ -267,8 +267,8 @@ Application of the same assumed representation for the magnetic field gives
 } - \partial_r \lr{r
 \frac{e^{-j k r}}{r} a_\phi
 }
-}
-+ \frac{\phicap}{r} \lr{ \partial_r\lr{r
+} \\
+&\quad+ \frac{\phicap}{r} \lr{ \partial_r\lr{r
 \frac{e^{-j k r}}{r} a_\theta
 } - \partial_\theta
 \lr{
@@ -289,7 +289,8 @@ a_r
 e^{-j k r}
 }
 a_\phi
-}
+} \\
+&\quad
 + \frac{\phicap}{r} \lr{
 \partial_r
 \lr{
@@ -300,8 +301,8 @@ a_\theta
 \frac{e^{-j k r}}{r}
 \partial_\theta
 a_r
-}
-\approx
+} \\
+&\approx
 j k \lr{ \thetacap a_\phi
 -
 \phicap a_\theta

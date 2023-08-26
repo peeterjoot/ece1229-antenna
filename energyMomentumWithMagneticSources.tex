@@ -123,12 +123,13 @@ Lorentz force equation
 \( \rho \bcE = \epsilon_0 \bcE \spacegrad \cdot \bcE \) must be added to both sides.  To extend the magnetic current term to its full dual (magnetic) Lorentz force \index{Lorentz force!dual} structure, the quantity to add to both sides is \( \rho_\txtm \bcH = \mu_0 \bcH \spacegrad \cdot \bcH \).  Performing these manipulations gives
 %
 \begin{equation}\label{eqn:energyMomentumWithMagneticSources:240}
-\inv{c^2} \PD{t}{} \lr{ \bcE \cross \bcH }
+\begin{aligned}
+\inv{c^2} &\PD{t}{} \lr{ \bcE \cross \bcH }
 +
 \rho \BE + \mu_0 \bcJ \cross \bcH
 + \rho_\txtm \bcH
-+ \epsilon_0 \bcE \cross \bcM
-=
++ \epsilon_0 \bcE \cross \bcM \\
+&=
 \mu_0
 \lr{
 \bcH \spacegrad \cdot \bcH
@@ -140,6 +141,7 @@ Lorentz force equation
 -
 \bcE \cross \lr{ \spacegrad \cross \bcE }
 }.
+\end{aligned}
 \end{equation}
 %
 It seems slightly surprising the sign of the magnetic equivalent of the Lorentz force terms have an alternation of sign.  This is, however, consistent with the \textAndIndex{duality} transformations outlined in (\citep{balanis2005antenna} table 3.2)
@@ -391,7 +393,7 @@ What do these time derivative terms look like in the \textAndIndex{frequency dom
 %
 \begin{equation}\label{eqn:energyMomentumWithMagneticSources:620}
 \begin{aligned}
-\bcE^{(b)} \cdot \partial_t \bcE^{(a)}
+&\bcE^{(b)} \cdot \partial_t \bcE^{(a)} \\
 &=
 \inv{4}
 \lr{
@@ -465,14 +467,15 @@ j \omega
 so we have
 %
 \begin{equation}\label{eqn:energyMomentumWithMagneticSources:660}
+\begin{aligned}
 0
-=
+&=
 %\timeaverage{
 \spacegrad \cdot \Real \lr{
 \BE^{(a)} \cross {\BH^{(b)}}^\conj
 -\BE^{(b)} \cross {\BH^{(a)}}^\conj
-}
-+
+} \\
+&\quad+
 \omega \Imag
 \lr{
 \epsilon_0
@@ -480,8 +483,8 @@ so we have
 +
 \mu_0
 \BH^{(a)} \cdot { \BH^{(b)} }^\conj
-}
-+ \Real
+} \\
+&\quad+ \Real
 \lr{
 -\BH^{(a)} \cdot { \BM^{(b)} }^\conj
 +\BH^{(b)} \cdot { \BM^{(a)} }^\conj
@@ -490,6 +493,7 @@ so we have
 }
 %}_{\textrm{av}}
 .
+\end{aligned}
 \end{equation}
 %
 %Observe that the perfect cancellation of the time derivative terms only occurs when the cross product differences were those of the phasors.  When those cross differences are those of the actual fields, like those in the Poynting theorem, there is a frequency dependent term is that expansion.

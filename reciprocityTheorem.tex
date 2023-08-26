@@ -87,14 +87,16 @@ However, there are some subtle differences since the time domain products lead t
 Employing the \textAndIndex{divergence theorem} over a sphere the identity above takes the form
 %
 \begin{equation}\label{eqn:reciprocityTheorem:480}
+\begin{aligned}
 \int_S
-\lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS
-=
+&\lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS \\
+&=
 \int_V \lr{
 -\BH^{(b)} \cdot \BM^{(a)} -\BE^{(a)} \cdot \BJ^{(b)}
 +\BH^{(a)} \cdot \BM^{(b)} +\BE^{(b)} \cdot \BJ^{(a)}
 }
 dV
+\end{aligned}
 \end{equation}
 %
 In the far field, the cross products are strictly radial.  That surface integral can be written as
@@ -102,7 +104,7 @@ In the far field, the cross products are strictly radial.  That surface integral
 \begin{equation}\label{eqn:reciprocityTheorem:500}
 \begin{aligned}
 \int_S
-\lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS
+&\lr{ \BE^{(a)} \cross \BH^{(b)} - \BE^{(b)} \cross \BH^{(a)} } \cdot \rcap dS \\
 &=
 \inv{\mu_0}
 \int_S
